@@ -1,0 +1,126 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Cart Page Tests >> Verify Cart Quantity
+- Location: C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\cartPageTests.spec.ts:15:5
+
+# Error details
+
+```
+Error: expect(received).toBe(expected) // Object.is equality
+
+Expected: 1
+Received: 10
+    at C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\pages\cartPage.ts:27:44
+    at CartPage.verifyFirstProductQuantity (C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\pages\cartPage.ts:25:9)
+    at C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\cartPageTests.spec.ts:16:9
+```
+
+# Page snapshot
+
+```yaml
+- banner:
+  - link "Website for automation practice":
+    - img "Website for automation practice"
+  - list:
+    - listitem:
+      - link " Home"
+    - listitem:
+      - link " Products"
+    - listitem:
+      - link " Cart"
+    - listitem:
+      - link " Logout"
+    - listitem:
+      - link " Delete Account"
+    - listitem:
+      - link " Test Cases"
+    - listitem:
+      - link " API Testing"
+    - listitem:
+      - link " Video Tutorials"
+    - listitem:
+      - link " Contact us"
+    - listitem:  Logged in as Drew Test
+- list:
+  - listitem:
+    - link "Home"
+  - listitem: Shopping Cart
+- text: Proceed To Checkout
+- table:
+  - rowgroup:
+    - row "Item Description Price Quantity Total":
+      - cell "Item"
+      - cell "Description"
+      - cell "Price"
+      - cell "Quantity"
+      - cell "Total"
+      - cell
+  - rowgroup:
+    - row "Product Image Blue Top Women > Tops Rs. 500 10 Rs. 5000 ":
+      - cell "Product Image":
+        - link "Product Image":
+          - img "Product Image"
+      - cell "Blue Top Women > Tops":
+        - heading "Blue Top" [level=4]:
+          - link "Blue Top"
+        - paragraph: Women > Tops
+      - cell "Rs. 500":
+        - paragraph: Rs. 500
+      - cell "10":
+        - button "10"
+      - cell "Rs. 5000":
+        - paragraph: Rs. 5000
+      - cell ""
+- contentinfo:
+  - heading "Subscription" [level=2]
+  - textbox "Your email address"
+  - button ""
+  - paragraph: Get the most recent updates from our site and be updated your self...
+  - insertion
+  - paragraph: Copyright © 2021 All rights reserved
+  - insertion
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect, Locator, Page } from '@playwright/test';
+   2 |
+   3 | export class CartPage {
+   4 |     page: Page;
+   5 |
+   6 |     proceedToCheckoutButton: Locator;
+   7 |
+   8 |     constructor(page: Page) {
+   9 |         this.page = page;
+  10 |         this.proceedToCheckoutButton = this.page.getByText('Proceed To Checkout');
+  11 |     }
+  12 |
+  13 |
+  14 |     async verifyFirstProductIsDisplayedInCart() {
+  15 |         await test.step('Verify Product Is Displayed In Cart', async () => {
+  16 |             await expect(this.page.locator('#product-1')).toBeVisible();
+  17 |         });
+  18 |     };
+  19 |
+  20 |     async clickProceedToCheckoutButton() {
+  21 |         await this.proceedToCheckoutButton.click();
+  22 |     }
+  23 |
+  24 |     async verifyFirstProductQuantity(num: number) {
+  25 |         await test.step('Verify First Product Quantity = ' + num, async () => {
+  26 |             let cartQuantity = await this.page.locator('#product-1').locator('.cart_quantity').innerText();
+> 27 |             expect(parseInt(cartQuantity)).toBe(num);
+     |                                            ^ Error: expect(received).toBe(expected) // Object.is equality
+  28 |         });
+  29 |     };
+  30 |
+  31 |
+  32 | }
+```

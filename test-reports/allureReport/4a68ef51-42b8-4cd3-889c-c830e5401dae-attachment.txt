@@ -1,3 +1,0 @@
-Prod Test
-ENV Name = Drew Test
-production-validation

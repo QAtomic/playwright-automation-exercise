@@ -1,13 +1,12 @@
 import * as dotenv from 'dotenv';
 dotenv.config();
-
 import { asAnAuthenticatedUserOnHomePage } from '../fixtures/homePageFixtures';
-
 import { test } from '@playwright/test';
+
+
 test.describe("Home Page Tests", () => {
 
-    test("PROD POC", ({page}, testInfo) => {
-        console.log(testInfo.project.name);
+    test("PROD ENV POC", ({page}, testInfo) => {
         if (testInfo.project.name === 'production-validation') {
             console.log("PROD Test");
             console.log("Name = " + process.env.PROD_NAME);

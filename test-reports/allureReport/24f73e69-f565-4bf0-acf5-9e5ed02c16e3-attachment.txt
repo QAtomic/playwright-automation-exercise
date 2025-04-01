@@ -1,3 +1,0 @@
-chromium
-Non-Prod Test
-ENV Name = Drew Test

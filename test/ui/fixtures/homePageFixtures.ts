@@ -18,19 +18,8 @@ export const asAnAuthenticatedUserOnHomePage = fixture.extend<TFixture>({
         await homePage.navigateToHomePage();
         await homePage.clickLogin();
 
-        let username;
-        let password;
-        if (testInfo.project.name === 'production-validation') {
-            username = process.env.PROD_EMAIL as string;
-            password = process.env.PROD_PASSWORD as string;
-        } else {
-            username = process.env.QA_EMAIL as string;
-            password = process.env.QA_PASSWORD as string;
-        }
         const loginPage = new LoginPage(page);
-        console.log(username);
-        console.log(password);
-        await loginPage.enterCredentialsAndSubmit(username,password);
+        await loginPage.enterValidCredentialsAndSubmit(testInfo.project.name);
 
         await use (homePage);
     }

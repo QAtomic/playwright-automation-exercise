@@ -13,13 +13,13 @@ type TFixture = {
 
 export const asAnAuthenticatedUserOnCartPageWithProductsInCart = fixture.extend<TFixture>({
 
-    cartPage: async ({ page }, use) => {
+    cartPage: async ({ page }, use, testInfo) => {
         const homePage = new HomePage(page);
         await homePage.navigateToHomePage();
         await homePage.clickLogin();
 
         const loginPage = new LoginPage(page);
-        await loginPage.enterCredentialsAndSubmit("Drew@Atomic.com","Aq1!Sw2@");
+        await loginPage.enterValidCredentialsAndSubmit(testInfo.project.name);
 
         await homePage.verifyUserIsLoggedIn();
         await homePage.clickProductsLink();

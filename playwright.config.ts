@@ -40,6 +40,15 @@ export default defineConfig({
   /* Configure projects for major browsers */
   projects: [
     {
+      name: 'production-validation',
+      testMatch: /.*PROD.spec.ts/,
+      use: { 
+        baseURL: "prod.url.com",
+        ...devices['Desktop Chrome'] 
+      },
+      retries: 0
+    },
+    {
       name: 'chromium',
       use: { ...devices['Desktop Chrome'] },
     },

@@ -8,7 +8,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "npx playwright test"
+    "test": "npx playwright test",
+    "production-validation": "npx playwright test --project=production-validation"
   },
   "dependencies": {
     "dotenv": "^16.4.7",

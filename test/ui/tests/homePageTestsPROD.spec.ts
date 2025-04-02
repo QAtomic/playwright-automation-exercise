@@ -6,7 +6,7 @@ import { test } from '@playwright/test';
 
 test.describe("Home Page Tests", () => {
 
-    test("PROD ENV POC", ({page}, testInfo) => {
+    test("Environment Data Switching POC", ({page}, testInfo) => {
         if (testInfo.project.name === 'production-validation') {
             console.log("PROD Test");
             console.log("Name = " + process.env.PROD_NAME);

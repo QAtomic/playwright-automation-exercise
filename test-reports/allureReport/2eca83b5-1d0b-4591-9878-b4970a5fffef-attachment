@@ -1,0 +1,77 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Cart Page Tests >> Product In Cart
+- Location: C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\cartPageTests.spec.ts:10:5
+
+# Error details
+
+```
+Error: locator.fill: Test ended.
+Call log:
+  - waiting for locator('form').filter({ hasText: 'Login' }).getByPlaceholder('Email Address')
+
+    at LoginPage.enterValidCredentialsAndSubmit (C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\pages\loginPage.ts:39:31)
+    at LoginFunction.loginWithValidCredentials (C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\fixtureFunctions\loginFunction.ts:23:30)
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect, Locator, Page } from '@playwright/test';
+   2 | import * as dotenv from 'dotenv';
+   3 | dotenv.config();
+   4 |
+   5 | export class LoginPage {
+   6 |     page: Page;
+   7 |
+   8 |     emailInput: Locator;
+   9 |     passwordInput: Locator;
+  10 |     loginButton: Locator;
+  11 |     invalidEmailOrPasswordMessage: Locator;
+  12 |
+  13 |     constructor(page: Page) {
+  14 |         this.page = page;
+  15 |         this.emailInput = this.page.locator('form').filter({ hasText: 'Login' }).getByPlaceholder('Email Address');
+  16 |         this.passwordInput = this.page.getByRole('textbox', { name: 'Password' });
+  17 |         this.loginButton = this.page.getByRole('button', { name: 'Login' });
+  18 |         this.invalidEmailOrPasswordMessage = this.page.getByText('Your email or password is');
+  19 |     };
+  20 |
+  21 |
+  22 |     async enterCredentialsAndSubmit(email: string, password: string) {
+  23 |         await this.emailInput.fill(email);
+  24 |         await this.passwordInput.fill(password);
+  25 |         await this.loginButton.click();
+  26 |     }
+  27 |
+  28 |     async enterValidCredentialsAndSubmit(testEnv: string) {
+  29 |         let email;
+  30 |         let password;
+  31 |         if (testEnv === 'production-validation') {
+  32 |             email = process.env.PROD_EMAIL as string;
+  33 |             password = process.env.PROD_PASSWORD as string
+  34 |         } else {
+  35 |             email = process.env.QA_EMAIL as string;
+  36 |             password = process.env.QA_PASSWORD as string
+  37 |         }
+  38 |         
+> 39 |         await this.emailInput.fill(email);   
+     |                               ^ Error: locator.fill: Test ended.
+  40 |         await this.passwordInput.fill(password);
+  41 |         await this.loginButton.click();
+  42 |     }
+  43 |
+  44 |     async verifyIncorrectEmailOrPasswordMessageDisplays() {
+  45 |         await test.step('Verify Incorrect Email Or Password Message Displays', async () => {
+  46 |             await expect(this.invalidEmailOrPasswordMessage).toBeVisible();
+  47 |         });
+  48 |     };
+  49 |
+  50 | }
+```

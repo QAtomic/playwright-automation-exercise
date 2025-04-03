@@ -12,6 +12,8 @@
     "production-validation": "npx playwright test --project=production-validation"
   },
   "dependencies": {
+    "ajv": "^8.17.1",
+    "avj": "^0.0.0",
     "csv-parse": "^5.6.0",
     "dotenv": "^16.4.7",
     "next": "15.2.3",

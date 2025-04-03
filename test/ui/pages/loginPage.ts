@@ -26,14 +26,22 @@ export class LoginPage {
     }
 
     async enterValidCredentialsAndSubmit(testEnv: string) {
-        let email;
-        let password;
+        let email = "";
+        let password = "";
         if (testEnv === 'production-validation') {
             email = process.env.PROD_EMAIL as string;
             password = process.env.PROD_PASSWORD as string
+        } else if (testEnv === 'qa-chromium') {
+            email = process.env.QA_CHROMIUM_EMAIL as string;
+            password = process.env.QA_CHROMIUM_PASSWORD as string
+        } else if (testEnv === 'qa-firefox') {
+            email = process.env.QA_FIREFOX_EMAIL as string;
+            password = process.env.QA_FIREFOX_PASSWORD as string
+        } else if (testEnv === 'qa-webkit') {
+            email = process.env.QA_WEBKIT_EMAIL as string;
+            password = process.env.QA_WEBKIT_PASSWORD as string
         } else {
-            email = process.env.QA_EMAIL as string;
-            password = process.env.QA_PASSWORD as string
+            test.fail(true, "Login Setup Issue");
         }
         
         await this.emailInput.fill(email);   

@@ -1,6 +1,8 @@
 import { test, expect, Locator, Page } from '@playwright/test';
+import { count } from 'console';
 
 export class CartPage {
+    url = "https://www.automationexercise.com/view_cart";
     page: Page;
 
     proceedToCheckoutButton: Locator;
@@ -27,6 +29,13 @@ export class CartPage {
             expect(parseInt(cartQuantity)).toBe(num);
         });
     };
-
+    
+    async removeAllItemsFromCart() {
+        await this.page.goto(this.url);
+        const removeItemButtons = await this.page.getByRole('cell', { name: '' }).locator('a').all();
+        for (const removeItemButton of removeItemButtons) {
+            await removeItemButton.click();
+        }
+    }
 
 }

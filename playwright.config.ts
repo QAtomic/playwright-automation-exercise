@@ -49,17 +49,17 @@ export default defineConfig({
       retries: 0
     },
     {
-      name: 'chromium',
+      name: 'qa-chromium',
       use: { ...devices['Desktop Chrome'] },
     },
 
     {
-      name: 'firefox',
+      name: 'qa-firefox',
       use: { ...devices['Desktop Firefox'] },
     },
 
     {
-      name: 'webkit',
+      name: 'qa-webkit',
       use: { ...devices['Desktop Safari'] },
     },
 

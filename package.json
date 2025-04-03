@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "npx playwright test --project=chromium --project=firefox --project=webkit",
+    "test": "npx playwright test --project=qa-chromium --project=qa-firefox --project=qa-webkit",
     "production-validation": "npx playwright test --project=production-validation"
   },
   "dependencies": {

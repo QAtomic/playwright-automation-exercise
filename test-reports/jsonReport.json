@@ -67,8 +67,8 @@
         "metadata": {
           "actualWorkers": 6
         },
-        "id": "chromium",
-        "name": "chromium",
+        "id": "qa-chromium",
+        "name": "qa-chromium",
         "testDir": "C:/Users/Drew/Documents/VScode-workspace/playwright-automation-exercise/test",
         "testIgnore": [],
         "testMatch": [
@@ -83,8 +83,8 @@
         "metadata": {
           "actualWorkers": 6
         },
-        "id": "firefox",
-        "name": "firefox",
+        "id": "qa-firefox",
+        "name": "qa-firefox",
         "testDir": "C:/Users/Drew/Documents/VScode-workspace/playwright-automation-exercise/test",
         "testIgnore": [],
         "testMatch": [
@@ -99,8 +99,8 @@
         "metadata": {
           "actualWorkers": 6
         },
-        "id": "webkit",
-        "name": "webkit",
+        "id": "qa-webkit",
+        "name": "qa-webkit",
         "testDir": "C:/Users/Drew/Documents/VScode-workspace/playwright-automation-exercise/test",
         "testIgnore": [],
         "testMatch": [
@@ -111,7 +111,7 @@
     ],
     "shard": null,
     "updateSnapshots": "missing",
-    "updateSourceMethod": "patch",
+    "updateSourceMethod": "3way",
     "version": "1.51.1",
     "workers": 6,
     "webServer": null
@@ -127,7 +127,7 @@
         {
           "title": "Cart Page Tests",
           "file": "ui/tests/cartPageTests.spec.ts",
-          "line": 8,
+          "line": 9,
           "column": 6,
           "specs": [
             {
@@ -139,16 +139,20 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
+                  "projectId": "qa-chromium",
+                  "projectName": "qa-chromium",
                   "results": [
                     {
-                      "workerIndex": 0,
+                      "workerIndex": 15,
                       "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 5089,
+                      "duration": 14631,
                       "errors": [],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "Count Remove Item Buttons = 1\n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
@@ -161,12 +165,17 @@
                           "duration": 82
                         }
                       ],
-                      "startTime": "2025-04-02T15:45:03.613Z",
+                      "startTime": "2025-04-03T00:31:22.281Z",
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartPageTests-Cart-Page-Tests-Product-In-Cart-chromium\\test-finished-1.png"
+                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartPageTests-Cart-Page-Tests-Product-In-Cart-qa-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartPageTests-Cart-Page-Tests-Product-In-Cart-qa-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -174,9 +183,9 @@
                   "status": "expected"
                 }
               ],
-              "id": "8e01650236e277dbb67a-b04e93e7a50dd4d8b5c5",
+              "id": "8e01650236e277dbb67a-7cfbb84474ee91dea4f5",
               "file": "ui/tests/cartPageTests.spec.ts",
-              "line": 10,
+              "line": 11,
               "column": 5
             },
             {
@@ -188,42 +197,46 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
+                  "projectId": "qa-chromium",
+                  "projectName": "qa-chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
+                      "workerIndex": 16,
                       "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 5182,
+                      "duration": 19936,
                       "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m14\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m14\u001b[39m\n    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts:27:44\n    at CartPage.verifyFirstProductQuantity (C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts:25:9)\n    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\tests\\cartPageTests.spec.ts:17:9",
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts:29:44\n    at CartPage.verifyFirstProductQuantity (C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts:27:9)\n    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\tests\\cartPageTests.spec.ts:18:9",
                         "matcherResult": {
-                          "actual": 14,
+                          "actual": 2,
                           "expected": 1,
-                          "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m14\u001b[39m",
+                          "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
                           "name": "toBe",
                           "pass": false
                         },
                         "location": {
                           "file": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts",
                           "column": 44,
-                          "line": 27
+                          "line": 29
                         },
-                        "snippet": "\u001b[90m   at \u001b[39mui\\pages\\cartPage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m         \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verify First Product Quantity = '\u001b[39m \u001b[33m+\u001b[39m num\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 26 |\u001b[39m             \u001b[36mlet\u001b[39m cartQuantity \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#product-1'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'.cart_quantity'\u001b[39m)\u001b[33m.\u001b[39minnerText()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m             expect(parseInt(cartQuantity))\u001b[33m.\u001b[39mtoBe(num)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m         })\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m     }\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m\u001b[0m"
+                        "snippet": "\u001b[90m   at \u001b[39mui\\pages\\cartPage.ts:29\n\n\u001b[0m \u001b[90m 27 |\u001b[39m         \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verify First Product Quantity = '\u001b[39m \u001b[33m+\u001b[39m num\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 28 |\u001b[39m             \u001b[36mlet\u001b[39m cartQuantity \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#product-1'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'.cart_quantity'\u001b[39m)\u001b[33m.\u001b[39minnerText()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m             expect(parseInt(cartQuantity))\u001b[33m.\u001b[39mtoBe(num)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m         })\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m     }\u001b[33m;\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[0m"
                       },
                       "errors": [
                         {
                           "location": {
                             "file": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts",
                             "column": 44,
-                            "line": 27
+                            "line": 29
                           },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m14\u001b[39m\n\n\u001b[90m   at \u001b[39mui\\pages\\cartPage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m         \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verify First Product Quantity = '\u001b[39m \u001b[33m+\u001b[39m num\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 26 |\u001b[39m             \u001b[36mlet\u001b[39m cartQuantity \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#product-1'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'.cart_quantity'\u001b[39m)\u001b[33m.\u001b[39minnerText()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m             expect(parseInt(cartQuantity))\u001b[33m.\u001b[39mtoBe(num)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m         })\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m     }\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts:27:44\u001b[22m\n\u001b[2m    at CartPage.verifyFirstProductQuantity (C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts:25:9)\u001b[22m\n\u001b[2m    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\tests\\cartPageTests.spec.ts:17:9\u001b[22m"
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n\n\u001b[90m   at \u001b[39mui\\pages\\cartPage.ts:29\n\n\u001b[0m \u001b[90m 27 |\u001b[39m         \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verify First Product Quantity = '\u001b[39m \u001b[33m+\u001b[39m num\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 28 |\u001b[39m             \u001b[36mlet\u001b[39m cartQuantity \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#product-1'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'.cart_quantity'\u001b[39m)\u001b[33m.\u001b[39minnerText()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m             expect(parseInt(cartQuantity))\u001b[33m.\u001b[39mtoBe(num)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m         })\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m     }\u001b[33m;\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[0m\n\u001b[2m    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts:29:44\u001b[22m\n\u001b[2m    at CartPage.verifyFirstProductQuantity (C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts:27:9)\u001b[22m\n\u001b[2m    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\tests\\cartPageTests.spec.ts:18:9\u001b[22m"
                         }
                       ],
-                      "stdout": [],
+                      "stdout": [
+                        {
+                          "text": "Count Remove Item Buttons = 1\n"
+                        }
+                      ],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
@@ -233,354 +246,57 @@
                         },
                         {
                           "title": "Verify First Product Quantity = 1",
-                          "duration": 77,
+                          "duration": 75,
                           "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m14\u001b[39m",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m14\u001b[39m\n    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts:27:44\n    at CartPage.verifyFirstProductQuantity (C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts:25:9)\n    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\tests\\cartPageTests.spec.ts:17:9",
+                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
+                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts:29:44\n    at CartPage.verifyFirstProductQuantity (C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts:27:9)\n    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\tests\\cartPageTests.spec.ts:18:9",
                             "matcherResult": {
-                              "actual": 14,
+                              "actual": 2,
                               "expected": 1,
-                              "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m14\u001b[39m",
+                              "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
                               "name": "toBe",
                               "pass": false
                             },
                             "location": {
                               "file": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts",
                               "column": 44,
-                              "line": 27
+                              "line": 29
                             },
-                            "snippet": "\u001b[90m   at \u001b[39mui\\pages\\cartPage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m         \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verify First Product Quantity = '\u001b[39m \u001b[33m+\u001b[39m num\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 26 |\u001b[39m             \u001b[36mlet\u001b[39m cartQuantity \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#product-1'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'.cart_quantity'\u001b[39m)\u001b[33m.\u001b[39minnerText()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m             expect(parseInt(cartQuantity))\u001b[33m.\u001b[39mtoBe(num)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m         })\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m     }\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m\u001b[0m"
+                            "snippet": "\u001b[90m   at \u001b[39mui\\pages\\cartPage.ts:29\n\n\u001b[0m \u001b[90m 27 |\u001b[39m         \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verify First Product Quantity = '\u001b[39m \u001b[33m+\u001b[39m num\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 28 |\u001b[39m             \u001b[36mlet\u001b[39m cartQuantity \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#product-1'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'.cart_quantity'\u001b[39m)\u001b[33m.\u001b[39minnerText()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 29 |\u001b[39m             expect(parseInt(cartQuantity))\u001b[33m.\u001b[39mtoBe(num)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 30 |\u001b[39m         })\u001b[33m;\u001b[39m\n \u001b[90m 31 |\u001b[39m     }\u001b[33m;\u001b[39m\n \u001b[90m 32 |\u001b[39m     \u001b[0m"
                           }
                         }
                       ],
-                      "startTime": "2025-04-02T15:45:03.559Z",
+                      "startTime": "2025-04-03T00:31:22.326Z",
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartPageTests-Cart-Page-Tests-Verify-Cart-Quantity-chromium\\test-failed-1.png"
+                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartPageTests-Cart-Page-Tests-Verify-Cart-Quantity-qa-chromium\\test-failed-1.png"
                         },
                         {
                           "name": "_prompt-0",
                           "contentType": "text/markdown",
-                          "body": "IyBJbnN0cnVjdGlvbnMKCi0gRm9sbG93aW5nIFBsYXl3cmlnaHQgdGVzdCBmYWlsZWQuCi0gRXhwbGFpbiB3aHksIGJlIGNvbmNpc2UsIHJlc3BlY3QgUGxheXdyaWdodCBiZXN0IHByYWN0aWNlcy4KLSBQcm92aWRlIGEgc25pcHBldCBvZiBjb2RlIHdpdGggdGhlIGZpeCwgaWYgcG9zc2libGUuCgojIFRlc3QgaW5mbwoKLSBOYW1lOiBDYXJ0IFBhZ2UgVGVzdHMgPj4gVmVyaWZ5IENhcnQgUXVhbnRpdHkKLSBMb2NhdGlvbjogQzpcVXNlcnNcRHJld1xEb2N1bWVudHNcVlNjb2RlLXdvcmtzcGFjZVxwbGF5d3JpZ2h0LWF1dG9tYXRpb24tZXhlcmNpc2VcdGVzdFx1aVx0ZXN0c1xjYXJ0UGFnZVRlc3RzLnNwZWMudHM6MTU6NQoKIyBFcnJvciBkZXRhaWxzCgpgYGAKRXJyb3I6IGV4cGVjdChyZWNlaXZlZCkudG9CZShleHBlY3RlZCkgLy8gT2JqZWN0LmlzIGVxdWFsaXR5CgpFeHBlY3RlZDogMQpSZWNlaXZlZDogMTQKICAgIGF0IEM6XFVzZXJzXERyZXdcRG9jdW1lbnRzXFZTY29kZS13b3Jrc3BhY2VccGxheXdyaWdodC1hdXRvbWF0aW9uLWV4ZXJjaXNlXHRlc3RcdWlccGFnZXNcY2FydFBhZ2UudHM6Mjc6NDQKICAgIGF0IENhcnRQYWdlLnZlcmlmeUZpcnN0UHJvZHVjdFF1YW50aXR5IChDOlxVc2Vyc1xEcmV3XERvY3VtZW50c1xWU2NvZGUtd29ya3NwYWNlXHBsYXl3cmlnaHQtYXV0b21hdGlvbi1leGVyY2lzZVx0ZXN0XHVpXHBhZ2VzXGNhcnRQYWdlLnRzOjI1OjkpCiAgICBhdCBDOlxVc2Vyc1xEcmV3XERvY3VtZW50c1xWU2NvZGUtd29ya3NwYWNlXHBsYXl3cmlnaHQtYXV0b21hdGlvbi1leGVyY2lzZVx0ZXN0XHVpXHRlc3RzXGNhcnRQYWdlVGVzdHMuc3BlYy50czoxNzo5CmBgYAoKIyBQYWdlIHNuYXBzaG90CgpgYGB5YW1sCi0gYmFubmVyOgogIC0gbGluayAiV2Vic2l0ZSBmb3IgYXV0b21hdGlvbiBwcmFjdGljZSI6CiAgICAtIGltZyAiV2Vic2l0ZSBmb3IgYXV0b21hdGlvbiBwcmFjdGljZSIKICAtIGxpc3Q6CiAgICAtIGxpc3RpdGVtOgogICAgICAtIGxpbmsgIu+AlSBIb21lIgogICAgLSBsaXN0aXRlbToKICAgICAgLSBsaW5rICLuo7ggUHJvZHVjdHMiCiAgICAtIGxpc3RpdGVtOgogICAgICAtIGxpbmsgIu+BuiBDYXJ0IgogICAgLSBsaXN0aXRlbToKICAgICAgLSBsaW5rICLvgKMgTG9nb3V0IgogICAgLSBsaXN0aXRlbToKICAgICAgLSBsaW5rICLvgJQgRGVsZXRlIEFjY291bnQiCiAgICAtIGxpc3RpdGVtOgogICAgICAtIGxpbmsgIu+AuiBUZXN0IENhc2VzIgogICAgLSBsaXN0aXRlbToKICAgICAgLSBsaW5rICLvgLogQVBJIFRlc3RpbmciCiAgICAtIGxpc3RpdGVtOgogICAgICAtIGxpbmsgIu+FqiBWaWRlbyBUdXRvcmlhbHMiCiAgICAtIGxpc3RpdGVtOgogICAgICAtIGxpbmsgIu+DoCBDb250YWN0IHVzIgogICAgLSBsaXN0aXRlbTog74CHIExvZ2dlZCBpbiBhcyBRQSBUZXN0Ci0gbGlzdDoKICAtIGxpc3RpdGVtOgogICAgLSBsaW5rICJIb21lIgogIC0gbGlzdGl0ZW06IFNob3BwaW5nIENhcnQKLSB0ZXh0OiBQcm9jZWVkIFRvIENoZWNrb3V0Ci0gdGFibGU6CiAgLSByb3dncm91cDoKICAgIC0gcm93ICJJdGVtIERlc2NyaXB0aW9uIFByaWNlIFF1YW50aXR5IFRvdGFsIjoKICAgICAgLSBjZWxsICJJdGVtIgogICAgICAtIGNlbGwgIkRlc2NyaXB0aW9uIgogICAgICAtIGNlbGwgIlByaWNlIgogICAgICAtIGNlbGwgIlF1YW50aXR5IgogICAgICAtIGNlbGwgIlRvdGFsIgogICAgICAtIGNlbGwKICAtIHJvd2dyb3VwOgogICAgLSByb3cgIlByb2R1Y3QgSW1hZ2UgQmx1ZSBUb3AgV29tZW4gPiBUb3BzIFJzLiA1MDAgMTQgUnMuIDcwMDAg74CNIjoKICAgICAgLSBjZWxsICJQcm9kdWN0IEltYWdlIjoKICAgICAgICAtIGxpbmsgIlByb2R1Y3QgSW1hZ2UiOgogICAgICAgICAgLSBpbWcgIlByb2R1Y3QgSW1hZ2UiCiAgICAgIC0gY2VsbCAiQmx1ZSBUb3AgV29tZW4gPiBUb3BzIjoKICAgICAgICAtIGhlYWRpbmcgIkJsdWUgVG9wIiBbbGV2ZWw9NF06CiAgICAgICAgICAtIGxpbmsgIkJsdWUgVG9wIgogICAgICAgIC0gcGFyYWdyYXBoOiBXb21lbiA+IFRvcHMKICAgICAgLSBjZWxsICJScy4gNTAwIjoKICAgICAgICAtIHBhcmFncmFwaDogUnMuIDUwMAogICAgICAtIGNlbGwgIjE0IjoKICAgICAgICAtIGJ1dHRvbiAiMTQiCiAgICAgIC0gY2VsbCAiUnMuIDcwMDAiOgogICAgICAgIC0gcGFyYWdyYXBoOiBScy4gNzAwMAogICAgICAtIGNlbGwgIu+AjSIKLSBjb250ZW50aW5mbzoKICAtIGhlYWRpbmcgIlN1YnNjcmlwdGlvbiIgW2xldmVsPTJdCiAgLSB0ZXh0Ym94ICJZb3VyIGVtYWlsIGFkZHJlc3MiCiAgLSBidXR0b24gIu+GjiIKICAtIHBhcmFncmFwaDogR2V0IHRoZSBtb3N0IHJlY2VudCB1cGRhdGVzIGZyb20gb3VyIHNpdGUgYW5kIGJlIHVwZGF0ZWQgeW91ciBzZWxmLi4uCiAgLSBwYXJhZ3JhcGg6IENvcHlyaWdodCDCqSAyMDIxIEFsbCByaWdodHMgcmVzZXJ2ZWQKYGBgCgojIFRlc3Qgc291cmNlCgpgYGB0cwogICAxIHwgaW1wb3J0IHsgdGVzdCwgZXhwZWN0LCBMb2NhdG9yLCBQYWdlIH0gZnJvbSAnQHBsYXl3cmlnaHQvdGVzdCc7CiAgIDIgfAogICAzIHwgZXhwb3J0IGNsYXNzIENhcnRQYWdlIHsKICAgNCB8ICAgICBwYWdlOiBQYWdlOwogICA1IHwKICAgNiB8ICAgICBwcm9jZWVkVG9DaGVja291dEJ1dHRvbjogTG9jYXRvcjsKICAgNyB8CiAgIDggfCAgICAgY29uc3RydWN0b3IocGFnZTogUGFnZSkgewogICA5IHwgICAgICAgICB0aGlzLnBhZ2UgPSBwYWdlOwogIDEwIHwgICAgICAgICB0aGlzLnByb2NlZWRUb0NoZWNrb3V0QnV0dG9uID0gdGhpcy5wYWdlLmdldEJ5VGV4dCgnUHJvY2VlZCBUbyBDaGVja291dCcpOwogIDExIHwgICAgIH0KICAxMiB8CiAgMTMgfAogIDE0IHwgICAgIGFzeW5jIHZlcmlmeUZpcnN0UHJvZHVjdElzRGlzcGxheWVkSW5DYXJ0KCkgewogIDE1IHwgICAgICAgICBhd2FpdCB0ZXN0LnN0ZXAoJ1ZlcmlmeSBQcm9kdWN0IElzIERpc3BsYXllZCBJbiBDYXJ0JywgYXN5bmMgKCkgPT4gewogIDE2IHwgICAgICAgICAgICAgYXdhaXQgZXhwZWN0KHRoaXMucGFnZS5sb2NhdG9yKCcjcHJvZHVjdC0xJykpLnRvQmVWaXNpYmxlKCk7CiAgMTcgfCAgICAgICAgIH0pOwogIDE4IHwgICAgIH07CiAgMTkgfAogIDIwIHwgICAgIGFzeW5jIGNsaWNrUHJvY2VlZFRvQ2hlY2tvdXRCdXR0b24oKSB7CiAgMjEgfCAgICAgICAgIGF3YWl0IHRoaXMucHJvY2VlZFRvQ2hlY2tvdXRCdXR0b24uY2xpY2soKTsKICAyMiB8ICAgICB9CiAgMjMgfAogIDI0IHwgICAgIGFzeW5jIHZlcmlmeUZpcnN0UHJvZHVjdFF1YW50aXR5KG51bTogbnVtYmVyKSB7CiAgMjUgfCAgICAgICAgIGF3YWl0IHRlc3Quc3RlcCgnVmVyaWZ5IEZpcnN0IFByb2R1Y3QgUXVhbnRpdHkgPSAnICsgbnVtLCBhc3luYyAoKSA9PiB7CiAgMjYgfCAgICAgICAgICAgICBsZXQgY2FydFF1YW50aXR5ID0gYXdhaXQgdGhpcy5wYWdlLmxvY2F0b3IoJyNwcm9kdWN0LTEnKS5sb2NhdG9yKCcuY2FydF9xdWFudGl0eScpLmlubmVyVGV4dCgpOwo+IDI3IHwgICAgICAgICAgICAgZXhwZWN0KHBhcnNlSW50KGNhcnRRdWFudGl0eSkpLnRvQmUobnVtKTsKICAgICB8ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBeIEVycm9yOiBleHBlY3QocmVjZWl2ZWQpLnRvQmUoZXhwZWN0ZWQpIC8vIE9iamVjdC5pcyBlcXVhbGl0eQogIDI4IHwgICAgICAgICB9KTsKICAyOSB8ICAgICB9OwogIDMwIHwKICAzMSB8CiAgMzIgfCB9CmBgYA=="
+                          "body": "IyBJbnN0cnVjdGlvbnMKCi0gRm9sbG93aW5nIFBsYXl3cmlnaHQgdGVzdCBmYWlsZWQuCi0gRXhwbGFpbiB3aHksIGJlIGNvbmNpc2UsIHJlc3BlY3QgUGxheXdyaWdodCBiZXN0IHByYWN0aWNlcy4KLSBQcm92aWRlIGEgc25pcHBldCBvZiBjb2RlIHdpdGggdGhlIGZpeCwgaWYgcG9zc2libGUuCgojIFRlc3QgaW5mbwoKLSBOYW1lOiBDYXJ0IFBhZ2UgVGVzdHMgPj4gVmVyaWZ5IENhcnQgUXVhbnRpdHkKLSBMb2NhdGlvbjogQzpcVXNlcnNcRHJld1xEb2N1bWVudHNcVlNjb2RlLXdvcmtzcGFjZVxwbGF5d3JpZ2h0LWF1dG9tYXRpb24tZXhlcmNpc2VcdGVzdFx1aVx0ZXN0c1xjYXJ0UGFnZVRlc3RzLnNwZWMudHM6MTY6NQoKIyBFcnJvciBkZXRhaWxzCgpgYGAKRXJyb3I6IGV4cGVjdChyZWNlaXZlZCkudG9CZShleHBlY3RlZCkgLy8gT2JqZWN0LmlzIGVxdWFsaXR5CgpFeHBlY3RlZDogMQpSZWNlaXZlZDogMgogICAgYXQgQzpcVXNlcnNcRHJld1xEb2N1bWVudHNcVlNjb2RlLXdvcmtzcGFjZVxwbGF5d3JpZ2h0LWF1dG9tYXRpb24tZXhlcmNpc2VcdGVzdFx1aVxwYWdlc1xjYXJ0UGFnZS50czoyOTo0NAogICAgYXQgQ2FydFBhZ2UudmVyaWZ5Rmlyc3RQcm9kdWN0UXVhbnRpdHkgKEM6XFVzZXJzXERyZXdcRG9jdW1lbnRzXFZTY29kZS13b3Jrc3BhY2VccGxheXdyaWdodC1hdXRvbWF0aW9uLWV4ZXJjaXNlXHRlc3RcdWlccGFnZXNcY2FydFBhZ2UudHM6Mjc6OSkKICAgIGF0IEM6XFVzZXJzXERyZXdcRG9jdW1lbnRzXFZTY29kZS13b3Jrc3BhY2VccGxheXdyaWdodC1hdXRvbWF0aW9uLWV4ZXJjaXNlXHRlc3RcdWlcdGVzdHNcY2FydFBhZ2VUZXN0cy5zcGVjLnRzOjE4OjkKYGBgCgojIFBhZ2Ugc25hcHNob3QKCmBgYHlhbWwKLSBiYW5uZXI6CiAgLSBsaW5rICJXZWJzaXRlIGZvciBhdXRvbWF0aW9uIHByYWN0aWNlIjoKICAgIC0gaW1nICJXZWJzaXRlIGZvciBhdXRvbWF0aW9uIHByYWN0aWNlIgogIC0gbGlzdDoKICAgIC0gbGlzdGl0ZW06CiAgICAgIC0gbGluayAi74CVIEhvbWUiCiAgICAtIGxpc3RpdGVtOgogICAgICAtIGxpbmsgIu6juCBQcm9kdWN0cyIKICAgIC0gbGlzdGl0ZW06CiAgICAgIC0gbGluayAi74G6IENhcnQiCiAgICAtIGxpc3RpdGVtOgogICAgICAtIGxpbmsgIu+AoyBMb2dvdXQiCiAgICAtIGxpc3RpdGVtOgogICAgICAtIGxpbmsgIu+AlCBEZWxldGUgQWNjb3VudCIKICAgIC0gbGlzdGl0ZW06CiAgICAgIC0gbGluayAi74C6IFRlc3QgQ2FzZXMiCiAgICAtIGxpc3RpdGVtOgogICAgICAtIGxpbmsgIu+AuiBBUEkgVGVzdGluZyIKICAgIC0gbGlzdGl0ZW06CiAgICAgIC0gbGluayAi74WqIFZpZGVvIFR1dG9yaWFscyIKICAgIC0gbGlzdGl0ZW06CiAgICAgIC0gbGluayAi74OgIENvbnRhY3QgdXMiCiAgICAtIGxpc3RpdGVtOiDvgIcgTG9nZ2VkIGluIGFzIFFBIFRlc3QKLSBsaXN0OgogIC0gbGlzdGl0ZW06CiAgICAtIGxpbmsgIkhvbWUiCiAgLSBsaXN0aXRlbTogU2hvcHBpbmcgQ2FydAotIHBhcmFncmFwaDoKICAtIHRleHQ6IENhcnQgaXMgZW1wdHkhIENsaWNrCiAgLSBsaW5rICJoZXJlIgogIC0gdGV4dDogdG8gYnV5IHByb2R1Y3RzLgotIGNvbnRlbnRpbmZvOgogIC0gaGVhZGluZyAiU3Vic2NyaXB0aW9uIiBbbGV2ZWw9Ml0KICAtIHRleHRib3ggIllvdXIgZW1haWwgYWRkcmVzcyIKICAtIGJ1dHRvbiAi74aOIgogIC0gcGFyYWdyYXBoOiBHZXQgdGhlIG1vc3QgcmVjZW50IHVwZGF0ZXMgZnJvbSBvdXIgc2l0ZSBhbmQgYmUgdXBkYXRlZCB5b3VyIHNlbGYuLi4KICAtIHBhcmFncmFwaDogQ29weXJpZ2h0IMKpIDIwMjEgQWxsIHJpZ2h0cyByZXNlcnZlZAotIGluc2VydGlvbgpgYGAKCiMgVGVzdCBzb3VyY2UKCmBgYHRzCiAgIDEgfCBpbXBvcnQgeyB0ZXN0LCBleHBlY3QsIExvY2F0b3IsIFBhZ2UgfSBmcm9tICdAcGxheXdyaWdodC90ZXN0JzsKICAgMiB8IGltcG9ydCB7IGNvdW50IH0gZnJvbSAnY29uc29sZSc7CiAgIDMgfAogICA0IHwgZXhwb3J0IGNsYXNzIENhcnRQYWdlIHsKICAgNSB8ICAgICB1cmwgPSAiaHR0cHM6Ly93d3cuYXV0b21hdGlvbmV4ZXJjaXNlLmNvbS92aWV3X2NhcnQiOwogICA2IHwgICAgIHBhZ2U6IFBhZ2U7CiAgIDcgfAogICA4IHwgICAgIHByb2NlZWRUb0NoZWNrb3V0QnV0dG9uOiBMb2NhdG9yOwogICA5IHwKICAxMCB8ICAgICBjb25zdHJ1Y3RvcihwYWdlOiBQYWdlKSB7CiAgMTEgfCAgICAgICAgIHRoaXMucGFnZSA9IHBhZ2U7CiAgMTIgfCAgICAgICAgIHRoaXMucHJvY2VlZFRvQ2hlY2tvdXRCdXR0b24gPSB0aGlzLnBhZ2UuZ2V0QnlUZXh0KCdQcm9jZWVkIFRvIENoZWNrb3V0Jyk7CiAgMTMgfCAgICAgfQogIDE0IHwKICAxNSB8CiAgMTYgfCAgICAgYXN5bmMgdmVyaWZ5Rmlyc3RQcm9kdWN0SXNEaXNwbGF5ZWRJbkNhcnQoKSB7CiAgMTcgfCAgICAgICAgIGF3YWl0IHRlc3Quc3RlcCgnVmVyaWZ5IFByb2R1Y3QgSXMgRGlzcGxheWVkIEluIENhcnQnLCBhc3luYyAoKSA9PiB7CiAgMTggfCAgICAgICAgICAgICBhd2FpdCBleHBlY3QodGhpcy5wYWdlLmxvY2F0b3IoJyNwcm9kdWN0LTEnKSkudG9CZVZpc2libGUoKTsKICAxOSB8ICAgICAgICAgfSk7CiAgMjAgfCAgICAgfTsKICAyMSB8CiAgMjIgfCAgICAgYXN5bmMgY2xpY2tQcm9jZWVkVG9DaGVja291dEJ1dHRvbigpIHsKICAyMyB8ICAgICAgICAgYXdhaXQgdGhpcy5wcm9jZWVkVG9DaGVja291dEJ1dHRvbi5jbGljaygpOwogIDI0IHwgICAgIH0KICAyNSB8CiAgMjYgfCAgICAgYXN5bmMgdmVyaWZ5Rmlyc3RQcm9kdWN0UXVhbnRpdHkobnVtOiBudW1iZXIpIHsKICAyNyB8ICAgICAgICAgYXdhaXQgdGVzdC5zdGVwKCdWZXJpZnkgRmlyc3QgUHJvZHVjdCBRdWFudGl0eSA9ICcgKyBudW0sIGFzeW5jICgpID0+IHsKICAyOCB8ICAgICAgICAgICAgIGxldCBjYXJ0UXVhbnRpdHkgPSBhd2FpdCB0aGlzLnBhZ2UubG9jYXRvcignI3Byb2R1Y3QtMScpLmxvY2F0b3IoJy5jYXJ0X3F1YW50aXR5JykuaW5uZXJUZXh0KCk7Cj4gMjkgfCAgICAgICAgICAgICBleHBlY3QocGFyc2VJbnQoY2FydFF1YW50aXR5KSkudG9CZShudW0pOwogICAgIHwgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIF4gRXJyb3I6IGV4cGVjdChyZWNlaXZlZCkudG9CZShleHBlY3RlZCkgLy8gT2JqZWN0LmlzIGVxdWFsaXR5CiAgMzAgfCAgICAgICAgIH0pOwogIDMxIHwgICAgIH07CiAgMzIgfCAgICAgCiAgMzMgfCAgICAgYXN5bmMgcmVtb3ZlQWxsSXRlbXNGcm9tQ2FydCgpIHsKICAzNCB8ICAgICAgICAgYXdhaXQgdGhpcy5wYWdlLmdvdG8odGhpcy51cmwpOwogIDM1IHwgICAgICAgICBjb25zdCByZW1vdmVJdGVtQnV0dG9ucyA9IGF3YWl0IHRoaXMucGFnZS5nZXRCeVJvbGUoJ2NlbGwnLCB7IG5hbWU6ICfvgI0nIH0pLmxvY2F0b3IoJ2EnKS5hbGwoKTsKICAzNiB8ICAgICAgICAgY29uc3QgY291bnRSZW1vdmVJdGVtQnV0dG9ucyA9IHJlbW92ZUl0ZW1CdXR0b25zLmxlbmd0aDsKICAzNyB8ICAgICAgICAgY29uc29sZS5sb2coIkNvdW50IFJlbW92ZSBJdGVtIEJ1dHRvbnMgPSAiICsgY291bnRSZW1vdmVJdGVtQnV0dG9ucyk7CiAgMzggfCAgICAgICAgIGZvciAoY29uc3QgcmVtb3ZlSXRlbUJ1dHRvbiBvZiByZW1vdmVJdGVtQnV0dG9ucykgewogIDM5IHwgICAgICAgICAgICAgYXdhaXQgcmVtb3ZlSXRlbUJ1dHRvbi5jbGljaygpOwogIDQwIHwgICAgICAgICB9CiAgNDEgfCAgICAgfQogIDQyIHwKICA0MyB8IH0KYGBg"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartPageTests-Cart-Page-Tests-Verify-Cart-Quantity-qa-chromium\\trace.zip"
                         }
                       ],
                       "errorLocation": {
                         "file": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts",
                         "column": 44,
-                        "line": 27
+                        "line": 29
                       }
                     }
                   ],
                   "status": "unexpected"
                 }
               ],
-              "id": "8e01650236e277dbb67a-c82b35522442d4c12274",
+              "id": "8e01650236e277dbb67a-6ee71e9c89395154cede",
               "file": "ui/tests/cartPageTests.spec.ts",
-              "line": 15,
-              "column": 5
-            },
-            {
-              "title": "Product In Cart",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "parallelIndex": 5,
-                      "status": "passed",
-                      "duration": 8951,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "As An Authenticated User On Cart Page with Products In Cart",
-                          "duration": 0
-                        },
-                        {
-                          "title": "Verify Product Is Displayed In Cart",
-                          "duration": 218
-                        }
-                      ],
-                      "startTime": "2025-04-02T15:45:05.636Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartPageTests-Cart-Page-Tests-Product-In-Cart-firefox\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "8e01650236e277dbb67a-6e343ab58c969ad63ee9",
-              "file": "ui/tests/cartPageTests.spec.ts",
-              "line": 10,
-              "column": 5
-            },
-            {
-              "title": "Verify Cart Quantity",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 7,
-                      "parallelIndex": 4,
-                      "status": "failed",
-                      "duration": 8208,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m15\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m15\u001b[39m\n    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts:27:44\n    at CartPage.verifyFirstProductQuantity (C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts:25:9)\n    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\tests\\cartPageTests.spec.ts:17:9",
-                        "matcherResult": {
-                          "actual": 15,
-                          "expected": 1,
-                          "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m15\u001b[39m",
-                          "name": "toBe",
-                          "pass": false
-                        },
-                        "location": {
-                          "file": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts",
-                          "column": 44,
-                          "line": 27
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39mui\\pages\\cartPage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m         \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verify First Product Quantity = '\u001b[39m \u001b[33m+\u001b[39m num\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 26 |\u001b[39m             \u001b[36mlet\u001b[39m cartQuantity \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#product-1'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'.cart_quantity'\u001b[39m)\u001b[33m.\u001b[39minnerText()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m             expect(parseInt(cartQuantity))\u001b[33m.\u001b[39mtoBe(num)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m         })\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m     }\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts",
-                            "column": 44,
-                            "line": 27
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m15\u001b[39m\n\n\u001b[90m   at \u001b[39mui\\pages\\cartPage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m         \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verify First Product Quantity = '\u001b[39m \u001b[33m+\u001b[39m num\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 26 |\u001b[39m             \u001b[36mlet\u001b[39m cartQuantity \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#product-1'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'.cart_quantity'\u001b[39m)\u001b[33m.\u001b[39minnerText()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m             expect(parseInt(cartQuantity))\u001b[33m.\u001b[39mtoBe(num)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m         })\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m     }\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts:27:44\u001b[22m\n\u001b[2m    at CartPage.verifyFirstProductQuantity (C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts:25:9)\u001b[22m\n\u001b[2m    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\tests\\cartPageTests.spec.ts:17:9\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "As An Authenticated User On Cart Page with Products In Cart",
-                          "duration": 0
-                        },
-                        {
-                          "title": "Verify First Product Quantity = 1",
-                          "duration": 170,
-                          "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m15\u001b[39m",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m15\u001b[39m\n    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts:27:44\n    at CartPage.verifyFirstProductQuantity (C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts:25:9)\n    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\tests\\cartPageTests.spec.ts:17:9",
-                            "matcherResult": {
-                              "actual": 15,
-                              "expected": 1,
-                              "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m15\u001b[39m",
-                              "name": "toBe",
-                              "pass": false
-                            },
-                            "location": {
-                              "file": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts",
-                              "column": 44,
-                              "line": 27
-                            },
-                            "snippet": "\u001b[90m   at \u001b[39mui\\pages\\cartPage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m         \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verify First Product Quantity = '\u001b[39m \u001b[33m+\u001b[39m num\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 26 |\u001b[39m             \u001b[36mlet\u001b[39m cartQuantity \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#product-1'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'.cart_quantity'\u001b[39m)\u001b[33m.\u001b[39minnerText()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m             expect(parseInt(cartQuantity))\u001b[33m.\u001b[39mtoBe(num)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m         })\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m     }\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m\u001b[0m"
-                          }
-                        }
-                      ],
-                      "startTime": "2025-04-02T15:45:05.722Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartPageTests-Cart-Page-Tests-Verify-Cart-Quantity-firefox\\test-failed-1.png"
-                        },
-                        {
-                          "name": "_prompt-0",
-                          "contentType": "text/markdown",
-                          "body": "IyBJbnN0cnVjdGlvbnMKCi0gRm9sbG93aW5nIFBsYXl3cmlnaHQgdGVzdCBmYWlsZWQuCi0gRXhwbGFpbiB3aHksIGJlIGNvbmNpc2UsIHJlc3BlY3QgUGxheXdyaWdodCBiZXN0IHByYWN0aWNlcy4KLSBQcm92aWRlIGEgc25pcHBldCBvZiBjb2RlIHdpdGggdGhlIGZpeCwgaWYgcG9zc2libGUuCgojIFRlc3QgaW5mbwoKLSBOYW1lOiBDYXJ0IFBhZ2UgVGVzdHMgPj4gVmVyaWZ5IENhcnQgUXVhbnRpdHkKLSBMb2NhdGlvbjogQzpcVXNlcnNcRHJld1xEb2N1bWVudHNcVlNjb2RlLXdvcmtzcGFjZVxwbGF5d3JpZ2h0LWF1dG9tYXRpb24tZXhlcmNpc2VcdGVzdFx1aVx0ZXN0c1xjYXJ0UGFnZVRlc3RzLnNwZWMudHM6MTU6NQoKIyBFcnJvciBkZXRhaWxzCgpgYGAKRXJyb3I6IGV4cGVjdChyZWNlaXZlZCkudG9CZShleHBlY3RlZCkgLy8gT2JqZWN0LmlzIGVxdWFsaXR5CgpFeHBlY3RlZDogMQpSZWNlaXZlZDogMTUKICAgIGF0IEM6XFVzZXJzXERyZXdcRG9jdW1lbnRzXFZTY29kZS13b3Jrc3BhY2VccGxheXdyaWdodC1hdXRvbWF0aW9uLWV4ZXJjaXNlXHRlc3RcdWlccGFnZXNcY2FydFBhZ2UudHM6Mjc6NDQKICAgIGF0IENhcnRQYWdlLnZlcmlmeUZpcnN0UHJvZHVjdFF1YW50aXR5IChDOlxVc2Vyc1xEcmV3XERvY3VtZW50c1xWU2NvZGUtd29ya3NwYWNlXHBsYXl3cmlnaHQtYXV0b21hdGlvbi1leGVyY2lzZVx0ZXN0XHVpXHBhZ2VzXGNhcnRQYWdlLnRzOjI1OjkpCiAgICBhdCBDOlxVc2Vyc1xEcmV3XERvY3VtZW50c1xWU2NvZGUtd29ya3NwYWNlXHBsYXl3cmlnaHQtYXV0b21hdGlvbi1leGVyY2lzZVx0ZXN0XHVpXHRlc3RzXGNhcnRQYWdlVGVzdHMuc3BlYy50czoxNzo5CmBgYAoKIyBQYWdlIHNuYXBzaG90CgpgYGB5YW1sCi0gYmFubmVyOgogIC0gbGluayAiV2Vic2l0ZSBmb3IgYXV0b21hdGlvbiBwcmFjdGljZSI6CiAgICAtIGltZyAiV2Vic2l0ZSBmb3IgYXV0b21hdGlvbiBwcmFjdGljZSIKICAtIGxpc3Q6CiAgICAtIGxpc3RpdGVtOgogICAgICAtIGxpbmsgIu+AlSBIb21lIgogICAgLSBsaXN0aXRlbToKICAgICAgLSBsaW5rICLuo7ggUHJvZHVjdHMiCiAgICAtIGxpc3RpdGVtOgogICAgICAtIGxpbmsgIu+BuiBDYXJ0IgogICAgLSBsaXN0aXRlbToKICAgICAgLSBsaW5rICLvgKMgTG9nb3V0IgogICAgLSBsaXN0aXRlbToKICAgICAgLSBsaW5rICLvgJQgRGVsZXRlIEFjY291bnQiCiAgICAtIGxpc3RpdGVtOgogICAgICAtIGxpbmsgIu+AuiBUZXN0IENhc2VzIgogICAgLSBsaXN0aXRlbToKICAgICAgLSBsaW5rICLvgLogQVBJIFRlc3RpbmciCiAgICAtIGxpc3RpdGVtOgogICAgICAtIGxpbmsgIu+FqiBWaWRlbyBUdXRvcmlhbHMiCiAgICAtIGxpc3RpdGVtOgogICAgICAtIGxpbmsgIu+DoCBDb250YWN0IHVzIgogICAgLSBsaXN0aXRlbTog74CHIExvZ2dlZCBpbiBhcyBRQSBUZXN0Ci0gbGlzdDoKICAtIGxpc3RpdGVtOgogICAgLSBsaW5rICJIb21lIgogIC0gbGlzdGl0ZW06IFNob3BwaW5nIENhcnQKLSB0ZXh0OiBQcm9jZWVkIFRvIENoZWNrb3V0Ci0gdGFibGU6CiAgLSByb3dncm91cDoKICAgIC0gcm93ICJJdGVtIERlc2NyaXB0aW9uIFByaWNlIFF1YW50aXR5IFRvdGFsIjoKICAgICAgLSBjZWxsICJJdGVtIgogICAgICAtIGNlbGwgIkRlc2NyaXB0aW9uIgogICAgICAtIGNlbGwgIlByaWNlIgogICAgICAtIGNlbGwgIlF1YW50aXR5IgogICAgICAtIGNlbGwgIlRvdGFsIgogICAgICAtIGNlbGwKICAtIHJvd2dyb3VwOgogICAgLSByb3cgIlByb2R1Y3QgSW1hZ2UgQmx1ZSBUb3AgV29tZW4gPiBUb3BzIFJzLiA1MDAgMTUgUnMuIDc1MDAg74CNIjoKICAgICAgLSBjZWxsICJQcm9kdWN0IEltYWdlIjoKICAgICAgICAtIGxpbmsgIlByb2R1Y3QgSW1hZ2UiOgogICAgICAgICAgLSBpbWcgIlByb2R1Y3QgSW1hZ2UiCiAgICAgIC0gY2VsbCAiQmx1ZSBUb3AgV29tZW4gPiBUb3BzIjoKICAgICAgICAtIGhlYWRpbmcgIkJsdWUgVG9wIiBbbGV2ZWw9NF06CiAgICAgICAgICAtIGxpbmsgIkJsdWUgVG9wIgogICAgICAgIC0gcGFyYWdyYXBoOiBXb21lbiA+IFRvcHMKICAgICAgLSBjZWxsICJScy4gNTAwIjoKICAgICAgICAtIHBhcmFncmFwaDogUnMuIDUwMAogICAgICAtIGNlbGwgIjE1IjoKICAgICAgICAtIGJ1dHRvbiAiMTUiCiAgICAgIC0gY2VsbCAiUnMuIDc1MDAiOgogICAgICAgIC0gcGFyYWdyYXBoOiBScy4gNzUwMAogICAgICAtIGNlbGwgIu+AjSIKLSBjb250ZW50aW5mbzoKICAtIGhlYWRpbmcgIlN1YnNjcmlwdGlvbiIgW2xldmVsPTJdCiAgLSB0ZXh0Ym94ICJZb3VyIGVtYWlsIGFkZHJlc3MiCiAgLSBidXR0b24gIu+GjiIKICAtIHBhcmFncmFwaDogR2V0IHRoZSBtb3N0IHJlY2VudCB1cGRhdGVzIGZyb20gb3VyIHNpdGUgYW5kIGJlIHVwZGF0ZWQgeW91ciBzZWxmLi4uCiAgLSBwYXJhZ3JhcGg6IENvcHlyaWdodCDCqSAyMDIxIEFsbCByaWdodHMgcmVzZXJ2ZWQKYGBgCgojIFRlc3Qgc291cmNlCgpgYGB0cwogICAxIHwgaW1wb3J0IHsgdGVzdCwgZXhwZWN0LCBMb2NhdG9yLCBQYWdlIH0gZnJvbSAnQHBsYXl3cmlnaHQvdGVzdCc7CiAgIDIgfAogICAzIHwgZXhwb3J0IGNsYXNzIENhcnRQYWdlIHsKICAgNCB8ICAgICBwYWdlOiBQYWdlOwogICA1IHwKICAgNiB8ICAgICBwcm9jZWVkVG9DaGVja291dEJ1dHRvbjogTG9jYXRvcjsKICAgNyB8CiAgIDggfCAgICAgY29uc3RydWN0b3IocGFnZTogUGFnZSkgewogICA5IHwgICAgICAgICB0aGlzLnBhZ2UgPSBwYWdlOwogIDEwIHwgICAgICAgICB0aGlzLnByb2NlZWRUb0NoZWNrb3V0QnV0dG9uID0gdGhpcy5wYWdlLmdldEJ5VGV4dCgnUHJvY2VlZCBUbyBDaGVja291dCcpOwogIDExIHwgICAgIH0KICAxMiB8CiAgMTMgfAogIDE0IHwgICAgIGFzeW5jIHZlcmlmeUZpcnN0UHJvZHVjdElzRGlzcGxheWVkSW5DYXJ0KCkgewogIDE1IHwgICAgICAgICBhd2FpdCB0ZXN0LnN0ZXAoJ1ZlcmlmeSBQcm9kdWN0IElzIERpc3BsYXllZCBJbiBDYXJ0JywgYXN5bmMgKCkgPT4gewogIDE2IHwgICAgICAgICAgICAgYXdhaXQgZXhwZWN0KHRoaXMucGFnZS5sb2NhdG9yKCcjcHJvZHVjdC0xJykpLnRvQmVWaXNpYmxlKCk7CiAgMTcgfCAgICAgICAgIH0pOwogIDE4IHwgICAgIH07CiAgMTkgfAogIDIwIHwgICAgIGFzeW5jIGNsaWNrUHJvY2VlZFRvQ2hlY2tvdXRCdXR0b24oKSB7CiAgMjEgfCAgICAgICAgIGF3YWl0IHRoaXMucHJvY2VlZFRvQ2hlY2tvdXRCdXR0b24uY2xpY2soKTsKICAyMiB8ICAgICB9CiAgMjMgfAogIDI0IHwgICAgIGFzeW5jIHZlcmlmeUZpcnN0UHJvZHVjdFF1YW50aXR5KG51bTogbnVtYmVyKSB7CiAgMjUgfCAgICAgICAgIGF3YWl0IHRlc3Quc3RlcCgnVmVyaWZ5IEZpcnN0IFByb2R1Y3QgUXVhbnRpdHkgPSAnICsgbnVtLCBhc3luYyAoKSA9PiB7CiAgMjYgfCAgICAgICAgICAgICBsZXQgY2FydFF1YW50aXR5ID0gYXdhaXQgdGhpcy5wYWdlLmxvY2F0b3IoJyNwcm9kdWN0LTEnKS5sb2NhdG9yKCcuY2FydF9xdWFudGl0eScpLmlubmVyVGV4dCgpOwo+IDI3IHwgICAgICAgICAgICAgZXhwZWN0KHBhcnNlSW50KGNhcnRRdWFudGl0eSkpLnRvQmUobnVtKTsKICAgICB8ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBeIEVycm9yOiBleHBlY3QocmVjZWl2ZWQpLnRvQmUoZXhwZWN0ZWQpIC8vIE9iamVjdC5pcyBlcXVhbGl0eQogIDI4IHwgICAgICAgICB9KTsKICAyOSB8ICAgICB9OwogIDMwIHwKICAzMSB8CiAgMzIgfCB9CmBgYA=="
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts",
-                        "column": 44,
-                        "line": 27
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "8e01650236e277dbb67a-149cdcecba90b281ce60",
-              "file": "ui/tests/cartPageTests.spec.ts",
-              "line": 15,
-              "column": 5
-            },
-            {
-              "title": "Product In Cart",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 13,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 10634,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "As An Authenticated User On Cart Page with Products In Cart",
-                          "duration": 1
-                        },
-                        {
-                          "title": "Verify Product Is Displayed In Cart",
-                          "duration": 102
-                        }
-                      ],
-                      "startTime": "2025-04-02T15:45:20.963Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartPageTests-Cart-Page-Tests-Product-In-Cart-webkit\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "8e01650236e277dbb67a-bd8afc4cdb8747680598",
-              "file": "ui/tests/cartPageTests.spec.ts",
-              "line": 10,
-              "column": 5
-            },
-            {
-              "title": "Verify Cart Quantity",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 12,
-                      "parallelIndex": 4,
-                      "status": "failed",
-                      "duration": 10832,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m18\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m18\u001b[39m\n    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts:27:44\n    at CartPage.verifyFirstProductQuantity (C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts:25:9)\n    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\tests\\cartPageTests.spec.ts:17:9",
-                        "matcherResult": {
-                          "actual": 18,
-                          "expected": 1,
-                          "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m18\u001b[39m",
-                          "name": "toBe",
-                          "pass": false
-                        },
-                        "location": {
-                          "file": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts",
-                          "column": 44,
-                          "line": 27
-                        },
-                        "snippet": "\u001b[90m   at \u001b[39mui\\pages\\cartPage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m         \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verify First Product Quantity = '\u001b[39m \u001b[33m+\u001b[39m num\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 26 |\u001b[39m             \u001b[36mlet\u001b[39m cartQuantity \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#product-1'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'.cart_quantity'\u001b[39m)\u001b[33m.\u001b[39minnerText()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m             expect(parseInt(cartQuantity))\u001b[33m.\u001b[39mtoBe(num)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m         })\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m     }\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts",
-                            "column": 44,
-                            "line": 27
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m18\u001b[39m\n\n\u001b[90m   at \u001b[39mui\\pages\\cartPage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m         \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verify First Product Quantity = '\u001b[39m \u001b[33m+\u001b[39m num\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 26 |\u001b[39m             \u001b[36mlet\u001b[39m cartQuantity \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#product-1'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'.cart_quantity'\u001b[39m)\u001b[33m.\u001b[39minnerText()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m             expect(parseInt(cartQuantity))\u001b[33m.\u001b[39mtoBe(num)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m         })\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m     }\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts:27:44\u001b[22m\n\u001b[2m    at CartPage.verifyFirstProductQuantity (C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts:25:9)\u001b[22m\n\u001b[2m    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\tests\\cartPageTests.spec.ts:17:9\u001b[22m"
-                        }
-                      ],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "As An Authenticated User On Cart Page with Products In Cart",
-                          "duration": 0
-                        },
-                        {
-                          "title": "Verify First Product Quantity = 1",
-                          "duration": 207,
-                          "error": {
-                            "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m18\u001b[39m",
-                            "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m18\u001b[39m\n    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts:27:44\n    at CartPage.verifyFirstProductQuantity (C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts:25:9)\n    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\tests\\cartPageTests.spec.ts:17:9",
-                            "matcherResult": {
-                              "actual": 18,
-                              "expected": 1,
-                              "message": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m1\u001b[39m\nReceived: \u001b[31m18\u001b[39m",
-                              "name": "toBe",
-                              "pass": false
-                            },
-                            "location": {
-                              "file": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts",
-                              "column": 44,
-                              "line": 27
-                            },
-                            "snippet": "\u001b[90m   at \u001b[39mui\\pages\\cartPage.ts:27\n\n\u001b[0m \u001b[90m 25 |\u001b[39m         \u001b[36mawait\u001b[39m test\u001b[33m.\u001b[39mstep(\u001b[32m'Verify First Product Quantity = '\u001b[39m \u001b[33m+\u001b[39m num\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m () \u001b[33m=>\u001b[39m {\n \u001b[90m 26 |\u001b[39m             \u001b[36mlet\u001b[39m cartQuantity \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mlocator(\u001b[32m'#product-1'\u001b[39m)\u001b[33m.\u001b[39mlocator(\u001b[32m'.cart_quantity'\u001b[39m)\u001b[33m.\u001b[39minnerText()\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 27 |\u001b[39m             expect(parseInt(cartQuantity))\u001b[33m.\u001b[39mtoBe(num)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                            \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 28 |\u001b[39m         })\u001b[33m;\u001b[39m\n \u001b[90m 29 |\u001b[39m     }\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m\u001b[0m"
-                          }
-                        }
-                      ],
-                      "startTime": "2025-04-02T15:45:19.834Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartPageTests-Cart-Page-Tests-Verify-Cart-Quantity-webkit\\test-failed-1.png"
-                        },
-                        {
-                          "name": "_prompt-0",
-                          "contentType": "text/markdown",
-                          "body": "IyBJbnN0cnVjdGlvbnMKCi0gRm9sbG93aW5nIFBsYXl3cmlnaHQgdGVzdCBmYWlsZWQuCi0gRXhwbGFpbiB3aHksIGJlIGNvbmNpc2UsIHJlc3BlY3QgUGxheXdyaWdodCBiZXN0IHByYWN0aWNlcy4KLSBQcm92aWRlIGEgc25pcHBldCBvZiBjb2RlIHdpdGggdGhlIGZpeCwgaWYgcG9zc2libGUuCgojIFRlc3QgaW5mbwoKLSBOYW1lOiBDYXJ0IFBhZ2UgVGVzdHMgPj4gVmVyaWZ5IENhcnQgUXVhbnRpdHkKLSBMb2NhdGlvbjogQzpcVXNlcnNcRHJld1xEb2N1bWVudHNcVlNjb2RlLXdvcmtzcGFjZVxwbGF5d3JpZ2h0LWF1dG9tYXRpb24tZXhlcmNpc2VcdGVzdFx1aVx0ZXN0c1xjYXJ0UGFnZVRlc3RzLnNwZWMudHM6MTU6NQoKIyBFcnJvciBkZXRhaWxzCgpgYGAKRXJyb3I6IGV4cGVjdChyZWNlaXZlZCkudG9CZShleHBlY3RlZCkgLy8gT2JqZWN0LmlzIGVxdWFsaXR5CgpFeHBlY3RlZDogMQpSZWNlaXZlZDogMTgKICAgIGF0IEM6XFVzZXJzXERyZXdcRG9jdW1lbnRzXFZTY29kZS13b3Jrc3BhY2VccGxheXdyaWdodC1hdXRvbWF0aW9uLWV4ZXJjaXNlXHRlc3RcdWlccGFnZXNcY2FydFBhZ2UudHM6Mjc6NDQKICAgIGF0IENhcnRQYWdlLnZlcmlmeUZpcnN0UHJvZHVjdFF1YW50aXR5IChDOlxVc2Vyc1xEcmV3XERvY3VtZW50c1xWU2NvZGUtd29ya3NwYWNlXHBsYXl3cmlnaHQtYXV0b21hdGlvbi1leGVyY2lzZVx0ZXN0XHVpXHBhZ2VzXGNhcnRQYWdlLnRzOjI1OjkpCiAgICBhdCBDOlxVc2Vyc1xEcmV3XERvY3VtZW50c1xWU2NvZGUtd29ya3NwYWNlXHBsYXl3cmlnaHQtYXV0b21hdGlvbi1leGVyY2lzZVx0ZXN0XHVpXHRlc3RzXGNhcnRQYWdlVGVzdHMuc3BlYy50czoxNzo5CmBgYAoKIyBQYWdlIHNuYXBzaG90CgpgYGB5YW1sCi0gYmFubmVyOgogIC0gbGluayAiV2Vic2l0ZSBmb3IgYXV0b21hdGlvbiBwcmFjdGljZSI6CiAgICAtIGltZyAiV2Vic2l0ZSBmb3IgYXV0b21hdGlvbiBwcmFjdGljZSIKICAtIGxpc3Q6CiAgICAtIGxpc3RpdGVtOgogICAgICAtIGxpbmsgIu+AlSBIb21lIgogICAgLSBsaXN0aXRlbToKICAgICAgLSBsaW5rICLuo7ggUHJvZHVjdHMiCiAgICAtIGxpc3RpdGVtOgogICAgICAtIGxpbmsgIu+BuiBDYXJ0IgogICAgLSBsaXN0aXRlbToKICAgICAgLSBsaW5rICLvgKMgTG9nb3V0IgogICAgLSBsaXN0aXRlbToKICAgICAgLSBsaW5rICLvgJQgRGVsZXRlIEFjY291bnQiCiAgICAtIGxpc3RpdGVtOgogICAgICAtIGxpbmsgIu+AuiBUZXN0IENhc2VzIgogICAgLSBsaXN0aXRlbToKICAgICAgLSBsaW5rICLvgLogQVBJIFRlc3RpbmciCiAgICAtIGxpc3RpdGVtOgogICAgICAtIGxpbmsgIu+FqiBWaWRlbyBUdXRvcmlhbHMiCiAgICAtIGxpc3RpdGVtOgogICAgICAtIGxpbmsgIu+DoCBDb250YWN0IHVzIgogICAgLSBsaXN0aXRlbTog74CHIExvZ2dlZCBpbiBhcyBRQSBUZXN0Ci0gbGlzdDoKICAtIGxpc3RpdGVtOgogICAgLSBsaW5rICJIb21lIgogIC0gbGlzdGl0ZW06IFNob3BwaW5nIENhcnQKLSB0ZXh0OiBQcm9jZWVkIFRvIENoZWNrb3V0Ci0gdGFibGU6CiAgLSByb3dncm91cDoKICAgIC0gcm93ICJJdGVtIERlc2NyaXB0aW9uIFByaWNlIFF1YW50aXR5IFRvdGFsIjoKICAgICAgLSBjZWxsICJJdGVtIgogICAgICAtIGNlbGwgIkRlc2NyaXB0aW9uIgogICAgICAtIGNlbGwgIlByaWNlIgogICAgICAtIGNlbGwgIlF1YW50aXR5IgogICAgICAtIGNlbGwgIlRvdGFsIgogICAgICAtIGNlbGwKICAtIHJvd2dyb3VwOgogICAgLSByb3cgIlByb2R1Y3QgSW1hZ2UgQmx1ZSBUb3AgV29tZW4gPiBUb3BzIFJzLiA1MDAgMTggUnMuIDkwMDAg74CNIjoKICAgICAgLSBjZWxsICJQcm9kdWN0IEltYWdlIjoKICAgICAgICAtIGxpbmsgIlByb2R1Y3QgSW1hZ2UiOgogICAgICAgICAgLSBpbWcgIlByb2R1Y3QgSW1hZ2UiCiAgICAgIC0gY2VsbCAiQmx1ZSBUb3AgV29tZW4gPiBUb3BzIjoKICAgICAgICAtIGhlYWRpbmcgIkJsdWUgVG9wIiBbbGV2ZWw9NF06CiAgICAgICAgICAtIGxpbmsgIkJsdWUgVG9wIgogICAgICAgIC0gcGFyYWdyYXBoOiBXb21lbiA+IFRvcHMKICAgICAgLSBjZWxsICJScy4gNTAwIjoKICAgICAgICAtIHBhcmFncmFwaDogUnMuIDUwMAogICAgICAtIGNlbGwgIjE4IjoKICAgICAgICAtIGJ1dHRvbiAiMTgiCiAgICAgIC0gY2VsbCAiUnMuIDkwMDAiOgogICAgICAgIC0gcGFyYWdyYXBoOiBScy4gOTAwMAogICAgICAtIGNlbGwgIu+AjSIKLSBjb250ZW50aW5mbzoKICAtIGhlYWRpbmcgIlN1YnNjcmlwdGlvbiIgW2xldmVsPTJdCiAgLSB0ZXh0Ym94ICJZb3VyIGVtYWlsIGFkZHJlc3MiCiAgLSBidXR0b24gIu+GjiIKICAtIHBhcmFncmFwaDogR2V0IHRoZSBtb3N0IHJlY2VudCB1cGRhdGVzIGZyb20gb3VyIHNpdGUgYW5kIGJlIHVwZGF0ZWQgeW91ciBzZWxmLi4uCiAgLSBwYXJhZ3JhcGg6IENvcHlyaWdodCDCqSAyMDIxIEFsbCByaWdodHMgcmVzZXJ2ZWQKLSBpbnNlcnRpb24KLSBpbnNlcnRpb24KYGBgCgojIFRlc3Qgc291cmNlCgpgYGB0cwogICAxIHwgaW1wb3J0IHsgdGVzdCwgZXhwZWN0LCBMb2NhdG9yLCBQYWdlIH0gZnJvbSAnQHBsYXl3cmlnaHQvdGVzdCc7CiAgIDIgfAogICAzIHwgZXhwb3J0IGNsYXNzIENhcnRQYWdlIHsKICAgNCB8ICAgICBwYWdlOiBQYWdlOwogICA1IHwKICAgNiB8ICAgICBwcm9jZWVkVG9DaGVja291dEJ1dHRvbjogTG9jYXRvcjsKICAgNyB8CiAgIDggfCAgICAgY29uc3RydWN0b3IocGFnZTogUGFnZSkgewogICA5IHwgICAgICAgICB0aGlzLnBhZ2UgPSBwYWdlOwogIDEwIHwgICAgICAgICB0aGlzLnByb2NlZWRUb0NoZWNrb3V0QnV0dG9uID0gdGhpcy5wYWdlLmdldEJ5VGV4dCgnUHJvY2VlZCBUbyBDaGVja291dCcpOwogIDExIHwgICAgIH0KICAxMiB8CiAgMTMgfAogIDE0IHwgICAgIGFzeW5jIHZlcmlmeUZpcnN0UHJvZHVjdElzRGlzcGxheWVkSW5DYXJ0KCkgewogIDE1IHwgICAgICAgICBhd2FpdCB0ZXN0LnN0ZXAoJ1ZlcmlmeSBQcm9kdWN0IElzIERpc3BsYXllZCBJbiBDYXJ0JywgYXN5bmMgKCkgPT4gewogIDE2IHwgICAgICAgICAgICAgYXdhaXQgZXhwZWN0KHRoaXMucGFnZS5sb2NhdG9yKCcjcHJvZHVjdC0xJykpLnRvQmVWaXNpYmxlKCk7CiAgMTcgfCAgICAgICAgIH0pOwogIDE4IHwgICAgIH07CiAgMTkgfAogIDIwIHwgICAgIGFzeW5jIGNsaWNrUHJvY2VlZFRvQ2hlY2tvdXRCdXR0b24oKSB7CiAgMjEgfCAgICAgICAgIGF3YWl0IHRoaXMucHJvY2VlZFRvQ2hlY2tvdXRCdXR0b24uY2xpY2soKTsKICAyMiB8ICAgICB9CiAgMjMgfAogIDI0IHwgICAgIGFzeW5jIHZlcmlmeUZpcnN0UHJvZHVjdFF1YW50aXR5KG51bTogbnVtYmVyKSB7CiAgMjUgfCAgICAgICAgIGF3YWl0IHRlc3Quc3RlcCgnVmVyaWZ5IEZpcnN0IFByb2R1Y3QgUXVhbnRpdHkgPSAnICsgbnVtLCBhc3luYyAoKSA9PiB7CiAgMjYgfCAgICAgICAgICAgICBsZXQgY2FydFF1YW50aXR5ID0gYXdhaXQgdGhpcy5wYWdlLmxvY2F0b3IoJyNwcm9kdWN0LTEnKS5sb2NhdG9yKCcuY2FydF9xdWFudGl0eScpLmlubmVyVGV4dCgpOwo+IDI3IHwgICAgICAgICAgICAgZXhwZWN0KHBhcnNlSW50KGNhcnRRdWFudGl0eSkpLnRvQmUobnVtKTsKICAgICB8ICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBeIEVycm9yOiBleHBlY3QocmVjZWl2ZWQpLnRvQmUoZXhwZWN0ZWQpIC8vIE9iamVjdC5pcyBlcXVhbGl0eQogIDI4IHwgICAgICAgICB9KTsKICAyOSB8ICAgICB9OwogIDMwIHwKICAzMSB8CiAgMzIgfCB9CmBgYA=="
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\ui\\pages\\cartPage.ts",
-                        "column": 44,
-                        "line": 27
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "8e01650236e277dbb67a-249363e21e40b9606786",
-              "file": "ui/tests/cartPageTests.spec.ts",
-              "line": 15,
+              "line": 16,
               "column": 5
             }
           ]
@@ -602,14 +318,14 @@
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
+              "projectId": "qa-chromium",
+              "projectName": "qa-chromium",
               "results": [
                 {
-                  "workerIndex": 2,
+                  "workerIndex": 17,
                   "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 350,
+                  "duration": 550,
                   "errors": [],
                   "stdout": [
                     {
@@ -618,12 +334,17 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-02T15:45:03.584Z",
+                  "startTime": "2025-04-03T00:31:22.314Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-csvTest-Valid-User-chromium\\test-finished-1.png"
+                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-csvTest-Valid-User-qa-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-csvTest-Valid-User-qa-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -631,7 +352,7 @@
               "status": "expected"
             }
           ],
-          "id": "57c5e6824f3dc650c3d5-c3a5d55d1d8600139a8c",
+          "id": "57c5e6824f3dc650c3d5-66e9eef073f25b6f87b5",
           "file": "ui/tests/csvTest.spec.ts",
           "line": 18,
           "column": 3
@@ -645,14 +366,14 @@
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
+              "projectId": "qa-chromium",
+              "projectName": "qa-chromium",
               "results": [
                 {
-                  "workerIndex": 3,
+                  "workerIndex": 18,
                   "parallelIndex": 3,
                   "status": "passed",
-                  "duration": 397,
+                  "duration": 544,
                   "errors": [],
                   "stdout": [
                     {
@@ -661,12 +382,17 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-02T15:45:03.571Z",
+                  "startTime": "2025-04-03T00:31:22.311Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-csvTest-Invalid-User-chromium\\test-finished-1.png"
+                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-csvTest-Invalid-User-qa-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-csvTest-Invalid-User-qa-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -674,7 +400,7 @@
               "status": "expected"
             }
           ],
-          "id": "57c5e6824f3dc650c3d5-07641a714fc334081d2f",
+          "id": "57c5e6824f3dc650c3d5-60c17092da82ef743af0",
           "file": "ui/tests/csvTest.spec.ts",
           "line": 18,
           "column": 3
@@ -688,14 +414,14 @@
               "timeout": 30000,
               "annotations": [],
               "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
+              "projectId": "qa-chromium",
+              "projectName": "qa-chromium",
               "results": [
                 {
-                  "workerIndex": 4,
+                  "workerIndex": 19,
                   "parallelIndex": 4,
                   "status": "passed",
-                  "duration": 244,
+                  "duration": 585,
                   "errors": [],
                   "stdout": [
                     {
@@ -704,12 +430,17 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-02T15:45:03.692Z",
+                  "startTime": "2025-04-03T00:31:22.301Z",
                   "attachments": [
                     {
                       "name": "screenshot",
                       "contentType": "image/png",
-                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-csvTest-Anonymous-User-chromium\\test-finished-1.png"
+                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-csvTest-Anonymous-User-qa-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-csvTest-Anonymous-User-qa-chromium\\trace.zip"
                     }
                   ]
                 }
@@ -717,265 +448,7 @@
               "status": "expected"
             }
           ],
-          "id": "57c5e6824f3dc650c3d5-36b61033ca58524b62bd",
-          "file": "ui/tests/csvTest.spec.ts",
-          "line": 18,
-          "column": 3
-        },
-        {
-          "title": "Valid User",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 8,
-                  "parallelIndex": 3,
-                  "status": "passed",
-                  "duration": 2755,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Valid User = Bobby Real\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-04-02T15:45:10.926Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-csvTest-Valid-User-firefox\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "57c5e6824f3dc650c3d5-9effcf10cd706983ddc0",
-          "file": "ui/tests/csvTest.spec.ts",
-          "line": 18,
-          "column": 3
-        },
-        {
-          "title": "Invalid User",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 9,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 2947,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Invalid User = Matty Fake\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-04-02T15:45:11.568Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-csvTest-Invalid-User-firefox\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "57c5e6824f3dc650c3d5-ac4aaee088703fd371ef",
-          "file": "ui/tests/csvTest.spec.ts",
-          "line": 18,
-          "column": 3
-        },
-        {
-          "title": "Anonymous User",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "firefox",
-              "projectName": "firefox",
-              "results": [
-                {
-                  "workerIndex": 10,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 2919,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Anonymous User = Who Knows\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-04-02T15:45:11.630Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-csvTest-Anonymous-User-firefox\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "57c5e6824f3dc650c3d5-47751a9c30f59fab6cbb",
-          "file": "ui/tests/csvTest.spec.ts",
-          "line": 18,
-          "column": 3
-        },
-        {
-          "title": "Valid User",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 14,
-                  "parallelIndex": 1,
-                  "status": "passed",
-                  "duration": 515,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Valid User = Bobby Real\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-04-02T15:45:21.671Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-csvTest-Valid-User-webkit\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "57c5e6824f3dc650c3d5-d927d1f693b8a9a39489",
-          "file": "ui/tests/csvTest.spec.ts",
-          "line": 18,
-          "column": 3
-        },
-        {
-          "title": "Invalid User",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 15,
-                  "parallelIndex": 2,
-                  "status": "passed",
-                  "duration": 567,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Invalid User = Matty Fake\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-04-02T15:45:22.473Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-csvTest-Invalid-User-webkit\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "57c5e6824f3dc650c3d5-919d57f456679c24d6e3",
-          "file": "ui/tests/csvTest.spec.ts",
-          "line": 18,
-          "column": 3
-        },
-        {
-          "title": "Anonymous User",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 30000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "webkit",
-              "projectName": "webkit",
-              "results": [
-                {
-                  "workerIndex": 16,
-                  "parallelIndex": 3,
-                  "status": "passed",
-                  "duration": 680,
-                  "errors": [],
-                  "stdout": [
-                    {
-                      "text": "Anonymous User = Who Knows\n"
-                    }
-                  ],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2025-04-02T15:45:24.568Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-csvTest-Anonymous-User-webkit\\test-finished-1.png"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "57c5e6824f3dc650c3d5-09e7850f03b51d2e36c8",
+          "id": "57c5e6824f3dc650c3d5-dfc25910bfbdbc4e26bf",
           "file": "ui/tests/csvTest.spec.ts",
           "line": 18,
           "column": 3
@@ -1004,31 +477,36 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
+                  "projectId": "qa-chromium",
+                  "projectName": "qa-chromium",
                   "results": [
                     {
-                      "workerIndex": 5,
+                      "workerIndex": 20,
                       "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 401,
+                      "duration": 502,
                       "errors": [],
                       "stdout": [
                         {
                           "text": "Non-Prod Test\n"
                         },
                         {
-                          "text": "Name = QA Test\n"
+                          "text": "Name = undefined\n"
                         }
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-02T15:45:03.625Z",
+                      "startTime": "2025-04-03T00:31:22.342Z",
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-homePageTestsPROD-48564-ironment-Data-Switching-POC-chromium\\test-finished-1.png"
+                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-homePageTestsPROD-48564-ironment-Data-Switching-POC-qa-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-homePageTestsPROD-48564-ironment-Data-Switching-POC-qa-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -1036,7 +514,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "f42611a867d02233e7c6-87f8f1bcc525b5886a4a",
+              "id": "f42611a867d02233e7c6-fab183a7b1bd694a81d9",
               "file": "ui/tests/homePageTestsPROD.spec.ts",
               "line": 9,
               "column": 5
@@ -1050,204 +528,14 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
+                  "projectId": "qa-chromium",
+                  "projectName": "qa-chromium",
                   "results": [
                     {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 5050,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "As An Authenticated User On Home Page",
-                          "duration": 1
-                        },
-                        {
-                          "title": "Verify user Is Logged In",
-                          "duration": 22
-                        }
-                      ],
-                      "startTime": "2025-04-02T15:45:04.218Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-homePageTestsPROD-Home-Page-Tests-Valid-Login-chromium\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "f42611a867d02233e7c6-4c03a662dd76f4ad3101",
-              "file": "ui/tests/homePageTestsPROD.spec.ts",
-              "line": 21,
-              "column": 5
-            },
-            {
-              "title": "Environment Data Switching POC",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 11,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 2682,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Non-Prod Test\n"
-                        },
-                        {
-                          "text": "Name = QA Test\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-02T15:45:11.755Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-homePageTestsPROD-48564-ironment-Data-Switching-POC-firefox\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "f42611a867d02233e7c6-ac71c7448c1562f68bcf",
-              "file": "ui/tests/homePageTestsPROD.spec.ts",
-              "line": 9,
-              "column": 5
-            },
-            {
-              "title": "Valid Login",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 8,
+                      "workerIndex": 18,
                       "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 5359,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "As An Authenticated User On Home Page",
-                          "duration": 1
-                        },
-                        {
-                          "title": "Verify user Is Logged In",
-                          "duration": 191
-                        }
-                      ],
-                      "startTime": "2025-04-02T15:45:15.619Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-homePageTestsPROD-Home-Page-Tests-Valid-Login-firefox\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "f42611a867d02233e7c6-9bcb23b5e4ee14fa038c",
-              "file": "ui/tests/homePageTestsPROD.spec.ts",
-              "line": 21,
-              "column": 5
-            },
-            {
-              "title": "Environment Data Switching POC",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 17,
-                      "parallelIndex": 5,
-                      "status": "passed",
-                      "duration": 702,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Non-Prod Test\n"
-                        },
-                        {
-                          "text": "Name = QA Test\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-02T15:45:24.770Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-homePageTestsPROD-48564-ironment-Data-Switching-POC-webkit\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "f42611a867d02233e7c6-d1f0d84a15f8f3bb9dc0",
-              "file": "ui/tests/homePageTestsPROD.spec.ts",
-              "line": 9,
-              "column": 5
-            },
-            {
-              "title": "Valid Login",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 14,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 8588,
+                      "duration": 8008,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -1259,15 +547,20 @@
                         },
                         {
                           "title": "Verify user Is Logged In",
-                          "duration": 50
+                          "duration": 81
                         }
                       ],
-                      "startTime": "2025-04-02T15:45:22.424Z",
+                      "startTime": "2025-04-03T00:31:23.160Z",
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-homePageTestsPROD-Home-Page-Tests-Valid-Login-webkit\\test-finished-1.png"
+                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-homePageTestsPROD-Home-Page-Tests-Valid-Login-qa-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-homePageTestsPROD-Home-Page-Tests-Valid-Login-qa-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -1275,7 +568,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "f42611a867d02233e7c6-80d01536ca2c02f9e5f9",
+              "id": "f42611a867d02233e7c6-6a7c22ab9cfc161268d6",
               "file": "ui/tests/homePageTestsPROD.spec.ts",
               "line": 21,
               "column": 5
@@ -1306,14 +599,14 @@
                   "timeout": 30000,
                   "annotations": [],
                   "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
+                  "projectId": "qa-chromium",
+                  "projectName": "qa-chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 19,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 3546,
+                      "duration": 7739,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -1325,19 +618,24 @@
                         },
                         {
                           "title": "Enter Valid Email and Invalid Password and Submit",
-                          "duration": 654
+                          "duration": 707
                         },
                         {
                           "title": "Verify Incorrect Email Or Password Message Displays",
-                          "duration": 86
+                          "duration": 101
                         }
                       ],
-                      "startTime": "2025-04-02T15:45:04.205Z",
+                      "startTime": "2025-04-03T00:31:23.179Z",
                       "attachments": [
                         {
                           "name": "screenshot",
                           "contentType": "image/png",
-                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-loginPageTests-Login-Page-Tests-Invalid-Login-chromium\\test-finished-1.png"
+                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-loginPageTests-Login-Page-Tests-Invalid-Login-qa-chromium\\test-finished-1.png"
+                        },
+                        {
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-loginPageTests-Login-Page-Tests-Invalid-Login-qa-chromium\\trace.zip"
                         }
                       ]
                     }
@@ -1345,113 +643,7 @@
                   "status": "expected"
                 }
               ],
-              "id": "8a8e1bce0956b95a6d07-1838ba685c90f22d9b7f",
-              "file": "ui/tests/loginPageTests.spec.ts",
-              "line": 7,
-              "column": 5
-            },
-            {
-              "title": "Invalid Login",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "firefox",
-                  "projectName": "firefox",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "parallelIndex": 5,
-                      "status": "passed",
-                      "duration": 4718,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "As An Unauthenticated User On Login Page",
-                          "duration": 0
-                        },
-                        {
-                          "title": "Enter Valid Email and Invalid Password and Submit",
-                          "duration": 622
-                        },
-                        {
-                          "title": "Verify Incorrect Email Or Password Message Displays",
-                          "duration": 143
-                        }
-                      ],
-                      "startTime": "2025-04-02T15:45:16.660Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-loginPageTests-Login-Page-Tests-Invalid-Login-firefox\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "8a8e1bce0956b95a6d07-25975aeecb9064bcf17d",
-              "file": "ui/tests/loginPageTests.spec.ts",
-              "line": 7,
-              "column": 5
-            },
-            {
-              "title": "Invalid Login",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "webkit",
-                  "projectName": "webkit",
-                  "results": [
-                    {
-                      "workerIndex": 15,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 6369,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "As An Unauthenticated User On Login Page",
-                          "duration": 1
-                        },
-                        {
-                          "title": "Enter Valid Email and Invalid Password and Submit",
-                          "duration": 755
-                        },
-                        {
-                          "title": "Verify Incorrect Email Or Password Message Displays",
-                          "duration": 102
-                        }
-                      ],
-                      "startTime": "2025-04-02T15:45:23.219Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-loginPageTests-Login-Page-Tests-Invalid-Login-webkit\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "8a8e1bce0956b95a6d07-b46a31f53bd7b8b14a56",
+              "id": "8a8e1bce0956b95a6d07-08b99805faa100119547",
               "file": "ui/tests/loginPageTests.spec.ts",
               "line": 7,
               "column": 5
@@ -1463,11 +655,11 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-04-02T15:45:01.990Z",
-    "duration": 29823.66,
-    "expected": 21,
+    "startTime": "2025-04-03T00:31:19.913Z",
+    "duration": 23332.38099999982,
+    "expected": 7,
     "skipped": 0,
-    "unexpected": 3,
+    "unexpected": 1,
     "flaky": 0
   }
 }

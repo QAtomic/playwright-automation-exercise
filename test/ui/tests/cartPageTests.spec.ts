@@ -6,6 +6,8 @@ import { CartPage } from "../pages/cartPage";
 
 
 
+test.describe.configure({ mode: 'default' });
+
 test.describe("Cart Page Tests", () => {
 
     asAnAuthenticatedUserOnCartPageWithProductsInCart('Product In Cart', async ({ cartPage }) => {
@@ -21,6 +23,7 @@ test.describe("Cart Page Tests", () => {
     test.afterEach( async ({ page }) => {
         let cartPage = new CartPage(page);
         await cartPage.removeAllItemsFromCart();
+        await page.waitForTimeout(1000);
     });
 
     

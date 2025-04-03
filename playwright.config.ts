@@ -41,7 +41,7 @@ export default defineConfig({
   projects: [
     {
       name: 'production-validation',
-      testMatch: /.*PROD.spec.ts/,
+      testMatch: 'ui/**/*PROD.*spec.ts',
       use: { 
         baseURL: "prod.url.com",
         ...devices['Desktop Chrome'] 
@@ -50,17 +50,29 @@ export default defineConfig({
     },
     {
       name: 'qa-chromium',
+      testMatch: 'ui/**/*spec.ts',
       use: { ...devices['Desktop Chrome'] },
     },
-
     {
       name: 'qa-firefox',
+      testMatch: 'ui/**/*spec.ts',
       use: { ...devices['Desktop Firefox'] },
     },
 
     {
       name: 'qa-webkit',
+      testMatch: 'ui/**/*spec.ts',
       use: { ...devices['Desktop Safari'] },
+    },
+    {
+      name: 'api',
+      testMatch: 'api/**/*spec.ts',
+      use: { ...devices['Desktop Chrome'] },
+    },
+    {
+      name: 'functional',
+      testMatch: 'functional/**/*spec.ts',
+      use: { ...devices['Desktop Chrome'] },
     },
 
     /* Test against mobile viewports. */

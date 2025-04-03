@@ -1,5 +1,5 @@
 import { test, expect, Locator, Page } from '@playwright/test';
-import { count } from 'console';
+
 
 export class CartPage {
     url = "https://www.automationexercise.com/view_cart";

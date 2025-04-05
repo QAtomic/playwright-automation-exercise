@@ -72,7 +72,7 @@
         "testDir": "C:/Users/Drew/Documents/VScode-workspace/playwright-automation-exercise/test",
         "testIgnore": [],
         "testMatch": [
-          "ui/**/*spec.ts"
+          "ui/tests/**/*spec.ts"
         ],
         "timeout": 30000
       },
@@ -88,7 +88,7 @@
         "testDir": "C:/Users/Drew/Documents/VScode-workspace/playwright-automation-exercise/test",
         "testIgnore": [],
         "testMatch": [
-          "ui/**/*spec.ts"
+          "ui/tests/**/*spec.ts"
         ],
         "timeout": 30000
       },
@@ -104,7 +104,7 @@
         "testDir": "C:/Users/Drew/Documents/VScode-workspace/playwright-automation-exercise/test",
         "testIgnore": [],
         "testMatch": [
-          "ui/**/*spec.ts"
+          "ui/tests/**/*spec.ts"
         ],
         "timeout": 30000
       },
@@ -150,317 +150,6 @@
   },
   "suites": [
     {
-      "title": "ui\\tests\\cartPageTests.spec.ts",
-      "file": "ui/tests/cartPageTests.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Cart Page Tests",
-          "file": "ui/tests/cartPageTests.spec.ts",
-          "line": 11,
-          "column": 6,
-          "specs": [
-            {
-              "title": "Product In Cart",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "qa-chromium",
-                  "projectName": "qa-chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 6952,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "As An Authenticated User On Cart Page with Products In Cart",
-                          "duration": 1
-                        },
-                        {
-                          "title": "Verify Product Is Displayed In Cart",
-                          "duration": 76
-                        }
-                      ],
-                      "startTime": "2025-04-03T22:41:41.491Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartPageTests-Cart-Page-Tests-Product-In-Cart-qa-chromium\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "8e01650236e277dbb67a-7cfbb84474ee91dea4f5",
-              "file": "ui/tests/cartPageTests.spec.ts",
-              "line": 13,
-              "column": 5
-            },
-            {
-              "title": "Verify Cart Quantity",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "qa-chromium",
-                  "projectName": "qa-chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "passed",
-                      "duration": 7156,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "As An Authenticated User On Cart Page with Products In Cart",
-                          "duration": 1
-                        },
-                        {
-                          "title": "Verify First Product Quantity = 1",
-                          "duration": 61
-                        }
-                      ],
-                      "startTime": "2025-04-03T22:41:48.626Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartPageTests-Cart-Page-Tests-Verify-Cart-Quantity-qa-chromium\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "8e01650236e277dbb67a-6ee71e9c89395154cede",
-              "file": "ui/tests/cartPageTests.spec.ts",
-              "line": 18,
-              "column": 5
-            },
-            {
-              "title": "Product In Cart",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "qa-firefox",
-                  "projectName": "qa-firefox",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 12400,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "As An Authenticated User On Cart Page with Products In Cart",
-                          "duration": 1
-                        },
-                        {
-                          "title": "Verify Product Is Displayed In Cart",
-                          "duration": 176
-                        }
-                      ],
-                      "startTime": "2025-04-03T22:41:43.752Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartPageTests-Cart-Page-Tests-Product-In-Cart-qa-firefox\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "8e01650236e277dbb67a-14633d69d580d0b4356d",
-              "file": "ui/tests/cartPageTests.spec.ts",
-              "line": 13,
-              "column": 5
-            },
-            {
-              "title": "Verify Cart Quantity",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "qa-firefox",
-                  "projectName": "qa-firefox",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "parallelIndex": 2,
-                      "status": "passed",
-                      "duration": 8782,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "As An Authenticated User On Cart Page with Products In Cart",
-                          "duration": 0
-                        },
-                        {
-                          "title": "Verify First Product Quantity = 1",
-                          "duration": 167
-                        }
-                      ],
-                      "startTime": "2025-04-03T22:41:57.089Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartPageTests-Cart-Page-Tests-Verify-Cart-Quantity-qa-firefox\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "8e01650236e277dbb67a-de34070eacbaa991a406",
-              "file": "ui/tests/cartPageTests.spec.ts",
-              "line": 18,
-              "column": 5
-            },
-            {
-              "title": "Product In Cart",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "qa-webkit",
-                  "projectName": "qa-webkit",
-                  "results": [
-                    {
-                      "workerIndex": 11,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 14110,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "As An Authenticated User On Cart Page with Products In Cart",
-                          "duration": 1
-                        },
-                        {
-                          "title": "Verify Product Is Displayed In Cart",
-                          "duration": 76
-                        }
-                      ],
-                      "startTime": "2025-04-03T22:41:57.271Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartPageTests-Cart-Page-Tests-Product-In-Cart-qa-webkit\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "8e01650236e277dbb67a-f2e88cf7df198dc2ec54",
-              "file": "ui/tests/cartPageTests.spec.ts",
-              "line": 13,
-              "column": 5
-            },
-            {
-              "title": "Verify Cart Quantity",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "qa-webkit",
-                  "projectName": "qa-webkit",
-                  "results": [
-                    {
-                      "workerIndex": 11,
-                      "parallelIndex": 1,
-                      "status": "passed",
-                      "duration": 9656,
-                      "errors": [],
-                      "stdout": [],
-                      "stderr": [],
-                      "retry": 0,
-                      "steps": [
-                        {
-                          "title": "As An Authenticated User On Cart Page with Products In Cart",
-                          "duration": 0
-                        },
-                        {
-                          "title": "Verify First Product Quantity = 1",
-                          "duration": 52
-                        }
-                      ],
-                      "startTime": "2025-04-03T22:42:11.490Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartPageTests-Cart-Page-Tests-Verify-Cart-Quantity-qa-webkit\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "8e01650236e277dbb67a-6f94757f2305fa024332",
-              "file": "ui/tests/cartPageTests.spec.ts",
-              "line": 18,
-              "column": 5
-            }
-          ]
-        }
-      ]
-    },
-    {
       "title": "ui\\tests\\csvTest.spec.ts",
       "file": "ui/tests/csvTest.spec.ts",
       "column": 0,
@@ -479,10 +168,10 @@
               "projectName": "qa-chromium",
               "results": [
                 {
-                  "workerIndex": 1,
-                  "parallelIndex": 1,
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 395,
+                  "duration": 349,
                   "errors": [],
                   "stdout": [
                     {
@@ -491,7 +180,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-03T22:41:41.524Z",
+                  "startTime": "2025-04-05T01:42:15.682Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -522,10 +211,10 @@
               "projectName": "qa-chromium",
               "results": [
                 {
-                  "workerIndex": 2,
-                  "parallelIndex": 2,
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 344,
+                  "duration": 442,
                   "errors": [],
                   "stdout": [
                     {
@@ -534,7 +223,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-03T22:41:41.579Z",
+                  "startTime": "2025-04-05T01:42:15.735Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -565,10 +254,10 @@
               "projectName": "qa-chromium",
               "results": [
                 {
-                  "workerIndex": 3,
-                  "parallelIndex": 3,
+                  "workerIndex": 2,
+                  "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 371,
+                  "duration": 416,
                   "errors": [],
                   "stdout": [
                     {
@@ -577,7 +266,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-03T22:41:41.579Z",
+                  "startTime": "2025-04-05T01:42:15.725Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -608,10 +297,10 @@
               "projectName": "qa-firefox",
               "results": [
                 {
-                  "workerIndex": 7,
+                  "workerIndex": 8,
                   "parallelIndex": 3,
                   "status": "passed",
-                  "duration": 2480,
+                  "duration": 1704,
                   "errors": [],
                   "stdout": [
                     {
@@ -620,7 +309,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-03T22:41:43.735Z",
+                  "startTime": "2025-04-05T01:42:17.982Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -651,10 +340,10 @@
               "projectName": "qa-firefox",
               "results": [
                 {
-                  "workerIndex": 8,
-                  "parallelIndex": 4,
+                  "workerIndex": 6,
+                  "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 2603,
+                  "duration": 2373,
                   "errors": [],
                   "stdout": [
                     {
@@ -663,7 +352,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-03T22:41:43.783Z",
+                  "startTime": "2025-04-05T01:42:17.859Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -694,10 +383,10 @@
               "projectName": "qa-firefox",
               "results": [
                 {
-                  "workerIndex": 9,
-                  "parallelIndex": 5,
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 4168,
+                  "duration": 1903,
                   "errors": [],
                   "stdout": [
                     {
@@ -706,7 +395,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-03T22:41:47.204Z",
+                  "startTime": "2025-04-05T01:42:17.948Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -737,10 +426,10 @@
               "projectName": "qa-webkit",
               "results": [
                 {
-                  "workerIndex": 13,
-                  "parallelIndex": 3,
+                  "workerIndex": 11,
+                  "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 665,
+                  "duration": 662,
                   "errors": [],
                   "stdout": [
                     {
@@ -749,7 +438,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-03T22:41:57.988Z",
+                  "startTime": "2025-04-05T01:42:27.788Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -780,10 +469,10 @@
               "projectName": "qa-webkit",
               "results": [
                 {
-                  "workerIndex": 14,
-                  "parallelIndex": 5,
+                  "workerIndex": 12,
+                  "parallelIndex": 3,
                   "status": "passed",
-                  "duration": 698,
+                  "duration": 650,
                   "errors": [],
                   "stdout": [
                     {
@@ -792,7 +481,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-03T22:41:58.081Z",
+                  "startTime": "2025-04-05T01:42:29.464Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -823,10 +512,10 @@
               "projectName": "qa-webkit",
               "results": [
                 {
-                  "workerIndex": 15,
-                  "parallelIndex": 4,
+                  "workerIndex": 13,
+                  "parallelIndex": 5,
                   "status": "passed",
-                  "duration": 707,
+                  "duration": 535,
                   "errors": [],
                   "stdout": [
                     {
@@ -835,7 +524,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-03T22:41:58.707Z",
+                  "startTime": "2025-04-05T01:42:31.298Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -865,7 +554,7 @@
         {
           "title": "Home Page Tests",
           "file": "ui/tests/homePageTestsPROD.spec.ts",
-          "line": 7,
+          "line": 9,
           "column": 6,
           "specs": [
             {
@@ -881,10 +570,10 @@
                   "projectName": "qa-chromium",
                   "results": [
                     {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
+                      "workerIndex": 3,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 334,
+                      "duration": 487,
                       "errors": [],
                       "stdout": [
                         {
@@ -896,7 +585,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-03T22:41:41.613Z",
+                      "startTime": "2025-04-05T01:42:15.701Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -911,7 +600,7 @@
               ],
               "id": "f42611a867d02233e7c6-fab183a7b1bd694a81d9",
               "file": "ui/tests/homePageTestsPROD.spec.ts",
-              "line": 9,
+              "line": 11,
               "column": 5
             },
             {
@@ -927,25 +616,25 @@
                   "projectName": "qa-chromium",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 5,
+                      "workerIndex": 4,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 3119,
+                      "duration": 3659,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
                         {
-                          "title": "As An Authenticated User On Home Page",
-                          "duration": 1
+                          "title": "Verify user Is Logged In",
+                          "duration": 122
                         },
                         {
                           "title": "Verify user Is Logged In",
-                          "duration": 16
+                          "duration": 23
                         }
                       ],
-                      "startTime": "2025-04-03T22:41:41.554Z",
+                      "startTime": "2025-04-05T01:42:15.752Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -960,7 +649,7 @@
               ],
               "id": "f42611a867d02233e7c6-6a7c22ab9cfc161268d6",
               "file": "ui/tests/homePageTestsPROD.spec.ts",
-              "line": 21,
+              "line": 22,
               "column": 5
             },
             {
@@ -976,10 +665,10 @@
                   "projectName": "qa-firefox",
                   "results": [
                     {
-                      "workerIndex": 10,
-                      "parallelIndex": 1,
+                      "workerIndex": 9,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 3863,
+                      "duration": 2604,
                       "errors": [],
                       "stdout": [
                         {
@@ -991,7 +680,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-03T22:41:47.816Z",
+                      "startTime": "2025-04-05T01:42:21.655Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -1006,7 +695,7 @@
               ],
               "id": "f42611a867d02233e7c6-cca38d4f17ca02ec8e40",
               "file": "ui/tests/homePageTestsPROD.spec.ts",
-              "line": 9,
+              "line": 11,
               "column": 5
             },
             {
@@ -1022,25 +711,25 @@
                   "projectName": "qa-firefox",
                   "results": [
                     {
-                      "workerIndex": 7,
-                      "parallelIndex": 3,
+                      "workerIndex": 10,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 6355,
+                      "duration": 6254,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
                         {
-                          "title": "As An Authenticated User On Home Page",
-                          "duration": 0
+                          "title": "Verify user Is Logged In",
+                          "duration": 281
                         },
                         {
                           "title": "Verify user Is Logged In",
-                          "duration": 319
+                          "duration": 93
                         }
                       ],
-                      "startTime": "2025-04-03T22:41:48.209Z",
+                      "startTime": "2025-04-05T01:42:21.969Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -1055,7 +744,7 @@
               ],
               "id": "f42611a867d02233e7c6-eba92525dcda56f96ec7",
               "file": "ui/tests/homePageTestsPROD.spec.ts",
-              "line": 21,
+              "line": 22,
               "column": 5
             },
             {
@@ -1071,10 +760,10 @@
                   "projectName": "qa-webkit",
                   "results": [
                     {
-                      "workerIndex": 12,
-                      "parallelIndex": 0,
+                      "workerIndex": 11,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 490,
+                      "duration": 488,
                       "errors": [],
                       "stdout": [
                         {
@@ -1086,7 +775,7 @@
                       ],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-03T22:41:57.593Z",
+                      "startTime": "2025-04-05T01:42:28.735Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -1101,7 +790,7 @@
               ],
               "id": "f42611a867d02233e7c6-eb5962e5a28d6b4ae2fe",
               "file": "ui/tests/homePageTestsPROD.spec.ts",
-              "line": 9,
+              "line": 11,
               "column": 5
             },
             {
@@ -1117,25 +806,25 @@
                   "projectName": "qa-webkit",
                   "results": [
                     {
-                      "workerIndex": 12,
-                      "parallelIndex": 0,
+                      "workerIndex": 11,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 11094,
+                      "duration": 8890,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
                         {
-                          "title": "As An Authenticated User On Home Page",
-                          "duration": 0
+                          "title": "Verify user Is Logged In",
+                          "duration": 231
                         },
                         {
                           "title": "Verify user Is Logged In",
-                          "duration": 63
+                          "duration": 56
                         }
                       ],
-                      "startTime": "2025-04-03T22:41:58.212Z",
+                      "startTime": "2025-04-05T01:42:29.255Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -1150,7 +839,7 @@
               ],
               "id": "f42611a867d02233e7c6-463a82b44a01601eea3a",
               "file": "ui/tests/homePageTestsPROD.spec.ts",
-              "line": 21,
+              "line": 22,
               "column": 5
             }
           ]
@@ -1167,7 +856,7 @@
         {
           "title": "Login Page Tests",
           "file": "ui/tests/loginPageTests.spec.ts",
-          "line": 5,
+          "line": 6,
           "column": 6,
           "specs": [
             {
@@ -1183,29 +872,21 @@
                   "projectName": "qa-chromium",
                   "results": [
                     {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
+                      "workerIndex": 5,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 2879,
+                      "duration": 3272,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
                         {
-                          "title": "As An Unauthenticated User On Login Page",
-                          "duration": 0
-                        },
-                        {
-                          "title": "Enter Valid Email and Invalid Password and Submit",
-                          "duration": 274
-                        },
-                        {
                           "title": "Verify Incorrect Email Or Password Message Displays",
-                          "duration": 76
+                          "duration": 62
                         }
                       ],
-                      "startTime": "2025-04-03T22:41:42.181Z",
+                      "startTime": "2025-04-05T01:42:15.780Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -1220,7 +901,7 @@
               ],
               "id": "8a8e1bce0956b95a6d07-08b99805faa100119547",
               "file": "ui/tests/loginPageTests.spec.ts",
-              "line": 7,
+              "line": 8,
               "column": 5
             },
             {
@@ -1237,28 +918,20 @@
                   "results": [
                     {
                       "workerIndex": 8,
-                      "parallelIndex": 4,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 6120,
+                      "duration": 4440,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
                         {
-                          "title": "As An Unauthenticated User On Login Page",
-                          "duration": 2
-                        },
-                        {
-                          "title": "Enter Valid Email and Invalid Password and Submit",
-                          "duration": 950
-                        },
-                        {
                           "title": "Verify Incorrect Email Or Password Message Displays",
-                          "duration": 228
+                          "duration": 79
                         }
                       ],
-                      "startTime": "2025-04-03T22:41:49.464Z",
+                      "startTime": "2025-04-05T01:42:20.693Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -1273,7 +946,7 @@
               ],
               "id": "8a8e1bce0956b95a6d07-ef24cf766432fb9ffca3",
               "file": "ui/tests/loginPageTests.spec.ts",
-              "line": 7,
+              "line": 8,
               "column": 5
             },
             {
@@ -1289,29 +962,21 @@
                   "projectName": "qa-webkit",
                   "results": [
                     {
-                      "workerIndex": 13,
-                      "parallelIndex": 3,
+                      "workerIndex": 14,
+                      "parallelIndex": 4,
                       "status": "passed",
-                      "duration": 8040,
+                      "duration": 7059,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
                         {
-                          "title": "As An Unauthenticated User On Login Page",
-                          "duration": 1
-                        },
-                        {
-                          "title": "Enter Valid Email and Invalid Password and Submit",
-                          "duration": 1007
-                        },
-                        {
                           "title": "Verify Incorrect Email Or Password Message Displays",
-                          "duration": 88
+                          "duration": 66
                         }
                       ],
-                      "startTime": "2025-04-03T22:41:58.823Z",
+                      "startTime": "2025-04-05T01:42:33.198Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -1326,10 +991,588 @@
               ],
               "id": "8a8e1bce0956b95a6d07-20edb60210a827b597d0",
               "file": "ui/tests/loginPageTests.spec.ts",
-              "line": 7,
+              "line": 8,
               "column": 5
             }
           ]
+        }
+      ]
+    },
+    {
+      "title": "ui\\tests\\serialTests\\serialTestMasters\\cartSerialTestMaster.spec.ts",
+      "file": "ui/tests/serialTests/serialTestMasters/cartSerialTestMaster.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Serial Test One",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "qa-chromium",
+              "projectName": "qa-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3183,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Start Test One\n"
+                    },
+                    {
+                      "text": "End Test One\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-05T01:42:16.447Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-serialTests-seria-74e1c-lTestMaster-Serial-Test-One-qa-chromium\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b9b94a85e415586cc1ad-1a12e498e9ae4b270014",
+          "file": "ui/tests/serialTests/serialTestMasters/cartSerialTestMaster.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "Serial Test Two",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "qa-chromium",
+              "projectName": "qa-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 3210,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Start Test Two\n"
+                    },
+                    {
+                      "text": "End Test Two\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-05T01:42:19.639Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-serialTests-seria-fb1d5-lTestMaster-Serial-Test-Two-qa-chromium\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b9b94a85e415586cc1ad-77ae5520806f415f992b",
+          "file": "ui/tests/serialTests/serialTestMasters/cartSerialTestMaster.spec.ts",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "Product In Cart",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "qa-chromium",
+              "projectName": "qa-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7177,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Verify user Is Logged In",
+                      "duration": 172
+                    },
+                    {
+                      "title": "Verify Product Is Displayed In Cart",
+                      "duration": 113
+                    }
+                  ],
+                  "startTime": "2025-04-05T01:42:22.858Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-serialTests-seria-04ec0-lTestMaster-Product-In-Cart-qa-chromium\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b9b94a85e415586cc1ad-d3c66c900f018756290f",
+          "file": "ui/tests/serialTests/serialTestMasters/cartSerialTestMaster.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "verifyCartQuantity",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "qa-chromium",
+              "projectName": "qa-chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 7388,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Verify user Is Logged In",
+                      "duration": 105
+                    },
+                    {
+                      "title": "Verify First Product Quantity = 1",
+                      "duration": 82
+                    }
+                  ],
+                  "startTime": "2025-04-05T01:42:30.042Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-serialTests-seria-00b19-stMaster-verifyCartQuantity-qa-chromium\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b9b94a85e415586cc1ad-d508337d63a2338b0b88",
+          "file": "ui/tests/serialTests/serialTestMasters/cartSerialTestMaster.spec.ts",
+          "line": 20,
+          "column": 1
+        },
+        {
+          "title": "Serial Test One",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "qa-firefox",
+              "projectName": "qa-firefox",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 3715,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Start Test One\n"
+                    },
+                    {
+                      "text": "End Test One\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-05T01:42:21.838Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-serialTests-seria-74e1c-lTestMaster-Serial-Test-One-qa-firefox\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b9b94a85e415586cc1ad-693055b382d4e9f34dc0",
+          "file": "ui/tests/serialTests/serialTestMasters/cartSerialTestMaster.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "Serial Test Two",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "qa-firefox",
+              "projectName": "qa-firefox",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 3633,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Start Test Two\n"
+                    },
+                    {
+                      "text": "End Test Two\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-05T01:42:25.576Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-serialTests-seria-fb1d5-lTestMaster-Serial-Test-Two-qa-firefox\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b9b94a85e415586cc1ad-14e0f26daba0b14cc382",
+          "file": "ui/tests/serialTests/serialTestMasters/cartSerialTestMaster.spec.ts",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "Product In Cart",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "qa-firefox",
+              "projectName": "qa-firefox",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 9118,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Verify user Is Logged In",
+                      "duration": 305
+                    },
+                    {
+                      "title": "Verify Product Is Displayed In Cart",
+                      "duration": 128
+                    }
+                  ],
+                  "startTime": "2025-04-05T01:42:29.218Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-serialTests-seria-04ec0-lTestMaster-Product-In-Cart-qa-firefox\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b9b94a85e415586cc1ad-5f6f7c263a524041723d",
+          "file": "ui/tests/serialTests/serialTestMasters/cartSerialTestMaster.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "verifyCartQuantity",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "qa-firefox",
+              "projectName": "qa-firefox",
+              "results": [
+                {
+                  "workerIndex": 7,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 6982,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Verify user Is Logged In",
+                      "duration": 137
+                    },
+                    {
+                      "title": "Verify First Product Quantity = 1",
+                      "duration": 70
+                    }
+                  ],
+                  "startTime": "2025-04-05T01:42:38.343Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-serialTests-seria-00b19-stMaster-verifyCartQuantity-qa-firefox\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b9b94a85e415586cc1ad-c537dd2a72d932902045",
+          "file": "ui/tests/serialTests/serialTestMasters/cartSerialTestMaster.spec.ts",
+          "line": 20,
+          "column": 1
+        },
+        {
+          "title": "Serial Test One",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "qa-webkit",
+              "projectName": "qa-webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 3543,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Start Test One\n"
+                    },
+                    {
+                      "text": "End Test One\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-05T01:42:30.450Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-serialTests-seria-74e1c-lTestMaster-Serial-Test-One-qa-webkit\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b9b94a85e415586cc1ad-76394df279f3d8fa6198",
+          "file": "ui/tests/serialTests/serialTestMasters/cartSerialTestMaster.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "Serial Test Two",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "qa-webkit",
+              "projectName": "qa-webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 3706,
+                  "errors": [],
+                  "stdout": [
+                    {
+                      "text": "Start Test Two\n"
+                    },
+                    {
+                      "text": "End Test Two\n"
+                    }
+                  ],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-04-05T01:42:34.004Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-serialTests-seria-fb1d5-lTestMaster-Serial-Test-Two-qa-webkit\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b9b94a85e415586cc1ad-1567a481da9642cdad46",
+          "file": "ui/tests/serialTests/serialTestMasters/cartSerialTestMaster.spec.ts",
+          "line": 12,
+          "column": 1
+        },
+        {
+          "title": "Product In Cart",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "qa-webkit",
+              "projectName": "qa-webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 13147,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Verify user Is Logged In",
+                      "duration": 130
+                    },
+                    {
+                      "title": "Verify Product Is Displayed In Cart",
+                      "duration": 60
+                    }
+                  ],
+                  "startTime": "2025-04-05T01:42:37.717Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-serialTests-seria-04ec0-lTestMaster-Product-In-Cart-qa-webkit\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b9b94a85e415586cc1ad-25d80ce2ca21e812d7c5",
+          "file": "ui/tests/serialTests/serialTestMasters/cartSerialTestMaster.spec.ts",
+          "line": 16,
+          "column": 1
+        },
+        {
+          "title": "verifyCartQuantity",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "qa-webkit",
+              "projectName": "qa-webkit",
+              "results": [
+                {
+                  "workerIndex": 12,
+                  "parallelIndex": 3,
+                  "status": "passed",
+                  "duration": 13248,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "steps": [
+                    {
+                      "title": "Verify user Is Logged In",
+                      "duration": 151
+                    },
+                    {
+                      "title": "Verify First Product Quantity = 1",
+                      "duration": 92
+                    }
+                  ],
+                  "startTime": "2025-04-05T01:42:50.870Z",
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-serialTests-seria-00b19-stMaster-verifyCartQuantity-qa-webkit\\test-finished-1.png"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "b9b94a85e415586cc1ad-ff59da25580f9ea1264f",
+          "file": "ui/tests/serialTests/serialTestMasters/cartSerialTestMaster.spec.ts",
+          "line": 20,
+          "column": 1
         }
       ]
     },
@@ -1359,15 +1602,15 @@
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 16,
+                      "workerIndex": 15,
                       "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 388,
+                      "duration": 553,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-03T22:42:01.114Z",
+                      "startTime": "2025-04-05T01:42:34.093Z",
                       "attachments": []
                     }
                   ],
@@ -1392,15 +1635,15 @@
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 17,
-                      "parallelIndex": 4,
+                      "workerIndex": 15,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 379,
+                      "duration": 191,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-03T22:42:01.760Z",
+                      "startTime": "2025-04-05T01:42:34.716Z",
                       "attachments": []
                     }
                   ],
@@ -1442,15 +1685,15 @@
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 16,
+                      "workerIndex": 15,
                       "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 148,
+                      "duration": 149,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-03T22:42:01.776Z",
+                      "startTime": "2025-04-05T01:42:35.239Z",
                       "attachments": []
                     }
                   ],
@@ -1475,15 +1718,15 @@
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 16,
+                      "workerIndex": 15,
                       "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 57,
+                      "duration": 191,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-03T22:42:01.944Z",
+                      "startTime": "2025-04-05T01:42:35.407Z",
                       "attachments": []
                     }
                   ],
@@ -1508,15 +1751,15 @@
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 16,
+                      "workerIndex": 15,
                       "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 181,
+                      "duration": 182,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-03T22:42:02.021Z",
+                      "startTime": "2025-04-05T01:42:35.612Z",
                       "attachments": []
                     }
                   ],
@@ -1558,15 +1801,15 @@
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 17,
-                      "parallelIndex": 4,
+                      "workerIndex": 15,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 172,
+                      "duration": 63,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-03T22:42:02.451Z",
+                      "startTime": "2025-04-05T01:42:35.832Z",
                       "attachments": []
                     }
                   ],
@@ -1591,15 +1834,15 @@
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 16,
+                      "workerIndex": 15,
                       "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 52,
+                      "duration": 54,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-03T22:42:02.234Z",
+                      "startTime": "2025-04-05T01:42:35.907Z",
                       "attachments": []
                     }
                   ],
@@ -1624,15 +1867,15 @@
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 16,
+                      "workerIndex": 15,
                       "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 169,
+                      "duration": 173,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-03T22:42:02.301Z",
+                      "startTime": "2025-04-05T01:42:35.977Z",
                       "attachments": []
                     }
                   ],
@@ -1657,15 +1900,15 @@
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 16,
+                      "workerIndex": 15,
                       "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 176,
+                      "duration": 169,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-03T22:42:02.486Z",
+                      "startTime": "2025-04-05T01:42:36.163Z",
                       "attachments": []
                     }
                   ],
@@ -1690,15 +1933,15 @@
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 17,
-                      "parallelIndex": 4,
+                      "workerIndex": 15,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 171,
+                      "duration": 166,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-03T22:42:02.646Z",
+                      "startTime": "2025-04-05T01:42:36.350Z",
                       "attachments": []
                     }
                   ],
@@ -1723,15 +1966,15 @@
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 16,
+                      "workerIndex": 15,
                       "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 172,
+                      "duration": 159,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-03T22:42:02.677Z",
+                      "startTime": "2025-04-05T01:42:36.527Z",
                       "attachments": []
                     }
                   ],
@@ -1756,15 +1999,15 @@
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 17,
-                      "parallelIndex": 4,
+                      "workerIndex": 15,
+                      "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 157,
+                      "duration": 166,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-03T22:42:02.832Z",
+                      "startTime": "2025-04-05T01:42:36.696Z",
                       "attachments": []
                     }
                   ],
@@ -1806,15 +2049,15 @@
                   "projectName": "functional",
                   "results": [
                     {
-                      "workerIndex": 18,
+                      "workerIndex": 16,
                       "parallelIndex": 5,
                       "status": "passed",
-                      "duration": 32,
+                      "duration": 28,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-03T22:42:05.216Z",
+                      "startTime": "2025-04-05T01:42:38.826Z",
                       "attachments": []
                     }
                   ],
@@ -1839,15 +2082,15 @@
                   "projectName": "functional",
                   "results": [
                     {
-                      "workerIndex": 19,
-                      "parallelIndex": 4,
+                      "workerIndex": 17,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 35,
+                      "duration": 20,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-03T22:42:05.389Z",
+                      "startTime": "2025-04-05T01:42:39.305Z",
                       "attachments": []
                     }
                   ],
@@ -1873,9 +2116,9 @@
                   "results": [
                     {
                       "workerIndex": 18,
-                      "parallelIndex": 5,
+                      "parallelIndex": 2,
                       "status": "failed",
-                      "duration": 15,
+                      "duration": 22,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m12\u001b[39m\nReceived: \u001b[31m13\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m12\u001b[39m\nReceived: \u001b[31m13\u001b[39m\n    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\functional\\tests\\sumFunction.spec.ts:10:47",
@@ -1906,7 +2149,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-03T22:42:05.287Z",
+                      "startTime": "2025-04-05T01:42:39.940Z",
                       "attachments": [
                         {
                           "name": "_prompt-0",
@@ -1936,9 +2179,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-04-03T22:41:39.624Z",
-    "duration": 41633.714,
-    "expected": 38,
+    "startTime": "2025-04-05T01:42:13.959Z",
+    "duration": 50304.176999999996,
+    "expected": 44,
     "skipped": 0,
     "unexpected": 1,
     "flaky": 0

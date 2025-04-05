@@ -1,0 +1,129 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Home Page Tests >> Valid Login
+- Location: C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\homePageTestsPROD.spec.ts:21:5
+
+# Error details
+
+```
+Error: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+  - waiting for locator('button.Login')
+
+    at LoginPage.enterValidCredentialsAndSubmit (C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\pages\loginPage.ts:51:32)
+    at LoginFunction.loginWithValidCredentials (C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\fixtureFunctions\loginFunction.ts:23:9)
+    at Object.homePage (C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\fixtures\homePageFixtures.ts:18:9)
+```
+
+# Page snapshot
+
+```yaml
+- banner:
+  - link "Website for automation practice":
+    - img "Website for automation practice"
+  - list:
+    - listitem:
+      - link " Home"
+    - listitem:
+      - link " Products"
+    - listitem:
+      - link " Cart"
+    - listitem:
+      - link " Signup / Login"
+    - listitem:
+      - link " Test Cases"
+    - listitem:
+      - link " API Testing"
+    - listitem:
+      - link " Video Tutorials"
+    - listitem:
+      - link " Contact us"
+- heading "Login to your account" [level=2]
+- textbox "Email Address": Drew@Webkit.com
+- textbox "Password": WebTest@123
+- button "Login"
+- heading "OR" [level=2]
+- heading "New User Signup!" [level=2]
+- textbox "Name"
+- textbox "Email Address"
+- button "Signup"
+- contentinfo:
+  - heading "Subscription" [level=2]
+  - textbox "Your email address"
+  - button ""
+  - paragraph: Get the most recent updates from our site and be updated your self...
+  - paragraph: Copyright © 2021 All rights reserved
+- insertion
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect, Locator, Page } from '@playwright/test';
+   2 | import * as dotenv from 'dotenv';
+   3 | dotenv.config();
+   4 |
+   5 | export class LoginPage {
+   6 |     page: Page;
+   7 |
+   8 |     emailInput: Locator;
+   9 |     passwordInput: Locator;
+  10 |     loginButton: Locator;
+  11 |     invalidEmailOrPasswordMessage: Locator;
+  12 |
+  13 |     constructor(page: Page) {
+  14 |         this.page = page;
+  15 |         this.emailInput = this.page.locator('form').filter({ hasText: 'Login' }).getByPlaceholder('Email Address');
+  16 |         this.passwordInput = this.page.getByRole('textbox', { name: 'Password' });
+  17 |         //this.loginButton = this.page.getByRole('button', { name: 'Login' });
+  18 |         //this.loginButton = this.page.getByRole('button', { name: /^Log/ });
+  19 |         this.loginButton = this.page.locator('button.Login');
+  20 |         this.invalidEmailOrPasswordMessage = this.page.getByText('Your email or password is');
+  21 |     };
+  22 |
+  23 |
+  24 |     async enterCredentialsAndSubmit(email: string, password: string) {
+  25 |         await this.emailInput.fill(email);
+  26 |         await this.passwordInput.fill(password);
+  27 |         await this.loginButton.click();
+  28 |     }
+  29 |
+  30 |     async enterValidCredentialsAndSubmit(testEnv: string) {
+  31 |         let email = "";
+  32 |         let password = "";
+  33 |         if (testEnv === 'production-validation') {
+  34 |             email = process.env.PROD_EMAIL as string;
+  35 |             password = process.env.PROD_PASSWORD as string
+  36 |         } else if (testEnv === 'qa-chromium') {
+  37 |             email = process.env.QA_CHROMIUM_EMAIL as string;
+  38 |             password = process.env.QA_CHROMIUM_PASSWORD as string
+  39 |         } else if (testEnv === 'qa-firefox') {
+  40 |             email = process.env.QA_FIREFOX_EMAIL as string;
+  41 |             password = process.env.QA_FIREFOX_PASSWORD as string
+  42 |         } else if (testEnv === 'qa-webkit') {
+  43 |             email = process.env.QA_WEBKIT_EMAIL as string;
+  44 |             password = process.env.QA_WEBKIT_PASSWORD as string
+  45 |         } else {
+  46 |             test.fail(true, "Login Setup Issue");
+  47 |         }
+  48 |         
+  49 |         await this.emailInput.fill(email);   
+  50 |         await this.passwordInput.fill(password);
+> 51 |         await this.loginButton.click();
+     |                                ^ Error: locator.click: Test timeout of 30000ms exceeded.
+  52 |     }
+  53 |
+  54 |     async verifyIncorrectEmailOrPasswordMessageDisplays() {
+  55 |         await test.step('Verify Incorrect Email Or Password Message Displays', async () => {
+  56 |             await expect(this.invalidEmailOrPasswordMessage).toBeVisible();
+  57 |         });
+  58 |     };
+  59 |
+  60 | }
+```

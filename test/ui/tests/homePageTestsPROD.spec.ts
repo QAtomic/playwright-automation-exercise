@@ -1,7 +1,9 @@
 import * as dotenv from 'dotenv';
 dotenv.config();
-import { asAnAuthenticatedUserOnHomePage } from '../fixtures/homePageFixtures';
+
 import { test } from '@playwright/test';
+import { HomePage } from '../pages/homePage';
+import { HomePageFunctions } from '../pageFunctions/homePageFunctions';
 
 
 test.describe("Home Page Tests", () => {
@@ -17,10 +19,12 @@ test.describe("Home Page Tests", () => {
         
     });
 
+    test('Valid Login', async ({ page }, testInfo) => { 
+        const homePageFunctions = new HomePageFunctions(page);
+        await homePageFunctions.asAnAuthenticatedUserOnHomePage(page, testInfo);
 
-    asAnAuthenticatedUserOnHomePage('Valid Login', async ({ homePage }) => {
-        await test.step('As An Authenticated User On Home Page', async () => true);
-        await homePage.verifyUserIsLoggedIn();  
+        const homePage = new HomePage(page);
+        await homePage.verifyUserIsLoggedIn();
     });
 
 

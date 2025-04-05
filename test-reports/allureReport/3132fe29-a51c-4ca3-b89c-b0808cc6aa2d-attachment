@@ -1,0 +1,55 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: testing with Charlie
+- Location: C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\trial.spec.ts:9:5
+
+# Error details
+
+```
+Error: Timed out 5000ms waiting for expect(locator).toHaveText(expected)
+
+Locator: getByRole('heading')
+Expected string: "Hello, Charlie!"
+Received string: "Example Domain"
+Call log:
+  - expect.toHaveText with timeout 5000ms
+  - waiting for getByRole('heading')
+    8 × locator resolved to <h1>Example Domain</h1>
+      - unexpected value "Example Domain"
+
+    at C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\trial.spec.ts:11:47
+```
+
+# Page snapshot
+
+```yaml
+- heading "Example Domain" [level=1]
+- paragraph: This domain is for use in illustrative examples in documents. You may use this domain in literature without prior coordination or asking for permission.
+- paragraph:
+  - link "More information..."
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from '@playwright/test';
+   2 |
+   3 | [
+   4 |     { name: 'Alice', expected: 'Hello, Alice!' },
+   5 |     { name: 'Bob', expected: 'Hello, Bob!' },
+   6 |     { name: 'Charlie', expected: 'Hello, Charlie!' },
+   7 |   ].forEach(({ name, expected }) => {
+   8 |     // You can also do it with test.describe() or with multiple tests as long the test name is unique.
+   9 |     test(`testing with ${name}`, async ({ page }) => {
+  10 |       await page.goto(`https://example.com/greet?name=${name}`);
+> 11 |       await expect(page.getByRole('heading')).toHaveText(expected);
+     |                                               ^ Error: Timed out 5000ms waiting for expect(locator).toHaveText(expected)
+  12 |     });
+  13 |   });
+```

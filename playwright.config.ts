@@ -50,18 +50,18 @@ export default defineConfig({
     },
     {
       name: 'qa-chromium',
-      testMatch: 'ui/**/*spec.ts',
+      testMatch: 'ui/tests/**/*spec.ts',
       use: { ...devices['Desktop Chrome'] },
     },
     {
       name: 'qa-firefox',
-      testMatch: 'ui/**/*spec.ts',
+      testMatch: 'ui/tests/**/*spec.ts',
       use: { ...devices['Desktop Firefox'] },
     },
 
     {
       name: 'qa-webkit',
-      testMatch: 'ui/**/*spec.ts',
+      testMatch: 'ui/tests/**/*spec.ts',
       use: { ...devices['Desktop Safari'] },
     },
     {

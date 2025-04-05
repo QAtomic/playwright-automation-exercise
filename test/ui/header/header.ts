@@ -13,11 +13,11 @@ export class Header {
     constructor(page: Page) {
         this.page = page;
 
-        this.homeLink = this.page.getByRole('link', { name: ' Home' });
-        this.productsLink = this.page.getByRole('link', { name: ' Products' });
-        this.cartLink = this.page.getByRole('link', { name: ' Cart' });
-        this.loginLink = this.page.getByRole('link', { name: ' Signup / Login' });
-        this.logoutLink = this.page.getByRole('link', { name: ' Logout' }); 
+        this.homeLink = this.page.getByRole('link', { name: 'Home' });
+        this.productsLink = this.page.getByRole('link', { name: 'Products' });
+        this.cartLink = this.page.getByRole('link', { name: 'Cart' });
+        this.loginLink = this.page.getByRole('link', { name: 'Signup / Login' });
+        this.logoutLink = this.page.getByRole('link', { name: 'Logout' }); 
     };
 
     async clickHomeLink() {
@@ -41,6 +41,6 @@ export class Header {
     }
 
     async verifyLogoutLinkDisplays() {
-        await expect(this.logoutLink).toBeVisible();
+        await expect(this.logoutLink).toBeVisible({ timeout: 15000 });
     }
 };

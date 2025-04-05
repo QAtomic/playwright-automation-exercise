@@ -23,7 +23,7 @@ export class HomePage {
     }
 
     async verifyUserIsLoggedIn() {
-        await test.step('Verify user Is Logged In', async () => {
+        await test.step('Verify User Is Logged In', async () => {
             await this.header.verifyLogoutLinkDisplays();
         })
     }

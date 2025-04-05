@@ -11,7 +11,7 @@
     "grepInvert": null,
     "maxFailures": 0,
     "metadata": {
-      "actualWorkers": 6
+      "actualWorkers": 4
     },
     "preserveOutput": "always",
     "reporter": [
@@ -49,7 +49,7 @@
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 4
         },
         "id": "production-validation",
         "name": "production-validation",
@@ -58,14 +58,14 @@
         "testMatch": [
           "ui/**/*PROD.*spec.ts"
         ],
-        "timeout": 30000
+        "timeout": 15000
       },
       {
         "outputDir": "C:/Users/Drew/Documents/VScode-workspace/playwright-automation-exercise/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 4
         },
         "id": "qa-chromium",
         "name": "qa-chromium",
@@ -74,14 +74,14 @@
         "testMatch": [
           "ui/tests/**/*spec.ts"
         ],
-        "timeout": 30000
+        "timeout": 15000
       },
       {
         "outputDir": "C:/Users/Drew/Documents/VScode-workspace/playwright-automation-exercise/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 4
         },
         "id": "qa-firefox",
         "name": "qa-firefox",
@@ -90,14 +90,14 @@
         "testMatch": [
           "ui/tests/**/*spec.ts"
         ],
-        "timeout": 30000
+        "timeout": 15000
       },
       {
         "outputDir": "C:/Users/Drew/Documents/VScode-workspace/playwright-automation-exercise/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 4
         },
         "id": "qa-webkit",
         "name": "qa-webkit",
@@ -106,14 +106,14 @@
         "testMatch": [
           "ui/tests/**/*spec.ts"
         ],
-        "timeout": 30000
+        "timeout": 15000
       },
       {
         "outputDir": "C:/Users/Drew/Documents/VScode-workspace/playwright-automation-exercise/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 4
         },
         "id": "api",
         "name": "api",
@@ -122,14 +122,14 @@
         "testMatch": [
           "api/**/*spec.ts"
         ],
-        "timeout": 30000
+        "timeout": 15000
       },
       {
         "outputDir": "C:/Users/Drew/Documents/VScode-workspace/playwright-automation-exercise/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
-          "actualWorkers": 6
+          "actualWorkers": 4
         },
         "id": "functional",
         "name": "functional",
@@ -138,14 +138,14 @@
         "testMatch": [
           "functional/**/*spec.ts"
         ],
-        "timeout": 30000
+        "timeout": 15000
       }
     ],
     "shard": null,
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.51.1",
-    "workers": 6,
+    "workers": 4,
     "webServer": null
   },
   "suites": [
@@ -161,7 +161,7 @@
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 15000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "qa-chromium",
@@ -171,22 +171,32 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 11423,
+                  "duration": 7162,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
                   "steps": [
                     {
-                      "title": "Verify user Is Logged In",
-                      "duration": 214
+                      "title": "As An Authenticated User On Cart Page With Products In Cart",
+                      "duration": 3910,
+                      "steps": [
+                        {
+                          "title": "Enter Credentials and Submit",
+                          "duration": 554
+                        },
+                        {
+                          "title": "Verify User Is Logged In",
+                          "duration": 637
+                        }
+                      ]
                     },
                     {
                       "title": "Verify Product Is Displayed In Cart",
-                      "duration": 84
+                      "duration": 4724
                     }
                   ],
-                  "startTime": "2025-04-05T01:55:17.770Z",
+                  "startTime": "2025-04-05T13:47:30.121Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -201,7 +211,7 @@
           ],
           "id": "881d738d60516ba076d1-2e5d5370fab6f78b7366",
           "file": "ui/tests/cartSerialTests.spec.ts",
-          "line": 6,
+          "line": 7,
           "column": 1
         },
         {
@@ -210,7 +220,7 @@
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 15000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "qa-chromium",
@@ -220,22 +230,32 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6943,
+                  "duration": 7301,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
                   "steps": [
                     {
-                      "title": "Verify user Is Logged In",
-                      "duration": 180
+                      "title": "As An Authenticated User On Cart Page With Products In Cart",
+                      "duration": 4299,
+                      "steps": [
+                        {
+                          "title": "Enter Credentials and Submit",
+                          "duration": 535
+                        },
+                        {
+                          "title": "Verify User Is Logged In",
+                          "duration": 696
+                        }
+                      ]
                     },
                     {
                       "title": "Verify First Product Quantity = 1",
-                      "duration": 90
+                      "duration": 4856
                     }
                   ],
-                  "startTime": "2025-04-05T01:55:29.379Z",
+                  "startTime": "2025-04-05T13:47:37.432Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -250,7 +270,7 @@
           ],
           "id": "881d738d60516ba076d1-d8f55c738b27526006a6",
           "file": "ui/tests/cartSerialTests.spec.ts",
-          "line": 10,
+          "line": 11,
           "column": 1
         },
         {
@@ -259,32 +279,42 @@
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 15000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "qa-firefox",
               "projectName": "qa-firefox",
               "results": [
                 {
-                  "workerIndex": 6,
-                  "parallelIndex": 2,
+                  "workerIndex": 4,
+                  "parallelIndex": 3,
                   "status": "passed",
-                  "duration": 12796,
+                  "duration": 10248,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
                   "steps": [
                     {
-                      "title": "Verify user Is Logged In",
-                      "duration": 448
+                      "title": "As An Authenticated User On Cart Page With Products In Cart",
+                      "duration": 5114,
+                      "steps": [
+                        {
+                          "title": "Enter Credentials and Submit",
+                          "duration": 690
+                        },
+                        {
+                          "title": "Verify User Is Logged In",
+                          "duration": 902
+                        }
+                      ]
                     },
                     {
                       "title": "Verify Product Is Displayed In Cart",
-                      "duration": 124
+                      "duration": 5852
                     }
                   ],
-                  "startTime": "2025-04-05T01:55:19.602Z",
+                  "startTime": "2025-04-05T13:47:31.850Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -299,7 +329,7 @@
           ],
           "id": "881d738d60516ba076d1-9a846a0b1175eb6dcc14",
           "file": "ui/tests/cartSerialTests.spec.ts",
-          "line": 6,
+          "line": 7,
           "column": 1
         },
         {
@@ -308,32 +338,42 @@
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 15000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "qa-firefox",
               "projectName": "qa-firefox",
               "results": [
                 {
-                  "workerIndex": 6,
-                  "parallelIndex": 2,
+                  "workerIndex": 4,
+                  "parallelIndex": 3,
                   "status": "passed",
-                  "duration": 9417,
+                  "duration": 8708,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
                   "steps": [
                     {
-                      "title": "Verify user Is Logged In",
-                      "duration": 266
+                      "title": "As An Authenticated User On Cart Page With Products In Cart",
+                      "duration": 5609,
+                      "steps": [
+                        {
+                          "title": "Enter Credentials and Submit",
+                          "duration": 720
+                        },
+                        {
+                          "title": "Verify User Is Logged In",
+                          "duration": 920
+                        }
+                      ]
                     },
                     {
                       "title": "Verify First Product Quantity = 1",
-                      "duration": 75
+                      "duration": 5953
                     }
                   ],
-                  "startTime": "2025-04-05T01:55:35.044Z",
+                  "startTime": "2025-04-05T13:47:43.259Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -348,7 +388,7 @@
           ],
           "id": "881d738d60516ba076d1-5f8b5cb320f63d4e9cd5",
           "file": "ui/tests/cartSerialTests.spec.ts",
-          "line": 10,
+          "line": 11,
           "column": 1
         },
         {
@@ -357,32 +397,42 @@
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 15000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "qa-webkit",
               "projectName": "qa-webkit",
               "results": [
                 {
-                  "workerIndex": 9,
-                  "parallelIndex": 3,
+                  "workerIndex": 8,
+                  "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 16804,
+                  "duration": 13399,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
                   "steps": [
                     {
-                      "title": "Verify user Is Logged In",
-                      "duration": 327
+                      "title": "As An Authenticated User On Cart Page With Products In Cart",
+                      "duration": 9071,
+                      "steps": [
+                        {
+                          "title": "Enter Credentials and Submit",
+                          "duration": 959
+                        },
+                        {
+                          "title": "Verify User Is Logged In",
+                          "duration": 1148
+                        }
+                      ]
                     },
                     {
                       "title": "Verify Product Is Displayed In Cart",
-                      "duration": 165
+                      "duration": 9274
                     }
                   ],
-                  "startTime": "2025-04-05T01:55:28.425Z",
+                  "startTime": "2025-04-05T13:47:47.464Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -397,7 +447,7 @@
           ],
           "id": "881d738d60516ba076d1-198c2543b4cf0de2de52",
           "file": "ui/tests/cartSerialTests.spec.ts",
-          "line": 6,
+          "line": 7,
           "column": 1
         },
         {
@@ -406,32 +456,42 @@
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 15000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "qa-webkit",
               "projectName": "qa-webkit",
               "results": [
                 {
-                  "workerIndex": 9,
-                  "parallelIndex": 3,
+                  "workerIndex": 8,
+                  "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 14724,
+                  "duration": 10956,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
                   "retry": 0,
                   "steps": [
                     {
-                      "title": "Verify user Is Logged In",
-                      "duration": 193
+                      "title": "As An Authenticated User On Cart Page With Products In Cart",
+                      "duration": 7379,
+                      "steps": [
+                        {
+                          "title": "Enter Credentials and Submit",
+                          "duration": 810
+                        },
+                        {
+                          "title": "Verify User Is Logged In",
+                          "duration": 945
+                        }
+                      ]
                     },
                     {
                       "title": "Verify First Product Quantity = 1",
-                      "duration": 64
+                      "duration": 7444
                     }
                   ],
-                  "startTime": "2025-04-05T01:55:45.492Z",
+                  "startTime": "2025-04-05T13:48:01.098Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -446,7 +506,7 @@
           ],
           "id": "881d738d60516ba076d1-479f1a4bd20212603e81",
           "file": "ui/tests/cartSerialTests.spec.ts",
-          "line": 10,
+          "line": 11,
           "column": 1
         }
       ]
@@ -463,7 +523,7 @@
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 15000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "qa-chromium",
@@ -473,7 +533,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 490,
+                  "duration": 301,
                   "errors": [],
                   "stdout": [
                     {
@@ -482,7 +542,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-05T01:55:17.762Z",
+                  "startTime": "2025-04-05T13:47:30.117Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -506,7 +566,7 @@
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 15000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "qa-chromium",
@@ -516,7 +576,7 @@
                   "workerIndex": 2,
                   "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 413,
+                  "duration": 287,
                   "errors": [],
                   "stdout": [
                     {
@@ -525,7 +585,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-05T01:55:17.789Z",
+                  "startTime": "2025-04-05T13:47:30.121Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -549,7 +609,7 @@
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 15000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "qa-chromium",
@@ -559,7 +619,7 @@
                   "workerIndex": 3,
                   "parallelIndex": 3,
                   "status": "passed",
-                  "duration": 330,
+                  "duration": 264,
                   "errors": [],
                   "stdout": [
                     {
@@ -568,7 +628,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-05T01:55:17.770Z",
+                  "startTime": "2025-04-05T13:47:30.165Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -592,17 +652,17 @@
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 15000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "qa-firefox",
               "projectName": "qa-firefox",
               "results": [
                 {
-                  "workerIndex": 7,
-                  "parallelIndex": 1,
+                  "workerIndex": 5,
+                  "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 2266,
+                  "duration": 1963,
                   "errors": [],
                   "stdout": [
                     {
@@ -611,7 +671,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-05T01:55:19.628Z",
+                  "startTime": "2025-04-05T13:47:35.163Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -635,17 +695,17 @@
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 15000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "qa-firefox",
               "projectName": "qa-firefox",
               "results": [
                 {
-                  "workerIndex": 8,
-                  "parallelIndex": 4,
+                  "workerIndex": 6,
+                  "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 1466,
+                  "duration": 2156,
                   "errors": [],
                   "stdout": [
                     {
@@ -654,7 +714,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-05T01:55:19.658Z",
+                  "startTime": "2025-04-05T13:47:36.142Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -678,17 +738,17 @@
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 15000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "qa-firefox",
               "projectName": "qa-firefox",
               "results": [
                 {
-                  "workerIndex": 8,
-                  "parallelIndex": 4,
+                  "workerIndex": 5,
+                  "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 804,
+                  "duration": 497,
                   "errors": [],
                   "stdout": [
                     {
@@ -697,7 +757,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-05T01:55:21.870Z",
+                  "startTime": "2025-04-05T13:47:38.619Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -721,17 +781,17 @@
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 15000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "qa-webkit",
               "projectName": "qa-webkit",
               "results": [
                 {
-                  "workerIndex": 10,
-                  "parallelIndex": 5,
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 1011,
+                  "duration": 465,
                   "errors": [],
                   "stdout": [
                     {
@@ -740,7 +800,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-05T01:55:29.687Z",
+                  "startTime": "2025-04-05T13:47:46.561Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -764,17 +824,17 @@
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 15000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "qa-webkit",
               "projectName": "qa-webkit",
               "results": [
                 {
-                  "workerIndex": 11,
-                  "parallelIndex": 4,
+                  "workerIndex": 9,
+                  "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 698,
+                  "duration": 599,
                   "errors": [],
                   "stdout": [
                     {
@@ -783,7 +843,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-05T01:55:34.000Z",
+                  "startTime": "2025-04-05T13:47:48.197Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -807,17 +867,17 @@
           "tags": [],
           "tests": [
             {
-              "timeout": 30000,
+              "timeout": 15000,
               "annotations": [],
               "expectedStatus": "passed",
               "projectId": "qa-webkit",
               "projectName": "qa-webkit",
               "results": [
                 {
-                  "workerIndex": 12,
-                  "parallelIndex": 1,
+                  "workerIndex": 7,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 716,
+                  "duration": 385,
                   "errors": [],
                   "stdout": [
                     {
@@ -826,7 +886,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-05T01:55:34.052Z",
+                  "startTime": "2025-04-05T13:47:47.158Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -860,83 +920,47 @@
           "column": 6,
           "specs": [
             {
-              "title": "Environment Data Switching POC",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "qa-chromium",
-                  "projectName": "qa-chromium",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 331,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Non-Prod Test\n"
-                        },
-                        {
-                          "text": "Name = undefined\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-05T01:55:17.848Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-homePageTestsPROD-48564-ironment-Data-Switching-POC-qa-chromium\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "f42611a867d02233e7c6-fab183a7b1bd694a81d9",
-              "file": "ui/tests/homePageTestsPROD.spec.ts",
-              "line": 11,
-              "column": 5
-            },
-            {
               "title": "Valid Login",
               "ok": true,
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 15000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "qa-chromium",
                   "projectName": "qa-chromium",
                   "results": [
                     {
-                      "workerIndex": 5,
-                      "parallelIndex": 5,
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 7213,
+                      "duration": 2865,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
                         {
-                          "title": "Verify user Is Logged In",
-                          "duration": 179
+                          "title": "As An Authenticated User On HomePage",
+                          "duration": 2676,
+                          "steps": [
+                            {
+                              "title": "Enter Credentials and Submit",
+                              "duration": 560
+                            },
+                            {
+                              "title": "Verify User Is Logged In",
+                              "duration": 649
+                            }
+                          ]
                         },
                         {
-                          "title": "Verify user Is Logged In",
-                          "duration": 25
+                          "title": "Verify User Is Logged In",
+                          "duration": 2674
                         }
                       ],
-                      "startTime": "2025-04-05T01:55:17.790Z",
+                      "startTime": "2025-04-05T13:47:30.602Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -951,52 +975,6 @@
               ],
               "id": "f42611a867d02233e7c6-6a7c22ab9cfc161268d6",
               "file": "ui/tests/homePageTestsPROD.spec.ts",
-              "line": 22,
-              "column": 5
-            },
-            {
-              "title": "Environment Data Switching POC",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "qa-firefox",
-                  "projectName": "qa-firefox",
-                  "results": [
-                    {
-                      "workerIndex": 8,
-                      "parallelIndex": 4,
-                      "status": "passed",
-                      "duration": 690,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Non-Prod Test\n"
-                        },
-                        {
-                          "text": "Name = undefined\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-05T01:55:22.806Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-homePageTestsPROD-48564-ironment-Data-Switching-POC-qa-firefox\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "f42611a867d02233e7c6-cca38d4f17ca02ec8e40",
-              "file": "ui/tests/homePageTestsPROD.spec.ts",
               "line": 11,
               "column": 5
             },
@@ -1006,32 +984,42 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 15000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "qa-firefox",
                   "projectName": "qa-firefox",
                   "results": [
                     {
-                      "workerIndex": 7,
-                      "parallelIndex": 1,
+                      "workerIndex": 5,
+                      "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 6284,
+                      "duration": 5199,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
                         {
-                          "title": "Verify user Is Logged In",
-                          "duration": 458
+                          "title": "As An Authenticated User On HomePage",
+                          "duration": 4618,
+                          "steps": [
+                            {
+                              "title": "Enter Credentials and Submit",
+                              "duration": 1161
+                            },
+                            {
+                              "title": "Verify User Is Logged In",
+                              "duration": 1345
+                            }
+                          ]
                         },
                         {
-                          "title": "Verify user Is Logged In",
-                          "duration": 169
+                          "title": "Verify User Is Logged In",
+                          "duration": 4659
                         }
                       ],
-                      "startTime": "2025-04-05T01:55:23.452Z",
+                      "startTime": "2025-04-05T13:47:39.304Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -1046,52 +1034,6 @@
               ],
               "id": "f42611a867d02233e7c6-eba92525dcda56f96ec7",
               "file": "ui/tests/homePageTestsPROD.spec.ts",
-              "line": 22,
-              "column": 5
-            },
-            {
-              "title": "Environment Data Switching POC",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 30000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "qa-webkit",
-                  "projectName": "qa-webkit",
-                  "results": [
-                    {
-                      "workerIndex": 10,
-                      "parallelIndex": 5,
-                      "status": "passed",
-                      "duration": 652,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Non-Prod Test\n"
-                        },
-                        {
-                          "text": "Name = undefined\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2025-04-05T01:55:31.094Z",
-                      "attachments": [
-                        {
-                          "name": "screenshot",
-                          "contentType": "image/png",
-                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-homePageTestsPROD-48564-ironment-Data-Switching-POC-qa-webkit\\test-finished-1.png"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "f42611a867d02233e7c6-eb5962e5a28d6b4ae2fe",
-              "file": "ui/tests/homePageTestsPROD.spec.ts",
               "line": 11,
               "column": 5
             },
@@ -1101,32 +1043,42 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 15000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "qa-webkit",
                   "projectName": "qa-webkit",
                   "results": [
                     {
-                      "workerIndex": 10,
-                      "parallelIndex": 5,
+                      "workerIndex": 7,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 7493,
+                      "duration": 8293,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
                         {
-                          "title": "Verify user Is Logged In",
-                          "duration": 381
+                          "title": "As An Authenticated User On HomePage",
+                          "duration": 6365,
+                          "steps": [
+                            {
+                              "title": "Enter Credentials and Submit",
+                              "duration": 906
+                            },
+                            {
+                              "title": "Verify User Is Logged In",
+                              "duration": 1282
+                            }
+                          ]
                         },
                         {
-                          "title": "Verify user Is Logged In",
-                          "duration": 55
+                          "title": "Verify User Is Logged In",
+                          "duration": 6364
                         }
                       ],
-                      "startTime": "2025-04-05T01:55:31.776Z",
+                      "startTime": "2025-04-05T13:47:47.632Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -1141,7 +1093,7 @@
               ],
               "id": "f42611a867d02233e7c6-463a82b44a01601eea3a",
               "file": "ui/tests/homePageTestsPROD.spec.ts",
-              "line": 22,
+              "line": 11,
               "column": 5
             }
           ]
@@ -1167,28 +1119,36 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 15000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "qa-chromium",
                   "projectName": "qa-chromium",
                   "results": [
                     {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 5920,
+                      "duration": 3757,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
                         {
+                          "title": "As An Unauthenticated User On LoginPage",
+                          "duration": 2449
+                        },
+                        {
+                          "title": "Enter Credentials and Submit",
+                          "duration": 2896
+                        },
+                        {
                           "title": "Verify Incorrect Email Or Password Message Displays",
-                          "duration": 86
+                          "duration": 3541
                         }
                       ],
-                      "startTime": "2025-04-05T01:55:18.399Z",
+                      "startTime": "2025-04-05T13:47:30.640Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -1212,28 +1172,36 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 15000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "qa-firefox",
                   "projectName": "qa-firefox",
                   "results": [
                     {
-                      "workerIndex": 8,
-                      "parallelIndex": 4,
+                      "workerIndex": 6,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 5858,
+                      "duration": 5275,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
                         {
+                          "title": "As An Unauthenticated User On LoginPage",
+                          "duration": 3249
+                        },
+                        {
+                          "title": "Enter Credentials and Submit",
+                          "duration": 3758
+                        },
+                        {
                           "title": "Verify Incorrect Email Or Password Message Displays",
-                          "duration": 165
+                          "duration": 4429
                         }
                       ],
-                      "startTime": "2025-04-05T01:55:23.569Z",
+                      "startTime": "2025-04-05T13:47:39.851Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -1257,28 +1225,36 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 15000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "qa-webkit",
                   "projectName": "qa-webkit",
                   "results": [
                     {
-                      "workerIndex": 11,
-                      "parallelIndex": 4,
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 7648,
+                      "duration": 6226,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
                       "steps": [
                         {
+                          "title": "As An Unauthenticated User On LoginPage",
+                          "duration": 4175
+                        },
+                        {
+                          "title": "Enter Credentials and Submit",
+                          "duration": 4922
+                        },
+                        {
                           "title": "Verify Incorrect Email Or Password Message Displays",
-                          "duration": 106
+                          "duration": 5224
                         }
                       ],
-                      "startTime": "2025-04-05T01:55:34.876Z",
+                      "startTime": "2025-04-05T13:47:48.989Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -1319,22 +1295,22 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 15000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "api",
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 13,
-                      "parallelIndex": 1,
+                      "workerIndex": 10,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 369,
+                      "duration": 318,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-05T01:55:37.307Z",
+                      "startTime": "2025-04-05T13:47:55.369Z",
                       "attachments": []
                     }
                   ],
@@ -1352,22 +1328,22 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 15000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "api",
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 14,
-                      "parallelIndex": 0,
+                      "workerIndex": 11,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 379,
+                      "duration": 262,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-05T01:55:38.530Z",
+                      "startTime": "2025-04-05T13:47:56.707Z",
                       "attachments": []
                     }
                   ],
@@ -1402,22 +1378,22 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 15000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "api",
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 13,
-                      "parallelIndex": 1,
+                      "workerIndex": 10,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 286,
+                      "duration": 137,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-05T01:55:37.835Z",
+                      "startTime": "2025-04-05T13:47:55.881Z",
                       "attachments": []
                     }
                   ],
@@ -1435,22 +1411,22 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 15000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "api",
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 13,
-                      "parallelIndex": 1,
+                      "workerIndex": 12,
+                      "parallelIndex": 0,
                       "status": "passed",
-                      "duration": 59,
+                      "duration": 158,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-05T01:55:38.141Z",
+                      "startTime": "2025-04-05T13:47:57.347Z",
                       "attachments": []
                     }
                   ],
@@ -1468,22 +1444,22 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 15000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "api",
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 13,
-                      "parallelIndex": 1,
+                      "workerIndex": 10,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 173,
+                      "duration": 32,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-05T01:55:38.215Z",
+                      "startTime": "2025-04-05T13:47:56.045Z",
                       "attachments": []
                     }
                   ],
@@ -1518,22 +1494,22 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 15000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "api",
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 13,
-                      "parallelIndex": 1,
+                      "workerIndex": 10,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 81,
+                      "duration": 60,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-05T01:55:38.424Z",
+                      "startTime": "2025-04-05T13:47:56.099Z",
                       "attachments": []
                     }
                   ],
@@ -1551,22 +1527,22 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 15000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "api",
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 13,
-                      "parallelIndex": 1,
+                      "workerIndex": 10,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 43,
+                      "duration": 39,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-05T01:55:38.517Z",
+                      "startTime": "2025-04-05T13:47:56.168Z",
                       "attachments": []
                     }
                   ],
@@ -1584,22 +1560,22 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 15000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "api",
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 13,
-                      "parallelIndex": 1,
+                      "workerIndex": 10,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 182,
+                      "duration": 66,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-05T01:55:38.576Z",
+                      "startTime": "2025-04-05T13:47:56.218Z",
                       "attachments": []
                     }
                   ],
@@ -1617,22 +1593,22 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 15000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "api",
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 13,
-                      "parallelIndex": 1,
+                      "workerIndex": 10,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 170,
+                      "duration": 164,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-05T01:55:38.771Z",
+                      "startTime": "2025-04-05T13:47:56.294Z",
                       "attachments": []
                     }
                   ],
@@ -1650,22 +1626,22 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 15000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "api",
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 14,
-                      "parallelIndex": 0,
+                      "workerIndex": 10,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 195,
+                      "duration": 162,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-05T01:55:39.157Z",
+                      "startTime": "2025-04-05T13:47:56.471Z",
                       "attachments": []
                     }
                   ],
@@ -1683,22 +1659,22 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 15000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "api",
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 13,
-                      "parallelIndex": 1,
+                      "workerIndex": 10,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 182,
+                      "duration": 158,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-05T01:55:38.957Z",
+                      "startTime": "2025-04-05T13:47:56.642Z",
                       "attachments": []
                     }
                   ],
@@ -1716,22 +1692,22 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 15000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "api",
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 13,
-                      "parallelIndex": 1,
+                      "workerIndex": 10,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 168,
+                      "duration": 156,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-05T01:55:39.154Z",
+                      "startTime": "2025-04-05T13:47:56.809Z",
                       "attachments": []
                     }
                   ],
@@ -1766,22 +1742,22 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 15000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "functional",
                   "projectName": "functional",
                   "results": [
                     {
-                      "workerIndex": 17,
-                      "parallelIndex": 5,
+                      "workerIndex": 13,
+                      "parallelIndex": 3,
                       "status": "passed",
-                      "duration": 30,
+                      "duration": 21,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-05T01:55:41.614Z",
+                      "startTime": "2025-04-05T13:47:58.137Z",
                       "attachments": []
                     }
                   ],
@@ -1799,22 +1775,22 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 15000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "functional",
                   "projectName": "functional",
                   "results": [
                     {
-                      "workerIndex": 15,
+                      "workerIndex": 14,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 28,
+                      "duration": 22,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-05T01:55:41.579Z",
+                      "startTime": "2025-04-05T13:47:58.163Z",
                       "attachments": []
                     }
                   ],
@@ -1832,17 +1808,17 @@
               "tags": [],
               "tests": [
                 {
-                  "timeout": 30000,
+                  "timeout": 15000,
                   "annotations": [],
                   "expectedStatus": "passed",
                   "projectId": "functional",
                   "projectName": "functional",
                   "results": [
                     {
-                      "workerIndex": 16,
+                      "workerIndex": 15,
                       "parallelIndex": 0,
                       "status": "failed",
-                      "duration": 34,
+                      "duration": 13,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m12\u001b[39m\nReceived: \u001b[31m13\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m12\u001b[39m\nReceived: \u001b[31m13\u001b[39m\n    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\functional\\tests\\sumFunction.spec.ts:10:47",
@@ -1873,7 +1849,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-05T01:55:41.560Z",
+                      "startTime": "2025-04-05T13:47:58.602Z",
                       "attachments": [
                         {
                           "name": "_prompt-0",
@@ -1903,9 +1879,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-04-05T01:55:16.085Z",
-    "duration": 44254.612,
-    "expected": 38,
+    "startTime": "2025-04-05T13:47:28.818Z",
+    "duration": 43349.393000000004,
+    "expected": 35,
     "skipped": 0,
     "unexpected": 1,
     "flaky": 0

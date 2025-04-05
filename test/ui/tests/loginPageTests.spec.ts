@@ -5,11 +5,11 @@ import { LoginPage } from "../pages/loginPage";
 
 test.describe("Login Page Tests", () => {
 
-    test('Invalid Login', async ({ page }) => {
-        const loginPageFunctions = new LoginPageFunctions(page);
-        loginPageFunctions.asAnUnauthenticatedUserOnLoginPage();
+    test('Invalid Login', async ({ page }, testInfo) => {
+        const loginPageFunctions = new LoginPageFunctions(page, testInfo);
+        await loginPageFunctions.asAnUnauthenticatedUserOnLoginPage();
 
-        const loginPage = new LoginPage(page);
+        const loginPage = new LoginPage(page, testInfo);
         await loginPage.enterCredentialsAndSubmit("Drew@Atomic.com","InvalidPassword");
         await loginPage.verifyIncorrectEmailOrPasswordMessageDisplays();
 

@@ -15,7 +15,7 @@ export class CartPage {
 
     async verifyFirstProductIsDisplayedInCart() {
         await test.step('Verify Product Is Displayed In Cart', async () => {
-            await expect(this.page.locator('#product-1')).toBeVisible();
+            await expect(this.page.locator('tr#product-1').getByRole('link', { name: 'Product Image' })).toBeVisible({ timeout: 20000 });
         });
     };
 

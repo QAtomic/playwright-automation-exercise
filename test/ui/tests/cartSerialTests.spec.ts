@@ -22,10 +22,8 @@ for (const product of products) {
 
 
 
-
-
-test.afterEach( async ({ page }) => {
-    const cartPage = new CartPage(page);
+test.afterEach( async ({ page }, testInfo) => {
+    const cartPage = new CartPage(page, testInfo);
     await cartPage.removeAllItemsFromCart();
     await page.waitForTimeout(1000);
 });

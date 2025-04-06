@@ -16,7 +16,7 @@ export class HomePageFunctions {
     constructor(page: Page, testInfo: TestInfo) {
         this.page = page;
         this.testInfo = testInfo;
-        this.homePage = new HomePage(this.page);
+        this.homePage = new HomePage(this.page, this.testInfo);
         this.loginPage = new LoginPage(this.page, this.testInfo);
         this.loginPageFunctions = new LoginPageFunctions(this.page, this.testInfo);
     }

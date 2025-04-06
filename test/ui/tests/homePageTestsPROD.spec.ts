@@ -12,13 +12,13 @@ test.describe("Home Page Tests", () => {
         const homePageFunctions = new HomePageFunctions(page, testInfo);
         await homePageFunctions.asAnAuthenticatedUserOnHomePage();
 
-        const homePage = new HomePage(page);
+        const homePage = new HomePage(page, testInfo);
         await homePage.verifyUserIsLoggedIn();
     });
 
 
-    test('Company Logo', async ({ page }) => {
-        const homePage = new HomePage(page);
+    test('Company Logo', async ({ page }, testInfo) => {
+        const homePage = new HomePage(page, testInfo);
         await homePage.navigateToHomePage();
         await homePage.verifyLogo();
     });

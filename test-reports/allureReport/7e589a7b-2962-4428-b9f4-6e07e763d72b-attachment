@@ -1,0 +1,72 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Login Page Tests >> Invalid Login
+- Location: C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\loginPageTests.spec.ts:8:5
+
+# Error details
+
+```
+Error: page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+Call log:
+  - navigating to "/", waiting until "load"
+
+    at HomePage.navigateToHomePage (C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\pages\homePage.ts:21:25)
+    at C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\pageFunctions\loginPageFunctions.ts:30:33
+    at LoginPageFunctions.asAnUnauthenticatedUserOnLoginPage (C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\pageFunctions\loginPageFunctions.ts:29:14)
+    at C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\loginPageTests.spec.ts:10:34
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect, Locator, Page } from '@playwright/test';
+   2 | import { Header } from '../header/header';
+   3 |
+   4 |
+   5 | export class HomePage {
+   6 |     page: Page;
+   7 |
+   8 |     header: Header;
+   9 |
+  10 |     logo: Locator;
+  11 |     
+  12 |
+  13 |     constructor(page: Page) {
+  14 |         this.page = page;
+  15 |         this.header = new Header(this.page);
+  16 |
+  17 |         this.logo = this.page.getByAltText('Website for automation practice', {exact: true});
+  18 |     };
+  19 |
+  20 |     async navigateToHomePage() {
+> 21 |         await this.page.goto('/');
+     |                         ^ Error: page.goto: Protocol error (Page.navigate): Cannot navigate to invalid URL
+  22 |     }
+  23 |
+  24 |     async clickLogin() {
+  25 |         await this.header.clickLogin();
+  26 |     }
+  27 |
+  28 |     async verifyUserIsLoggedIn() {
+  29 |         await test.step('Verify User Is Logged In', async () => {
+  30 |             await this.header.verifyLogoutLinkDisplays();
+  31 |         })
+  32 |     }
+  33 |
+  34 |     async clickProductsLink() {
+  35 |         await this.header.clickProductsLink();
+  36 |     }
+  37 |
+  38 |     async verifyLogo() {
+  39 |         await expect(this.logo).toHaveScreenshot('logo.png');
+  40 |     }
+  41 |
+  42 |
+  43 | };
+```

@@ -1,25 +1,27 @@
-import { test, expect, Locator, Page } from '@playwright/test';
+import { test, expect, Locator, Page, TestInfo } from '@playwright/test';
 import { Header } from '../header/header';
 
 
 export class HomePage {
-    url = "https://www.automationexercise.com/";
     page: Page;
+    testInfo: TestInfo;
 
     header: Header;
 
     logo: Locator;
     
 
-    constructor(page: Page) {
+    constructor(page: Page, testInfo: TestInfo) {
         this.page = page;
+        this.testInfo = testInfo;
+
         this.header = new Header(this.page);
 
         this.logo = this.page.getByAltText('Website for automation practice', {exact: true});
     };
 
     async navigateToHomePage() {
-        await this.page.goto(this.url);
+        await this.page.goto('/');
     }
 
     async clickLogin() {

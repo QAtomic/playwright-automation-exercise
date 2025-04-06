@@ -1,14 +1,19 @@
-import { test, expect, Locator, Page } from '@playwright/test';
+import { test, expect, Locator, Page, TestInfo } from '@playwright/test';
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 
 export class CartPage {
-    url = "https://www.automationexercise.com/view_cart";
+    url = "/view_cart";
     page: Page;
+    testInfo: TestInfo;
 
     proceedToCheckoutButton: Locator;
 
-    constructor(page: Page) {
+    constructor(page: Page, testInfo: TestInfo) {
         this.page = page;
+        this.testInfo = testInfo;
+
         this.proceedToCheckoutButton = this.page.getByText('Proceed To Checkout');
     }
 

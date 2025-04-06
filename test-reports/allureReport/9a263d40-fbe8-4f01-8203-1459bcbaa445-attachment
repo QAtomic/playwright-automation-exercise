@@ -1,0 +1,94 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Login Page Tests >> Invalid Login
+- Location: C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\loginPageTests.spec.ts:8:5
+
+# Error details
+
+```
+Error: expect(locator).toBeVisible()
+
+Locator: getByText('Your email or password is')
+Expected: visible
+Received: <element(s) not found>
+Call log:
+  - expect.toBeVisible with timeout 10000ms
+  - waiting for getByText('Your email or password is')
+
+    at C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\pages\loginPage.ts:57:62
+    at LoginPage.verifyIncorrectEmailOrPasswordMessageDisplays (C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\pages\loginPage.ts:56:20)
+    at C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\loginPageTests.spec.ts:14:25
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect, Locator, Page, TestInfo } from '@playwright/test';
+   2 | import * as dotenv from 'dotenv';
+   3 | dotenv.config();
+   4 |
+   5 | export class LoginPage {
+   6 |     page: Page;
+   7 |     testInfo: TestInfo;
+   8 |
+   9 |     emailInput: Locator;
+  10 |     passwordInput: Locator;
+  11 |     loginButton: Locator;
+  12 |     invalidEmailOrPasswordMessage: Locator;
+  13 |
+  14 |     constructor(page: Page, testInfo: TestInfo) {
+  15 |         this.page = page;
+  16 |         this.testInfo = testInfo;
+  17 |
+  18 |         this.emailInput = this.page.locator('form').filter({ hasText: 'Login' }).getByPlaceholder('Email Address');
+  19 |         this.passwordInput = this.page.getByRole('textbox', { name: 'password' });
+  20 |         this.loginButton = this.page.getByRole('button', { name: 'Login' });
+  21 |         this.invalidEmailOrPasswordMessage = this.page.getByText('Your email or password is');
+  22 |     };
+  23 |
+  24 |
+  25 |     async enterCredentialsAndSubmit(email: string, password: string) {
+  26 |         test.step('Enter Credentials and Submit', async () => {
+  27 |             await this.emailInput.fill(email);
+  28 |             await this.passwordInput.fill(password);
+  29 |             await this.loginButton.click();
+  30 |         }); 
+  31 |     }
+  32 |
+  33 |     async enterValidCredentialsAndSubmit() {
+  34 |         let email = "";
+  35 |         let password = "";
+  36 |         if (this.testInfo.project.name === 'production-validation') {
+  37 |             email = process.env.PROD_EMAIL as string;
+  38 |             password = process.env.PROD_PASSWORD as string
+  39 |         } else if (this.testInfo.project.name === 'qa-chromium') {
+  40 |             email = process.env.QA_CHROMIUM_EMAIL as string;
+  41 |             password = process.env.QA_CHROMIUM_PASSWORD as string
+  42 |         } else if (this.testInfo.project.name === 'qa-firefox') {
+  43 |             email = process.env.QA_FIREFOX_EMAIL as string;
+  44 |             password = process.env.QA_FIREFOX_PASSWORD as string
+  45 |         } else if (this.testInfo.project.name === 'qa-webkit') {
+  46 |             email = process.env.QA_WEBKIT_EMAIL as string;
+  47 |             password = process.env.QA_WEBKIT_PASSWORD as string
+  48 |         } else {
+  49 |             test.fail(true, "Login Setup Issue");
+  50 |         }
+  51 |         
+  52 |         await this.enterCredentialsAndSubmit(email, password);
+  53 |     }
+  54 |
+  55 |     async verifyIncorrectEmailOrPasswordMessageDisplays() {
+  56 |         await test.step('Verify Incorrect Email Or Password Message Displays', async () => {
+> 57 |             await expect(this.invalidEmailOrPasswordMessage).toBeVisible({ timeout: 10000 });
+     |                                                              ^ Error: expect(locator).toBeVisible()
+  58 |         });
+  59 |     };
+  60 |
+  61 | }
+```

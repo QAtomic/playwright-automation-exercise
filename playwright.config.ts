@@ -1,12 +1,14 @@
 import { defineConfig, devices } from '@playwright/test';
+import * as dotenv from 'dotenv';
+dotenv.config();
 
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
  */
-// import dotenv from 'dotenv';
-// import path from 'path';
-// dotenv.config({ path: path.resolve(__dirname, '.env') });
+//import dotenv from 'dotenv';
+//import path from 'path';
+//dotenv.config({ path: path.resolve(__dirname, '.env') });
 
 /**
  * See https://playwright.dev/docs/test-configuration.
@@ -43,8 +45,8 @@ export default defineConfig({
     {
       name: 'production-validation',
       testMatch: 'ui/**/*PROD.*spec.ts',
-      use: { 
-        baseURL: "prod.url.com",
+      use: {
+        baseURL: process.env.PROD_BASE_URL,
         ...devices['Desktop Chrome'] 
       },
       retries: 0
@@ -52,18 +54,27 @@ export default defineConfig({
     {
       name: 'qa-chromium',
       testMatch: 'ui/tests/**/*spec.ts',
-      use: { ...devices['Desktop Chrome'] },
+      use: { 
+        baseURL: process.env.QA_BASE_URL,
+        ...devices['Desktop Chrome'] 
+      },
     },
     {
       name: 'qa-firefox',
       testMatch: 'ui/tests/**/*spec.ts',
-      use: { ...devices['Desktop Firefox'] },
+      use: { 
+        baseURL: process.env.QA_BASE_URL,
+        ...devices['Desktop Firefox'] 
+      },
     },
 
     {
       name: 'qa-webkit',
       testMatch: 'ui/tests/**/*spec.ts',
-      use: { ...devices['Desktop Safari'] },
+      use: { 
+        baseURL: process.env.QA_BASE_URL,
+        ...devices['Desktop Safari'] 
+      },
     },
     {
       name: 'api',

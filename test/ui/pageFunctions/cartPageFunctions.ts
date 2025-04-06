@@ -28,13 +28,24 @@ export class CartPageFunctions {
     }
 
 
-    async asAnAuthenticatedUserOnCartPageWithProductsInCart() {
+    async asAnAuthenticatedUserOnCartPageWithFirstProductInCart() {
         test.step("As An Authenticated User On Cart Page With Products In Cart", async () => {
             await this.loginPageFunctions.loginWithValidCredentials();
         
             await this.homePage.clickProductsLink();
 
             await this.productsPage.addFirstAvailableProductToCart();
+            await this.productsPage.clickViewCartLink();
+        });
+    }
+
+    async asAnAuthenticatedUserOnCartPageWithProductInCart(product: string) {
+        test.step("As An Authenticated User On Cart Page With Products In Cart", async () => {
+            await this.loginPageFunctions.loginWithValidCredentials();
+        
+            await this.homePage.clickProductsLink();
+
+            await this.productsPage.addProductToCart(product);
             await this.productsPage.clickViewCartLink();
         });
     }

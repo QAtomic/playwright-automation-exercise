@@ -4,9 +4,9 @@ import { CartPage } from "../../pages/cartPage";
 
 
 
-export async function productInCart(page: Page, testInfo: TestInfo) {
+export async function firstProductInCart(page: Page, testInfo: TestInfo) {
     const cartPageFunctions = new CartPageFunctions(page, testInfo);
-    await cartPageFunctions.asAnAuthenticatedUserOnCartPageWithProductsInCart();
+    await cartPageFunctions.asAnAuthenticatedUserOnCartPageWithFirstProductInCart();
             
     const cartPage = new CartPage(page);
     await cartPage.verifyFirstProductIsDisplayedInCart();
@@ -15,7 +15,16 @@ export async function productInCart(page: Page, testInfo: TestInfo) {
 
 export async function verifyCartQuantity(page: Page, testInfo: TestInfo) {
     const cartPageFunctions = new CartPageFunctions(page, testInfo);
-    await cartPageFunctions.asAnAuthenticatedUserOnCartPageWithProductsInCart();
+    await cartPageFunctions.asAnAuthenticatedUserOnCartPageWithFirstProductInCart();
+
+    const cartPage = new CartPage(page);
+    await cartPage.verifyFirstProductQuantity(1);
+};
+
+
+export async function verifyProductInCart(page: Page, testInfo: TestInfo, product: string) {
+    const cartPageFunctions = new CartPageFunctions(page, testInfo);
+    await cartPageFunctions.asAnAuthenticatedUserOnCartPageWithProductInCart(product);
 
     const cartPage = new CartPage(page);
     await cartPage.verifyFirstProductQuantity(1);

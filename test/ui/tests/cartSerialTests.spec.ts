@@ -1,16 +1,27 @@
 import { test } from '@playwright/test';
-import { productInCart, verifyCartQuantity } from './serialTests/cartTests';
+import { firstProductInCart, verifyCartQuantity, verifyProductInCart } from './serialTests/cartTests';
 import { CartPage } from '../pages/cartPage';
 
 test.describe.configure({ mode: 'default' });
 
-test('Product In Cart', async ({ page }, testInfo) => {
-    await productInCart(page, testInfo);
+test('First Product In Cart', async ({ page }, testInfo) => {
+    await firstProductInCart(page, testInfo);
 });
 
-test('verifyCartQuantity', async ({ page }, testInfo) => {
+test('Verify Cart Quantity', async ({ page }, testInfo) => {
     await verifyCartQuantity(page, testInfo)
 });
+
+const products = ['Men Tshirt', 'Sleeveless Dress', 'Stylish Dress', 'Winter Top'];
+
+for (const product of products) {
+    test(`Verify ${product} in Cart`, async ({ page }, testInfo) => {
+    await verifyProductInCart(page, testInfo, product)
+});
+}
+
+
+
 
 
 test.afterEach( async ({ page }) => {

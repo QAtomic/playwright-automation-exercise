@@ -1,0 +1,15 @@
+cart quantity = Item	Description	Price	Quantity	Total	
+
+Winter Top
+
+Women > Tops
+
+	
+
+Rs. 600
+
+	1	
+
+Rs. 600
+
+	

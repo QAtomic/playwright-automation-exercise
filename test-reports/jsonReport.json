@@ -150,403 +150,72 @@
   },
   "suites": [
     {
-      "title": "ui\\tests\\cartSerialTests.spec.ts",
-      "file": "ui/tests/cartSerialTests.spec.ts",
+      "title": "ui\\tests\\homePageTestsPROD.spec.ts",
+      "file": "ui/tests/homePageTestsPROD.spec.ts",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "First Product In Cart",
-          "ok": true,
-          "tags": [],
-          "tests": [
+          "title": "Home Page Tests",
+          "file": "ui/tests/homePageTestsPROD.spec.ts",
+          "line": 9,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 15000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "qa-chromium",
-              "projectName": "qa-chromium",
-              "results": [
+              "title": "Company Logo",
+              "ok": true,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 28,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 16264,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "steps": [
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "qa-chromium",
+                  "projectName": "qa-chromium",
+                  "results": [
                     {
-                      "title": "As An Authenticated User On Cart Page With Products In Cart",
-                      "duration": 5729,
-                      "steps": [
+                      "workerIndex": 38,
+                      "parallelIndex": 0,
+                      "status": "passed",
+                      "duration": 6101,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2025-04-06T16:18:12.338Z",
+                      "attachments": [
                         {
-                          "title": "Enter Credentials and Submit",
-                          "duration": 749
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-homePageTestsPROD-Home-Page-Tests-Company-Logo-qa-chromium\\test-finished-1.png"
                         },
                         {
-                          "title": "Verify User Is Logged In",
-                          "duration": 821
+                          "name": "trace",
+                          "contentType": "application/zip",
+                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-homePageTestsPROD-Home-Page-Tests-Company-Logo-qa-chromium\\trace.zip"
                         }
                       ]
-                    },
-                    {
-                      "title": "Verify Product Is Displayed In Cart",
-                      "duration": 6318
                     }
                   ],
-                  "startTime": "2025-04-06T01:20:04.983Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartSerialTests-First-Product-In-Cart-qa-chromium\\test-finished-1.png"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartSerialTests-First-Product-In-Cart-qa-chromium\\trace.zip"
-                    }
-                  ]
+                  "status": "expected"
                 }
               ],
-              "status": "expected"
+              "id": "f42611a867d02233e7c6-53832cd47cdb5824453a",
+              "file": "ui/tests/homePageTestsPROD.spec.ts",
+              "line": 20,
+              "column": 5
             }
-          ],
-          "id": "881d738d60516ba076d1-7a47739ac215ea882ec0",
-          "file": "ui/tests/cartSerialTests.spec.ts",
-          "line": 7,
-          "column": 1
-        },
-        {
-          "title": "Verify Cart Quantity",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 15000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "qa-chromium",
-              "projectName": "qa-chromium",
-              "results": [
-                {
-                  "workerIndex": 28,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 14903,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "steps": [
-                    {
-                      "title": "As An Authenticated User On Cart Page With Products In Cart",
-                      "duration": 4578,
-                      "steps": [
-                        {
-                          "title": "Enter Credentials and Submit",
-                          "duration": 631
-                        },
-                        {
-                          "title": "Verify User Is Logged In",
-                          "duration": 706
-                        }
-                      ]
-                    },
-                    {
-                      "title": "Verify First Product Quantity = 1",
-                      "duration": 4637
-                    }
-                  ],
-                  "startTime": "2025-04-06T01:20:22.049Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartSerialTests-Verify-Cart-Quantity-qa-chromium\\test-finished-1.png"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartSerialTests-Verify-Cart-Quantity-qa-chromium\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "881d738d60516ba076d1-46a79539659a725a0c4b",
-          "file": "ui/tests/cartSerialTests.spec.ts",
-          "line": 11,
-          "column": 1
-        },
-        {
-          "title": "Verify Men Tshirt in Cart",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 15000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "qa-chromium",
-              "projectName": "qa-chromium",
-              "results": [
-                {
-                  "workerIndex": 28,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 11056,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "steps": [
-                    {
-                      "title": "As An Authenticated User On Cart Page With Products In Cart",
-                      "duration": 5101,
-                      "steps": [
-                        {
-                          "title": "Enter Credentials and Submit",
-                          "duration": 670
-                        },
-                        {
-                          "title": "Verify User Is Logged In",
-                          "duration": 738
-                        }
-                      ]
-                    },
-                    {
-                      "title": "Verify First Product Quantity = 1",
-                      "duration": 5584
-                    }
-                  ],
-                  "startTime": "2025-04-06T01:20:37.530Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartSerialTests-Verify-Men-Tshirt-in-Cart-qa-chromium\\test-finished-1.png"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartSerialTests-Verify-Men-Tshirt-in-Cart-qa-chromium\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "881d738d60516ba076d1-730f77407c26131370a4",
-          "file": "ui/tests/cartSerialTests.spec.ts",
-          "line": 18,
-          "column": 5
-        },
-        {
-          "title": "Verify Sleeveless Dress in Cart",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 15000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "qa-chromium",
-              "projectName": "qa-chromium",
-              "results": [
-                {
-                  "workerIndex": 28,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 8521,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "steps": [
-                    {
-                      "title": "As An Authenticated User On Cart Page With Products In Cart",
-                      "duration": 4238,
-                      "steps": [
-                        {
-                          "title": "Enter Credentials and Submit",
-                          "duration": 640
-                        },
-                        {
-                          "title": "Verify User Is Logged In",
-                          "duration": 710
-                        }
-                      ]
-                    },
-                    {
-                      "title": "Verify First Product Quantity = 1",
-                      "duration": 4293
-                    }
-                  ],
-                  "startTime": "2025-04-06T01:20:49.208Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartSerialTests-Verify-Sleeveless-Dress-in-Cart-qa-chromium\\test-finished-1.png"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartSerialTests-Verify-Sleeveless-Dress-in-Cart-qa-chromium\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "881d738d60516ba076d1-a90387225fa756e95ed2",
-          "file": "ui/tests/cartSerialTests.spec.ts",
-          "line": 18,
-          "column": 5
-        },
-        {
-          "title": "Verify Stylish Dress in Cart",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 15000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "qa-chromium",
-              "projectName": "qa-chromium",
-              "results": [
-                {
-                  "workerIndex": 28,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 11205,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "steps": [
-                    {
-                      "title": "As An Authenticated User On Cart Page With Products In Cart",
-                      "duration": 4291,
-                      "steps": [
-                        {
-                          "title": "Enter Credentials and Submit",
-                          "duration": 588
-                        },
-                        {
-                          "title": "Verify User Is Logged In",
-                          "duration": 665
-                        }
-                      ]
-                    },
-                    {
-                      "title": "Verify First Product Quantity = 1",
-                      "duration": 4487
-                    }
-                  ],
-                  "startTime": "2025-04-06T01:20:58.355Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartSerialTests-Verify-Stylish-Dress-in-Cart-qa-chromium\\test-finished-1.png"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartSerialTests-Verify-Stylish-Dress-in-Cart-qa-chromium\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "881d738d60516ba076d1-9aa7a46bd75a5963d506",
-          "file": "ui/tests/cartSerialTests.spec.ts",
-          "line": 18,
-          "column": 5
-        },
-        {
-          "title": "Verify Winter Top in Cart",
-          "ok": true,
-          "tags": [],
-          "tests": [
-            {
-              "timeout": 15000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "qa-chromium",
-              "projectName": "qa-chromium",
-              "results": [
-                {
-                  "workerIndex": 28,
-                  "parallelIndex": 0,
-                  "status": "passed",
-                  "duration": 12591,
-                  "errors": [],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "steps": [
-                    {
-                      "title": "As An Authenticated User On Cart Page With Products In Cart",
-                      "duration": 5893,
-                      "steps": [
-                        {
-                          "title": "Enter Credentials and Submit",
-                          "duration": 719
-                        },
-                        {
-                          "title": "Verify User Is Logged In",
-                          "duration": 865
-                        }
-                      ]
-                    },
-                    {
-                      "title": "Verify First Product Quantity = 1",
-                      "duration": 6011
-                    }
-                  ],
-                  "startTime": "2025-04-06T01:21:10.201Z",
-                  "attachments": [
-                    {
-                      "name": "screenshot",
-                      "contentType": "image/png",
-                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartSerialTests-Verify-Winter-Top-in-Cart-qa-chromium\\test-finished-1.png"
-                    },
-                    {
-                      "name": "trace",
-                      "contentType": "application/zip",
-                      "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-cartSerialTests-Verify-Winter-Top-in-Cart-qa-chromium\\trace.zip"
-                    }
-                  ]
-                }
-              ],
-              "status": "expected"
-            }
-          ],
-          "id": "881d738d60516ba076d1-17092543ebed02f4aebe",
-          "file": "ui/tests/cartSerialTests.spec.ts",
-          "line": 18,
-          "column": 5
+          ]
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-04-06T01:20:01.993Z",
-    "duration": 82254.77199999988,
-    "expected": 6,
+    "startTime": "2025-04-06T16:18:09.283Z",
+    "duration": 10162.434000000358,
+    "expected": 1,
     "skipped": 0,
     "unexpected": 0,
     "flaky": 0

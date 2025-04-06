@@ -17,4 +17,11 @@ test.describe("Home Page Tests", () => {
     });
 
 
+    test('Company Logo', async ({ page }) => {
+        const homePage = new HomePage(page);
+        await homePage.navigateToHomePage();
+        await homePage.verifyLogo();
+    });
+
+
 });

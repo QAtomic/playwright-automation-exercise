@@ -7,11 +7,15 @@ export class HomePage {
     page: Page;
 
     header: Header;
+
+    logo: Locator;
     
 
     constructor(page: Page) {
         this.page = page;
         this.header = new Header(this.page);
+
+        this.logo = this.page.getByAltText('Website for automation practice', {exact: true});
     };
 
     async navigateToHomePage() {
@@ -30,6 +34,10 @@ export class HomePage {
 
     async clickProductsLink() {
         await this.header.clickProductsLink();
+    }
+
+    async verifyLogo() {
+        await expect(this.logo).toHaveScreenshot('logo.png');
     }
 
 

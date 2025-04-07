@@ -2,6 +2,7 @@ import { test, Page, TestInfo } from "@playwright/test";
 import { HomePage } from "../pages/homePage";
 import { LoginPage } from "../pages/loginPage";
 import { LoginPageFunctions } from "./loginPageFunctions";
+import { takeScreenshot } from "../../utils/screenshotUtils";
 
 
 
@@ -25,6 +26,7 @@ export class HomePageFunctions {
     async asAnAuthenticatedUserOnHomePage() {
         await test.step("As An Authenticated User On HomePage", async () => {
             await this.loginPageFunctions.loginWithValidCredentials();
+            await takeScreenshot("Authenticated User On HomePage", this.page, this.testInfo);
         });
     }
    

@@ -3,6 +3,7 @@ import { HomePage } from "../pages/homePage";
 import { ProductsPage } from "../pages/productsPage";
 import { LoginPage } from '../pages/loginPage';
 import { LoginPageFunctions } from './loginPageFunctions';
+import { takeScreenshot } from '../../utils/screenshotUtils';
 
 
 export class CartPageFunctions {
@@ -35,6 +36,8 @@ export class CartPageFunctions {
 
             await this.productsPage.addFirstAvailableProductToCart();
             await this.productsPage.clickViewCartLink();
+            
+            await takeScreenshot("Authenticated User On Cart Page With Products In Cart", this.page, this.testInfo);
         });
     }
 
@@ -46,6 +49,8 @@ export class CartPageFunctions {
 
             await this.productsPage.addProductToCart(product);
             await this.productsPage.clickViewCartLink();
+
+            await takeScreenshot("Authenticated User On Cart Page With Products In Cart", this.page, this.testInfo);
         });
     }
 }

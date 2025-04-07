@@ -1,6 +1,7 @@
 import { test, expect, Locator, Page, TestInfo } from '@playwright/test';
 import { HomePage } from '../pages/homePage';
 import { LoginPage } from '../pages/loginPage';
+import { takeScreenshot } from '../../utils/screenshotUtils';
 
 
 export class LoginPageFunctions {
@@ -29,6 +30,7 @@ export class LoginPageFunctions {
         await test.step("As An Unauthenticated User On LoginPage", async () => {
             await this.homePage.navigateToHomePage();
             await this.homePage.clickLogin();
+            await takeScreenshot("Unauthenticated User On LoginPage", this.page, this.testInfo);
         });
     };
 

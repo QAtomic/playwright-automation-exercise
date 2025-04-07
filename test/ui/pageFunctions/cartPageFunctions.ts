@@ -21,14 +21,14 @@ export class CartPageFunctions {
 
         this.homePage = new HomePage(this.page, this.testInfo);
         this.loginPage = new LoginPage(this.page, this.testInfo);
-        this.productsPage = new ProductsPage(this.page);
+        this.productsPage = new ProductsPage(this.page, this.testInfo);
         
         this.loginPageFunctions = new LoginPageFunctions(this.page, this.testInfo);
     }
 
 
     async asAnAuthenticatedUserOnCartPageWithFirstProductInCart() {
-        test.step("As An Authenticated User On Cart Page With Products In Cart", async () => {
+        await test.step("As An Authenticated User On Cart Page With Products In Cart", async () => {
             await this.loginPageFunctions.loginWithValidCredentials();
         
             await this.homePage.clickProductsLink();
@@ -39,7 +39,7 @@ export class CartPageFunctions {
     }
 
     async asAnAuthenticatedUserOnCartPageWithProductInCart(product: string) {
-        test.step("As An Authenticated User On Cart Page With Products In Cart", async () => {
+        await test.step("As An Authenticated User On Cart Page With Products In Cart", async () => {
             await this.loginPageFunctions.loginWithValidCredentials();
         
             await this.homePage.clickProductsLink();

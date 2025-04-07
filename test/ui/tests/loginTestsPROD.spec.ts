@@ -27,4 +27,13 @@ test.describe("Login Tests", () => {
 
     });
 
+
+    test('Login Page Required Fields', async ({ page }, testInfo) => {
+        const loginPageFunctions = new LoginPageFunctions(page, testInfo);
+        await loginPageFunctions.asAnUnauthenticatedUserOnLoginPage();
+
+        const loginPage = new LoginPage(page, testInfo);
+        await loginPage.verifyRequiredFields();
+    });
+
 });

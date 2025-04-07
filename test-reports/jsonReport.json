@@ -171,7 +171,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 7167,
+                  "duration": 8048,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -179,44 +179,44 @@
                   "steps": [
                     {
                       "title": "As An Authenticated User On Cart Page With Products In Cart",
-                      "duration": 4188,
+                      "duration": 5555,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 1915
+                          "duration": 2217
                         },
                         {
                           "title": "Click Login",
-                          "duration": 411
+                          "duration": 464
                         },
                         {
                           "title": "Enter Credentials and Submit",
-                          "duration": 509
+                          "duration": 908
                         },
                         {
                           "title": "Verify User Is Logged In",
-                          "duration": 85
+                          "duration": 118
                         },
                         {
                           "title": "Click Products Link",
-                          "duration": 558
+                          "duration": 600
                         },
                         {
                           "title": "Add First Available Product To Cart",
-                          "duration": 142
+                          "duration": 214
                         },
                         {
                           "title": "Click View Cart Link",
-                          "duration": 555
+                          "duration": 1017
                         }
                       ]
                     },
                     {
                       "title": "Verify Product Is Displayed In Cart",
-                      "duration": 4564
+                      "duration": 44
                     }
                   ],
-                  "startTime": "2025-04-07T15:00:48.845Z",
+                  "startTime": "2025-04-07T17:22:53.246Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -250,7 +250,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 6802,
+                  "duration": 7310,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -258,44 +258,44 @@
                   "steps": [
                     {
                       "title": "As An Authenticated User On Cart Page With Products In Cart",
-                      "duration": 3488,
+                      "duration": 4912,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 1233
+                          "duration": 1715
                         },
                         {
                           "title": "Click Login",
-                          "duration": 407
+                          "duration": 445
                         },
                         {
                           "title": "Enter Credentials and Submit",
-                          "duration": 703
+                          "duration": 545
                         },
                         {
                           "title": "Verify User Is Logged In",
-                          "duration": 138
+                          "duration": 93
                         },
                         {
                           "title": "Click Products Link",
-                          "duration": 295
+                          "duration": 588
                         },
                         {
                           "title": "Add First Available Product To Cart",
-                          "duration": 221
+                          "duration": 167
                         },
                         {
                           "title": "Click View Cart Link",
-                          "duration": 485
+                          "duration": 1352
                         }
                       ]
                     },
                     {
                       "title": "Verify First Product Quantity = 1",
-                      "duration": 3992
+                      "duration": 57
                     }
                   ],
-                  "startTime": "2025-04-07T15:00:56.168Z",
+                  "startTime": "2025-04-07T17:23:01.402Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -329,7 +329,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 7932,
+                  "duration": 5685,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -337,44 +337,44 @@
                   "steps": [
                     {
                       "title": "As An Authenticated User On Cart Page With Products In Cart",
-                      "duration": 4336,
+                      "duration": 3661,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 2410
+                          "duration": 1652
                         },
                         {
                           "title": "Click Login",
-                          "duration": 186
+                          "duration": 203
                         },
                         {
                           "title": "Enter Credentials and Submit",
-                          "duration": 540
+                          "duration": 595
                         },
                         {
                           "title": "Verify User Is Logged In",
-                          "duration": 104
+                          "duration": 175
                         },
                         {
                           "title": "Click Products Link",
-                          "duration": 371
+                          "duration": 285
                         },
                         {
                           "title": "Add Product To Cart : Men Tshirt",
-                          "duration": 248
+                          "duration": 138
                         },
                         {
                           "title": "Click View Cart Link",
-                          "duration": 473
+                          "duration": 604
                         }
                       ]
                     },
                     {
                       "title": "Verify First Product Quantity = 1",
-                      "duration": 4852
+                      "duration": 79
                     }
                   ],
-                  "startTime": "2025-04-07T15:01:02.977Z",
+                  "startTime": "2025-04-07T17:23:08.719Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -408,7 +408,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 8022,
+                  "duration": 6944,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -416,44 +416,44 @@
                   "steps": [
                     {
                       "title": "As An Authenticated User On Cart Page With Products In Cart",
-                      "duration": 4550,
+                      "duration": 4476,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 2088
+                          "duration": 1903
                         },
                         {
                           "title": "Click Login",
-                          "duration": 482
+                          "duration": 497
                         },
                         {
                           "title": "Enter Credentials and Submit",
-                          "duration": 587
+                          "duration": 737
                         },
                         {
                           "title": "Verify User Is Logged In",
-                          "duration": 92
+                          "duration": 170
                         },
                         {
                           "title": "Click Products Link",
-                          "duration": 614
+                          "duration": 568
                         },
                         {
                           "title": "Add Product To Cart : Sleeveless Dress",
-                          "duration": 189
+                          "duration": 187
                         },
                         {
                           "title": "Click View Cart Link",
-                          "duration": 495
+                          "duration": 407
                         }
                       ]
                     },
                     {
                       "title": "Verify First Product Quantity = 1",
-                      "duration": 4873
+                      "duration": 50
                     }
                   ],
-                  "startTime": "2025-04-07T15:01:10.916Z",
+                  "startTime": "2025-04-07T17:23:14.415Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -487,7 +487,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 7057,
+                  "duration": 7024,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -495,44 +495,44 @@
                   "steps": [
                     {
                       "title": "As An Authenticated User On Cart Page With Products In Cart",
-                      "duration": 3921,
+                      "duration": 4205,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 1503
+                          "duration": 1615
                         },
                         {
                           "title": "Click Login",
-                          "duration": 437
+                          "duration": 433
                         },
                         {
                           "title": "Enter Credentials and Submit",
-                          "duration": 490
+                          "duration": 597
                         },
                         {
                           "title": "Verify User Is Logged In",
-                          "duration": 95
+                          "duration": 90
                         },
                         {
                           "title": "Click Products Link",
-                          "duration": 675
+                          "duration": 628
                         },
                         {
                           "title": "Add Product To Cart : Stylish Dress",
-                          "duration": 228
+                          "duration": 255
                         },
                         {
                           "title": "Click View Cart Link",
-                          "duration": 490
+                          "duration": 580
                         }
                       ]
                     },
                     {
                       "title": "Verify First Product Quantity = 1",
-                      "duration": 4227
+                      "duration": 92
                     }
                   ],
-                  "startTime": "2025-04-07T15:01:18.945Z",
+                  "startTime": "2025-04-07T17:23:21.368Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -566,7 +566,7 @@
                   "workerIndex": 0,
                   "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 7049,
+                  "duration": 6447,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -574,44 +574,44 @@
                   "steps": [
                     {
                       "title": "As An Authenticated User On Cart Page With Products In Cart",
-                      "duration": 4615,
+                      "duration": 4021,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 2816
+                          "duration": 1591
                         },
                         {
                           "title": "Click Login",
-                          "duration": 186
+                          "duration": 431
                         },
                         {
                           "title": "Enter Credentials and Submit",
-                          "duration": 611
+                          "duration": 468
                         },
                         {
                           "title": "Verify User Is Logged In",
-                          "duration": 163
+                          "duration": 142
                         },
                         {
                           "title": "Click Products Link",
-                          "duration": 269
+                          "duration": 596
                         },
                         {
                           "title": "Add Product To Cart : Winter Top",
-                          "duration": 199
+                          "duration": 268
                         },
                         {
                           "title": "Click View Cart Link",
-                          "duration": 369
+                          "duration": 520
                         }
                       ]
                     },
                     {
                       "title": "Verify First Product Quantity = 1",
-                      "duration": 4683
+                      "duration": 49
                     }
                   ],
-                  "startTime": "2025-04-07T15:01:26.011Z",
+                  "startTime": "2025-04-07T17:23:28.402Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -645,7 +645,7 @@
                   "workerIndex": 3,
                   "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 9067,
+                  "duration": 7992,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -653,44 +653,44 @@
                   "steps": [
                     {
                       "title": "As An Authenticated User On Cart Page With Products In Cart",
-                      "duration": 4814,
+                      "duration": 4556,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 1708
+                          "duration": 1706
                         },
                         {
                           "title": "Click Login",
-                          "duration": 535
+                          "duration": 445
                         },
                         {
                           "title": "Enter Credentials and Submit",
-                          "duration": 746
+                          "duration": 826
                         },
                         {
                           "title": "Verify User Is Logged In",
-                          "duration": 191
+                          "duration": 144
                         },
                         {
                           "title": "Click Products Link",
-                          "duration": 565
+                          "duration": 426
                         },
                         {
                           "title": "Add First Available Product To Cart",
-                          "duration": 286
+                          "duration": 410
                         },
                         {
                           "title": "Click View Cart Link",
-                          "duration": 768
+                          "duration": 584
                         }
                       ]
                     },
                     {
                       "title": "Verify Product Is Displayed In Cart",
-                      "duration": 5204
+                      "duration": 102
                     }
                   ],
-                  "startTime": "2025-04-07T15:00:55.374Z",
+                  "startTime": "2025-04-07T17:23:03.121Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -724,7 +724,7 @@
                   "workerIndex": 3,
                   "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 7996,
+                  "duration": 8644,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -732,7 +732,7 @@
                   "steps": [
                     {
                       "title": "As An Authenticated User On Cart Page With Products In Cart",
-                      "duration": 5219,
+                      "duration": 5840,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
@@ -740,36 +740,36 @@
                         },
                         {
                           "title": "Click Login",
-                          "duration": 409
+                          "duration": 820
                         },
                         {
                           "title": "Enter Credentials and Submit",
-                          "duration": 866
+                          "duration": 833
                         },
                         {
                           "title": "Verify User Is Logged In",
-                          "duration": 243
+                          "duration": 185
                         },
                         {
                           "title": "Click Products Link",
-                          "duration": 524
+                          "duration": 594
                         },
                         {
                           "title": "Add First Available Product To Cart",
-                          "duration": 378
+                          "duration": 373
                         },
                         {
                           "title": "Click View Cart Link",
-                          "duration": 681
+                          "duration": 916
                         }
                       ]
                     },
                     {
                       "title": "Verify First Product Quantity = 1",
-                      "duration": 5426
+                      "duration": 179
                     }
                   ],
-                  "startTime": "2025-04-07T15:01:05.385Z",
+                  "startTime": "2025-04-07T17:23:12.035Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -803,7 +803,7 @@
                   "workerIndex": 3,
                   "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 7702,
+                  "duration": 7450,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -811,44 +811,44 @@
                   "steps": [
                     {
                       "title": "As An Authenticated User On Cart Page With Products In Cart",
-                      "duration": 4626,
+                      "duration": 4520,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 1788
+                          "duration": 1334
                         },
                         {
                           "title": "Click Login",
-                          "duration": 295
+                          "duration": 474
                         },
                         {
                           "title": "Enter Credentials and Submit",
-                          "duration": 652
+                          "duration": 688
                         },
                         {
                           "title": "Verify User Is Logged In",
-                          "duration": 220
+                          "duration": 235
                         },
                         {
                           "title": "Click Products Link",
-                          "duration": 361
+                          "duration": 458
                         },
                         {
                           "title": "Add Product To Cart : Men Tshirt",
-                          "duration": 353
+                          "duration": 403
                         },
                         {
                           "title": "Click View Cart Link",
-                          "duration": 952
+                          "duration": 921
                         }
                       ]
                     },
                     {
                       "title": "Verify First Product Quantity = 1",
-                      "duration": 4844
+                      "duration": 141
                     }
                   ],
-                  "startTime": "2025-04-07T15:01:13.393Z",
+                  "startTime": "2025-04-07T17:23:20.688Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -882,7 +882,7 @@
                   "workerIndex": 3,
                   "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 7122,
+                  "duration": 8199,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -890,44 +890,44 @@
                   "steps": [
                     {
                       "title": "As An Authenticated User On Cart Page With Products In Cart",
-                      "duration": 4571,
+                      "duration": 5310,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 1678
+                          "duration": 2127
                         },
                         {
                           "title": "Click Login",
-                          "duration": 250
+                          "duration": 473
                         },
                         {
                           "title": "Enter Credentials and Submit",
-                          "duration": 774
+                          "duration": 973
                         },
                         {
                           "title": "Verify User Is Logged In",
-                          "duration": 237
+                          "duration": 221
                         },
                         {
                           "title": "Click Products Link",
-                          "duration": 434
+                          "duration": 417
                         },
                         {
                           "title": "Add Product To Cart : Sleeveless Dress",
-                          "duration": 412
+                          "duration": 358
                         },
                         {
                           "title": "Click View Cart Link",
-                          "duration": 782
+                          "duration": 734
                         }
                       ]
                     },
                     {
                       "title": "Verify First Product Quantity = 1",
-                      "duration": 4755
+                      "duration": 146
                     }
                   ],
-                  "startTime": "2025-04-07T15:01:21.104Z",
+                  "startTime": "2025-04-07T17:23:28.146Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -961,7 +961,7 @@
                   "workerIndex": 3,
                   "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 7587,
+                  "duration": 8087,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -969,44 +969,44 @@
                   "steps": [
                     {
                       "title": "As An Authenticated User On Cart Page With Products In Cart",
-                      "duration": 4985,
+                      "duration": 5402,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 1853
+                          "duration": 1935
                         },
                         {
                           "title": "Click Login",
-                          "duration": 505
+                          "duration": 864
                         },
                         {
                           "title": "Enter Credentials and Submit",
-                          "duration": 764
+                          "duration": 666
                         },
                         {
                           "title": "Verify User Is Logged In",
-                          "duration": 178
+                          "duration": 154
                         },
                         {
                           "title": "Click Products Link",
-                          "duration": 667
+                          "duration": 551
                         },
                         {
                           "title": "Add Product To Cart : Stylish Dress",
-                          "duration": 397
+                          "duration": 510
                         },
                         {
                           "title": "Click View Cart Link",
-                          "duration": 619
+                          "duration": 716
                         }
                       ]
                     },
                     {
                       "title": "Verify First Product Quantity = 1",
-                      "duration": 5173
+                      "duration": 139
                     }
                   ],
-                  "startTime": "2025-04-07T15:01:28.233Z",
+                  "startTime": "2025-04-07T17:23:36.352Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -1040,7 +1040,7 @@
                   "workerIndex": 3,
                   "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 8530,
+                  "duration": 7778,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -1048,23 +1048,23 @@
                   "steps": [
                     {
                       "title": "As An Authenticated User On Cart Page With Products In Cart",
-                      "duration": 5283,
+                      "duration": 4458,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 2391
+                          "duration": 1421
                         },
                         {
                           "title": "Click Login",
-                          "duration": 550
+                          "duration": 568
                         },
                         {
                           "title": "Enter Credentials and Submit",
-                          "duration": 747
+                          "duration": 666
                         },
                         {
                           "title": "Verify User Is Logged In",
-                          "duration": 172
+                          "duration": 265
                         },
                         {
                           "title": "Click Products Link",
@@ -1072,20 +1072,20 @@
                         },
                         {
                           "title": "Add Product To Cart : Winter Top",
-                          "duration": 410
+                          "duration": 377
                         },
                         {
                           "title": "Click View Cart Link",
-                          "duration": 631
+                          "duration": 777
                         }
                       ]
                     },
                     {
                       "title": "Verify First Product Quantity = 1",
-                      "duration": 5530
+                      "duration": 99
                     }
                   ],
-                  "startTime": "2025-04-07T15:01:35.827Z",
+                  "startTime": "2025-04-07T17:23:44.447Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -1117,9 +1117,9 @@
               "results": [
                 {
                   "workerIndex": 5,
-                  "parallelIndex": 1,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 14965,
+                  "duration": 13909,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -1127,44 +1127,44 @@
                   "steps": [
                     {
                       "title": "As An Authenticated User On Cart Page With Products In Cart",
-                      "duration": 9451,
+                      "duration": 9121,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 1669
+                          "duration": 1699
                         },
                         {
                           "title": "Click Login",
-                          "duration": 2401
+                          "duration": 2433
                         },
                         {
                           "title": "Enter Credentials and Submit",
-                          "duration": 1009
+                          "duration": 1171
                         },
                         {
                           "title": "Verify User Is Logged In",
-                          "duration": 161
+                          "duration": 201
                         },
                         {
                           "title": "Click Products Link",
-                          "duration": 632
+                          "duration": 574
                         },
                         {
                           "title": "Add First Available Product To Cart",
-                          "duration": 458
+                          "duration": 738
                         },
                         {
                           "title": "Click View Cart Link",
-                          "duration": 3106
+                          "duration": 2291
                         }
                       ]
                     },
                     {
                       "title": "Verify Product Is Displayed In Cart",
-                      "duration": 9500
+                      "duration": 101
                     }
                   ],
-                  "startTime": "2025-04-07T15:01:22.462Z",
+                  "startTime": "2025-04-07T17:23:36.473Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -1196,9 +1196,9 @@
               "results": [
                 {
                   "workerIndex": 5,
-                  "parallelIndex": 1,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 12721,
+                  "duration": 12046,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -1206,44 +1206,44 @@
                   "steps": [
                     {
                       "title": "As An Authenticated User On Cart Page With Products In Cart",
-                      "duration": 7933,
+                      "duration": 7781,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 1846
+                          "duration": 1570
                         },
                         {
                           "title": "Click Login",
-                          "duration": 2993
+                          "duration": 2173
                         },
                         {
                           "title": "Enter Credentials and Submit",
-                          "duration": 996
+                          "duration": 1000
                         },
                         {
                           "title": "Verify User Is Logged In",
-                          "duration": 202
+                          "duration": 142
                         },
                         {
                           "title": "Click Products Link",
-                          "duration": 629
+                          "duration": 502
                         },
                         {
                           "title": "Add First Available Product To Cart",
-                          "duration": 577
+                          "duration": 474
                         },
                         {
                           "title": "Click View Cart Link",
-                          "duration": 686
+                          "duration": 1915
                         }
                       ]
                     },
                     {
                       "title": "Verify First Product Quantity = 1",
-                      "duration": 8218
+                      "duration": 75
                     }
                   ],
-                  "startTime": "2025-04-07T15:01:37.559Z",
+                  "startTime": "2025-04-07T17:23:50.485Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -1275,9 +1275,9 @@
               "results": [
                 {
                   "workerIndex": 5,
-                  "parallelIndex": 1,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 12498,
+                  "duration": 12317,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -1285,44 +1285,44 @@
                   "steps": [
                     {
                       "title": "As An Authenticated User On Cart Page With Products In Cart",
-                      "duration": 7272,
+                      "duration": 8320,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 1691
+                          "duration": 1752
                         },
                         {
                           "title": "Click Login",
-                          "duration": 2196
+                          "duration": 2752
                         },
                         {
                           "title": "Enter Credentials and Submit",
-                          "duration": 929
+                          "duration": 838
                         },
                         {
                           "title": "Verify User Is Logged In",
-                          "duration": 147
+                          "duration": 122
                         },
                         {
                           "title": "Click Products Link",
-                          "duration": 613
+                          "duration": 586
                         },
                         {
                           "title": "Add Product To Cart : Men Tshirt",
-                          "duration": 643
+                          "duration": 612
                         },
                         {
                           "title": "Click View Cart Link",
-                          "duration": 1050
+                          "duration": 1650
                         }
                       ]
                     },
                     {
                       "title": "Verify First Product Quantity = 1",
-                      "duration": 7351
+                      "duration": 94
                     }
                   ],
-                  "startTime": "2025-04-07T15:01:50.288Z",
+                  "startTime": "2025-04-07T17:24:02.539Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -1354,9 +1354,9 @@
               "results": [
                 {
                   "workerIndex": 5,
-                  "parallelIndex": 1,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 11258,
+                  "duration": 9842,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -1364,44 +1364,44 @@
                   "steps": [
                     {
                       "title": "As An Authenticated User On Cart Page With Products In Cart",
-                      "duration": 7087,
+                      "duration": 6402,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 1774
+                          "duration": 1520
                         },
                         {
                           "title": "Click Login",
-                          "duration": 1441
+                          "duration": 1401
                         },
                         {
                           "title": "Enter Credentials and Submit",
-                          "duration": 774
+                          "duration": 799
                         },
                         {
                           "title": "Verify User Is Logged In",
-                          "duration": 172
+                          "duration": 152
                         },
                         {
                           "title": "Click Products Link",
-                          "duration": 528
+                          "duration": 583
                         },
                         {
                           "title": "Add Product To Cart : Sleeveless Dress",
-                          "duration": 403
+                          "duration": 444
                         },
                         {
                           "title": "Click View Cart Link",
-                          "duration": 1992
+                          "duration": 1500
                         }
                       ]
                     },
                     {
                       "title": "Verify First Product Quantity = 1",
-                      "duration": 7369
+                      "duration": 57
                     }
                   ],
-                  "startTime": "2025-04-07T15:02:02.793Z",
+                  "startTime": "2025-04-07T17:24:14.863Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -1433,9 +1433,9 @@
               "results": [
                 {
                   "workerIndex": 5,
-                  "parallelIndex": 1,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 11406,
+                  "duration": 11597,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -1443,44 +1443,44 @@
                   "steps": [
                     {
                       "title": "As An Authenticated User On Cart Page With Products In Cart",
-                      "duration": 6879,
+                      "duration": 7025,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 1598
+                          "duration": 1712
                         },
                         {
                           "title": "Click Login",
-                          "duration": 1455
+                          "duration": 1404
                         },
                         {
                           "title": "Enter Credentials and Submit",
-                          "duration": 792
+                          "duration": 791
                         },
                         {
                           "title": "Verify User Is Logged In",
-                          "duration": 117
+                          "duration": 116
                         },
                         {
                           "title": "Click Products Link",
-                          "duration": 556
+                          "duration": 892
                         },
                         {
                           "title": "Add Product To Cart : Stylish Dress",
-                          "duration": 714
+                          "duration": 479
                         },
                         {
                           "title": "Click View Cart Link",
-                          "duration": 1642
+                          "duration": 1627
                         }
                       ]
                     },
                     {
                       "title": "Verify First Product Quantity = 1",
-                      "duration": 7400
+                      "duration": 58
                     }
                   ],
-                  "startTime": "2025-04-07T15:02:14.056Z",
+                  "startTime": "2025-04-07T17:24:24.715Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -1512,9 +1512,9 @@
               "results": [
                 {
                   "workerIndex": 5,
-                  "parallelIndex": 1,
+                  "parallelIndex": 0,
                   "status": "passed",
-                  "duration": 11146,
+                  "duration": 12277,
                   "errors": [],
                   "stdout": [],
                   "stderr": [],
@@ -1522,44 +1522,44 @@
                   "steps": [
                     {
                       "title": "As An Authenticated User On Cart Page With Products In Cart",
-                      "duration": 7246,
+                      "duration": 8194,
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 1643
+                          "duration": 1513
                         },
                         {
                           "title": "Click Login",
-                          "duration": 1547
+                          "duration": 1699
                         },
                         {
                           "title": "Enter Credentials and Submit",
-                          "duration": 816
+                          "duration": 906
                         },
                         {
                           "title": "Verify User Is Logged In",
-                          "duration": 130
+                          "duration": 157
                         },
                         {
                           "title": "Click Products Link",
-                          "duration": 561
+                          "duration": 399
                         },
                         {
                           "title": "Add Product To Cart : Winter Top",
-                          "duration": 656
+                          "duration": 1267
                         },
                         {
                           "title": "Click View Cart Link",
-                          "duration": 1891
+                          "duration": 2248
                         }
                       ]
                     },
                     {
                       "title": "Verify First Product Quantity = 1",
-                      "duration": 7540
+                      "duration": 52
                     }
                   ],
-                  "startTime": "2025-04-07T15:02:25.469Z",
+                  "startTime": "2025-04-07T17:24:36.317Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -1601,7 +1601,7 @@
                   "workerIndex": 1,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 273,
+                  "duration": 239,
                   "errors": [],
                   "stdout": [
                     {
@@ -1610,7 +1610,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-07T15:00:48.829Z",
+                  "startTime": "2025-04-07T17:22:53.238Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -1644,7 +1644,7 @@
                   "workerIndex": 2,
                   "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 272,
+                  "duration": 223,
                   "errors": [],
                   "stdout": [
                     {
@@ -1653,7 +1653,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-07T15:00:48.828Z",
+                  "startTime": "2025-04-07T17:22:53.252Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -1687,7 +1687,7 @@
                   "workerIndex": 2,
                   "parallelIndex": 2,
                   "status": "passed",
-                  "duration": 157,
+                  "duration": 125,
                   "errors": [],
                   "stdout": [
                     {
@@ -1696,7 +1696,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-07T15:00:49.250Z",
+                  "startTime": "2025-04-07T17:22:53.619Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -1730,7 +1730,7 @@
                   "workerIndex": 4,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 1427,
+                  "duration": 1393,
                   "errors": [],
                   "stdout": [
                     {
@@ -1739,7 +1739,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-07T15:00:58.843Z",
+                  "startTime": "2025-04-07T17:23:06.345Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -1773,7 +1773,7 @@
                   "workerIndex": 4,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 483,
+                  "duration": 411,
                   "errors": [],
                   "stdout": [
                     {
@@ -1782,7 +1782,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-07T15:01:01.493Z",
+                  "startTime": "2025-04-07T17:23:08.961Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -1816,7 +1816,7 @@
                   "workerIndex": 4,
                   "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 408,
+                  "duration": 425,
                   "errors": [],
                   "stdout": [
                     {
@@ -1825,7 +1825,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-07T15:01:02.007Z",
+                  "startTime": "2025-04-07T17:23:09.396Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -1857,9 +1857,9 @@
               "results": [
                 {
                   "workerIndex": 6,
-                  "parallelIndex": 0,
+                  "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 510,
+                  "duration": 478,
                   "errors": [],
                   "stdout": [
                     {
@@ -1868,7 +1868,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-07T15:01:34.337Z",
+                  "startTime": "2025-04-07T17:23:37.780Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -1900,9 +1900,9 @@
               "results": [
                 {
                   "workerIndex": 6,
-                  "parallelIndex": 0,
+                  "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 433,
+                  "duration": 318,
                   "errors": [],
                   "stdout": [
                     {
@@ -1911,7 +1911,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-07T15:01:35.053Z",
+                  "startTime": "2025-04-07T17:23:38.377Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -1943,9 +1943,9 @@
               "results": [
                 {
                   "workerIndex": 6,
-                  "parallelIndex": 0,
+                  "parallelIndex": 1,
                   "status": "passed",
-                  "duration": 384,
+                  "duration": 441,
                   "errors": [],
                   "stdout": [
                     {
@@ -1954,7 +1954,7 @@
                   ],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2025-04-07T15:01:35.512Z",
+                  "startTime": "2025-04-07T17:23:38.719Z",
                   "attachments": [
                     {
                       "name": "screenshot",
@@ -2003,7 +2003,7 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 4791,
+                      "duration": 5087,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -2011,27 +2011,27 @@
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 1784
+                          "duration": 1753
                         },
                         {
                           "title": "Click Login",
-                          "duration": 434
+                          "duration": 465
                         },
                         {
                           "title": "Enter New User Info And Click Signup",
-                          "duration": 235
+                          "duration": 281
                         },
                         {
                           "title": "Enter Account Information And Address Information And Click Create Account",
-                          "duration": 656
+                          "duration": 857
                         },
                         {
                           "title": "Verify Account Created Message Displays",
-                          "duration": 50
+                          "duration": 57
                         },
                         {
                           "title": "Click Continue Button",
-                          "duration": 445
+                          "duration": 220
                         },
                         {
                           "title": "Verify Logged In Username = Playwright",
@@ -2039,22 +2039,22 @@
                         },
                         {
                           "title": "Click Delete Account",
-                          "duration": 595
+                          "duration": 818
                         },
                         {
                           "title": "Verify Account Deleted Message Displays",
-                          "duration": 36
+                          "duration": 45
                         },
                         {
                           "title": "Click Continue Button",
-                          "duration": 200
+                          "duration": 224
                         },
                         {
                           "title": "Verify Page Title",
-                          "duration": 90
+                          "duration": 109
                         }
                       ],
-                      "startTime": "2025-04-07T15:00:49.338Z",
+                      "startTime": "2025-04-07T17:22:53.670Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -2088,7 +2088,7 @@
                       "workerIndex": 4,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 6535,
+                      "duration": 8029,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -2096,50 +2096,50 @@
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 1470
+                          "duration": 1865
                         },
                         {
                           "title": "Click Login",
-                          "duration": 730
+                          "duration": 635
                         },
                         {
                           "title": "Enter New User Info And Click Signup",
-                          "duration": 427
-                        },
-                        {
-                          "title": "Enter Account Information And Address Information And Click Create Account",
-                          "duration": 1617
-                        },
-                        {
-                          "title": "Verify Account Created Message Displays",
-                          "duration": 68
-                        },
-                        {
-                          "title": "Click Continue Button",
                           "duration": 408
                         },
                         {
-                          "title": "Verify Logged In Username = Playwright",
-                          "duration": 122
+                          "title": "Enter Account Information And Address Information And Click Create Account",
+                          "duration": 2655
                         },
                         {
-                          "title": "Click Delete Account",
-                          "duration": 648
-                        },
-                        {
-                          "title": "Verify Account Deleted Message Displays",
-                          "duration": 116
+                          "title": "Verify Account Created Message Displays",
+                          "duration": 87
                         },
                         {
                           "title": "Click Continue Button",
-                          "duration": 322
+                          "duration": 349
+                        },
+                        {
+                          "title": "Verify Logged In Username = Playwright",
+                          "duration": 191
+                        },
+                        {
+                          "title": "Click Delete Account",
+                          "duration": 550
+                        },
+                        {
+                          "title": "Verify Account Deleted Message Displays",
+                          "duration": 156
+                        },
+                        {
+                          "title": "Click Continue Button",
+                          "duration": 437
                         },
                         {
                           "title": "Verify Page Title",
-                          "duration": 44
+                          "duration": 62
                         }
                       ],
-                      "startTime": "2025-04-07T15:01:02.487Z",
+                      "startTime": "2025-04-07T17:23:09.918Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -2171,9 +2171,9 @@
                   "results": [
                     {
                       "workerIndex": 6,
-                      "parallelIndex": 0,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 14147,
+                      "duration": 15510,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -2181,50 +2181,50 @@
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 2070
+                          "duration": 2016
                         },
                         {
                           "title": "Click Login",
-                          "duration": 2563
+                          "duration": 2816
                         },
                         {
                           "title": "Enter New User Info And Click Signup",
-                          "duration": 786
+                          "duration": 715
                         },
                         {
                           "title": "Enter Account Information And Address Information And Click Create Account",
-                          "duration": 4119
+                          "duration": 5514
                         },
                         {
                           "title": "Verify Account Created Message Displays",
-                          "duration": 94
+                          "duration": 138
                         },
                         {
                           "title": "Click Continue Button",
-                          "duration": 532
+                          "duration": 630
                         },
                         {
                           "title": "Verify Logged In Username = Playwright",
-                          "duration": 167
+                          "duration": 175
                         },
                         {
                           "title": "Click Delete Account",
-                          "duration": 534
+                          "duration": 565
                         },
                         {
                           "title": "Verify Account Deleted Message Displays",
-                          "duration": 91
+                          "duration": 68
                         },
                         {
                           "title": "Click Continue Button",
-                          "duration": 459
+                          "duration": 499
                         },
                         {
                           "title": "Verify Page Title",
-                          "duration": 108
+                          "duration": 204
                         }
                       ],
-                      "startTime": "2025-04-07T15:01:36.002Z",
+                      "startTime": "2025-04-07T17:23:39.268Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -2275,7 +2275,7 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2092,
+                      "duration": 2018,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -2283,14 +2283,14 @@
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 1724
+                          "duration": 1658
                         },
                         {
                           "title": "Verify Logo",
-                          "duration": 142
+                          "duration": 147
                         }
                       ],
-                      "startTime": "2025-04-07T15:00:49.441Z",
+                      "startTime": "2025-04-07T17:22:53.773Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -2324,7 +2324,7 @@
                       "workerIndex": 4,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3086,
+                      "duration": 3014,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -2332,14 +2332,14 @@
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 1949
+                          "duration": 1609
                         },
                         {
                           "title": "Verify Logo",
-                          "duration": 420
+                          "duration": 741
                         }
                       ],
-                      "startTime": "2025-04-07T15:01:09.050Z",
+                      "startTime": "2025-04-07T17:23:17.987Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -2373,7 +2373,7 @@
                       "workerIndex": 7,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 4388,
+                      "duration": 4814,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -2381,14 +2381,14 @@
                       "steps": [
                         {
                           "title": "Navigate to Home Page",
-                          "duration": 1647
+                          "duration": 1705
                         },
                         {
                           "title": "Verify Logo",
-                          "duration": 2014
+                          "duration": 2111
                         }
                       ],
-                      "startTime": "2025-04-07T15:01:46.804Z",
+                      "startTime": "2025-04-07T17:23:55.290Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -2439,7 +2439,7 @@
                       "workerIndex": 2,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 2577,
+                      "duration": 3890,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -2447,32 +2447,32 @@
                       "steps": [
                         {
                           "title": "As An Authenticated User On HomePage",
-                          "duration": 2355,
+                          "duration": 2732,
                           "steps": [
                             {
                               "title": "Navigate to Home Page",
-                              "duration": 1562
+                              "duration": 1579
                             },
                             {
                               "title": "Click Login",
-                              "duration": 183
+                              "duration": 268
                             },
                             {
                               "title": "Enter Credentials and Submit",
-                              "duration": 496
+                              "duration": 732
                             },
                             {
                               "title": "Verify User Is Logged In",
-                              "duration": 108
+                              "duration": 147
                             }
                           ]
                         },
                         {
                           "title": "Verify User Is Logged In",
-                          "duration": 2392
+                          "duration": 24
                         }
                       ],
-                      "startTime": "2025-04-07T15:00:51.578Z",
+                      "startTime": "2025-04-07T17:22:55.835Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -2506,7 +2506,7 @@
                       "workerIndex": 1,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3006,
+                      "duration": 3119,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -2514,28 +2514,28 @@
                       "steps": [
                         {
                           "title": "As An Unauthenticated User On LoginPage",
-                          "duration": 2508,
+                          "duration": 1975,
                           "steps": [
                             {
                               "title": "Navigate to Home Page",
-                              "duration": 2094
+                              "duration": 1553
                             },
                             {
                               "title": "Click Login",
-                              "duration": 411
+                              "duration": 419
                             }
                           ]
                         },
                         {
                           "title": "Enter Credentials and Submit",
-                          "duration": 2764
+                          "duration": 247
                         },
                         {
                           "title": "Verify Incorrect Email Or Password Message Displays",
-                          "duration": 56
+                          "duration": 21
                         }
                       ],
-                      "startTime": "2025-04-07T15:00:54.175Z",
+                      "startTime": "2025-04-07T17:22:58.797Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -2554,6 +2554,65 @@
               "column": 5
             },
             {
+              "title": "Login Page Required Fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "qa-chromium",
+                  "projectName": "qa-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 2,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 2274,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "As An Unauthenticated User On LoginPage",
+                          "duration": 2043,
+                          "steps": [
+                            {
+                              "title": "Navigate to Home Page",
+                              "duration": 1597
+                            },
+                            {
+                              "title": "Click Login",
+                              "duration": 444
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Verify Required Fields",
+                          "duration": 84
+                        }
+                      ],
+                      "startTime": "2025-04-07T17:22:59.741Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-loginTestsPROD-Lo-4723b--Login-Page-Required-Fields-qa-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c3662dda31a3d57c8b4c-ae4a163f25f5c60aa8cb",
+              "file": "ui/tests/loginTestsPROD.spec.ts",
+              "line": 31,
+              "column": 5
+            },
+            {
               "title": "Valid Login",
               "ok": true,
               "tags": [],
@@ -2569,7 +2628,7 @@
                       "workerIndex": 4,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 4395,
+                      "duration": 4324,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -2577,32 +2636,32 @@
                       "steps": [
                         {
                           "title": "As An Authenticated User On HomePage",
-                          "duration": 3609,
+                          "duration": 3651,
                           "steps": [
                             {
                               "title": "Navigate to Home Page",
-                              "duration": 2313
+                              "duration": 1958
                             },
                             {
                               "title": "Click Login",
-                              "duration": 488
+                              "duration": 421
                             },
                             {
                               "title": "Enter Credentials and Submit",
-                              "duration": 660
+                              "duration": 1025
                             },
                             {
                               "title": "Verify User Is Logged In",
-                              "duration": 143
+                              "duration": 241
                             }
                           ]
                         },
                         {
                           "title": "Verify User Is Logged In",
-                          "duration": 3938
+                          "duration": 123
                         }
                       ],
-                      "startTime": "2025-04-07T15:01:12.197Z",
+                      "startTime": "2025-04-07T17:23:21.047Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -2636,7 +2695,7 @@
                       "workerIndex": 4,
                       "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 3257,
+                      "duration": 3063,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -2644,28 +2703,28 @@
                       "steps": [
                         {
                           "title": "As An Unauthenticated User On LoginPage",
-                          "duration": 1969,
+                          "duration": 1996,
                           "steps": [
                             {
                               "title": "Navigate to Home Page",
-                              "duration": 1503
+                              "duration": 1367
                             },
                             {
                               "title": "Click Login",
-                              "duration": 464
+                              "duration": 627
                             }
                           ]
                         },
                         {
                           "title": "Enter Credentials and Submit",
-                          "duration": 2714
+                          "duration": 520
                         },
                         {
                           "title": "Verify Incorrect Email Or Password Message Displays",
-                          "duration": 102
+                          "duration": 56
                         }
                       ],
-                      "startTime": "2025-04-07T15:01:16.617Z",
+                      "startTime": "2025-04-07T17:23:25.391Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -2684,6 +2743,65 @@
               "column": 5
             },
             {
+              "title": "Login Page Required Fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "qa-firefox",
+                  "projectName": "qa-firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2845,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "As An Unauthenticated User On LoginPage",
+                          "duration": 2241,
+                          "steps": [
+                            {
+                              "title": "Navigate to Home Page",
+                              "duration": 1620
+                            },
+                            {
+                              "title": "Click Login",
+                              "duration": 618
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Verify Required Fields",
+                          "duration": 265
+                        }
+                      ],
+                      "startTime": "2025-04-07T17:23:28.480Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-loginTestsPROD-Lo-4723b--Login-Page-Required-Fields-qa-firefox\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c3662dda31a3d57c8b4c-2bed92f1974f57926f40",
+              "file": "ui/tests/loginTestsPROD.spec.ts",
+              "line": 31,
+              "column": 5
+            },
+            {
               "title": "Valid Login",
               "ok": true,
               "tags": [],
@@ -2697,9 +2815,9 @@
                   "results": [
                     {
                       "workerIndex": 6,
-                      "parallelIndex": 0,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 4923,
+                      "duration": 6748,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -2707,32 +2825,32 @@
                       "steps": [
                         {
                           "title": "As An Authenticated User On HomePage",
-                          "duration": 3728,
+                          "duration": 5353,
                           "steps": [
                             {
                               "title": "Navigate to Home Page",
-                              "duration": 1668
+                              "duration": 1608
                             },
                             {
                               "title": "Click Login",
-                              "duration": 982
+                              "duration": 2646
                             },
                             {
                               "title": "Enter Credentials and Submit",
-                              "duration": 913
+                              "duration": 935
                             },
                             {
                               "title": "Verify User Is Logged In",
-                              "duration": 160
+                              "duration": 159
                             }
                           ]
                         },
                         {
                           "title": "Verify User Is Logged In",
-                          "duration": 3734
+                          "duration": 30
                         }
                       ],
-                      "startTime": "2025-04-07T15:01:50.193Z",
+                      "startTime": "2025-04-07T17:23:54.826Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -2766,7 +2884,7 @@
                       "workerIndex": 7,
                       "parallelIndex": 2,
                       "status": "passed",
-                      "duration": 4966,
+                      "duration": 6164,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
@@ -2774,28 +2892,28 @@
                       "steps": [
                         {
                           "title": "As An Unauthenticated User On LoginPage",
-                          "duration": 3306,
+                          "duration": 4257,
                           "steps": [
                             {
                               "title": "Navigate to Home Page",
-                              "duration": 1680
+                              "duration": 1585
                             },
                             {
                               "title": "Click Login",
-                              "duration": 1625
+                              "duration": 2670
                             }
                           ]
                         },
                         {
                           "title": "Enter Credentials and Submit",
-                          "duration": 3928
+                          "duration": 670
                         },
                         {
                           "title": "Verify Incorrect Email Or Password Message Displays",
-                          "duration": 53
+                          "duration": 78
                         }
                       ],
-                      "startTime": "2025-04-07T15:01:51.303Z",
+                      "startTime": "2025-04-07T17:24:00.214Z",
                       "attachments": [
                         {
                           "name": "screenshot",
@@ -2811,6 +2929,271 @@
               "id": "c3662dda31a3d57c8b4c-6bc7945792ccc62baca9",
               "file": "ui/tests/loginTestsPROD.spec.ts",
               "line": 20,
+              "column": 5
+            },
+            {
+              "title": "Login Page Required Fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "qa-webkit",
+                  "projectName": "qa-webkit",
+                  "results": [
+                    {
+                      "workerIndex": 6,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 5468,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "As An Unauthenticated User On LoginPage",
+                          "duration": 4344,
+                          "steps": [
+                            {
+                              "title": "Navigate to Home Page",
+                              "duration": 1751
+                            },
+                            {
+                              "title": "Click Login",
+                              "duration": 2591
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Verify Required Fields",
+                          "duration": 272
+                        }
+                      ],
+                      "startTime": "2025-04-07T17:24:01.592Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-loginTestsPROD-Lo-4723b--Login-Page-Required-Fields-qa-webkit\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "c3662dda31a3d57c8b4c-185cf7b58c591246778c",
+              "file": "ui/tests/loginTestsPROD.spec.ts",
+              "line": 31,
+              "column": 5
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "ui\\tests\\signupPageTestsPROD.spec.ts",
+      "file": "ui/tests/signupPageTestsPROD.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Signup Page Tests",
+          "file": "ui/tests/signupPageTestsPROD.spec.ts",
+          "line": 6,
+          "column": 6,
+          "specs": [
+            {
+              "title": "Signup Page Required Fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "qa-chromium",
+                  "projectName": "qa-chromium",
+                  "results": [
+                    {
+                      "workerIndex": 1,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 2582,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "As A New User On The Signup Page",
+                          "duration": 2299,
+                          "steps": [
+                            {
+                              "title": "Navigate to Home Page",
+                              "duration": 1571
+                            },
+                            {
+                              "title": "Click Login",
+                              "duration": 457
+                            },
+                            {
+                              "title": "Enter New User Info And Click Signup",
+                              "duration": 269
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Verify Required Fields",
+                          "duration": 159
+                        }
+                      ],
+                      "startTime": "2025-04-07T17:23:01.944Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-signupPageTestsPR-87014-Signup-Page-Required-Fields-qa-chromium\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1ace6a235f6ced1e0bbd-103f4f321afb14be0beb",
+              "file": "ui/tests/signupPageTestsPROD.spec.ts",
+              "line": 9,
+              "column": 5
+            },
+            {
+              "title": "Signup Page Required Fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "qa-firefox",
+                  "projectName": "qa-firefox",
+                  "results": [
+                    {
+                      "workerIndex": 4,
+                      "parallelIndex": 1,
+                      "status": "passed",
+                      "duration": 4120,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "As A New User On The Signup Page",
+                          "duration": 3222,
+                          "steps": [
+                            {
+                              "title": "Navigate to Home Page",
+                              "duration": 2355
+                            },
+                            {
+                              "title": "Click Login",
+                              "duration": 419
+                            },
+                            {
+                              "title": "Enter New User Info And Click Signup",
+                              "duration": 446
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Verify Required Fields",
+                          "duration": 429
+                        }
+                      ],
+                      "startTime": "2025-04-07T17:23:31.364Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-signupPageTestsPR-87014-Signup-Page-Required-Fields-qa-firefox\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1ace6a235f6ced1e0bbd-b85ae83a09a3147b9305",
+              "file": "ui/tests/signupPageTestsPROD.spec.ts",
+              "line": 9,
+              "column": 5
+            },
+            {
+              "title": "Signup Page Required Fields",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 15000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "qa-webkit",
+                  "projectName": "qa-webkit",
+                  "results": [
+                    {
+                      "workerIndex": 7,
+                      "parallelIndex": 2,
+                      "status": "passed",
+                      "duration": 5711,
+                      "errors": [],
+                      "stdout": [],
+                      "stderr": [],
+                      "retry": 0,
+                      "steps": [
+                        {
+                          "title": "As A New User On The Signup Page",
+                          "duration": 4406,
+                          "steps": [
+                            {
+                              "title": "Navigate to Home Page",
+                              "duration": 1665
+                            },
+                            {
+                              "title": "Click Login",
+                              "duration": 2070
+                            },
+                            {
+                              "title": "Enter New User Info And Click Signup",
+                              "duration": 669
+                            }
+                          ]
+                        },
+                        {
+                          "title": "Verify Required Fields",
+                          "duration": 369
+                        }
+                      ],
+                      "startTime": "2025-04-07T17:24:06.436Z",
+                      "attachments": [
+                        {
+                          "name": "screenshot",
+                          "contentType": "image/png",
+                          "path": "C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test-results\\ui-tests-signupPageTestsPR-87014-Signup-Page-Required-Fields-qa-webkit\\test-finished-1.png"
+                        }
+                      ]
+                    }
+                  ],
+                  "status": "expected"
+                }
+              ],
+              "id": "1ace6a235f6ced1e0bbd-737e94fac5712de1e319",
+              "file": "ui/tests/signupPageTestsPROD.spec.ts",
+              "line": 9,
               "column": 5
             }
           ]
@@ -2844,14 +3227,14 @@
                   "results": [
                     {
                       "workerIndex": 8,
-                      "parallelIndex": 0,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 308,
+                      "duration": 305,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-07T15:01:56.362Z",
+                      "startTime": "2025-04-07T17:24:08.311Z",
                       "attachments": []
                     }
                   ],
@@ -2876,15 +3259,15 @@
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "parallelIndex": 2,
+                      "workerIndex": 8,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 282,
+                      "duration": 169,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-07T15:01:57.647Z",
+                      "startTime": "2025-04-07T17:24:08.641Z",
                       "attachments": []
                     }
                   ],
@@ -2927,14 +3310,14 @@
                   "results": [
                     {
                       "workerIndex": 8,
-                      "parallelIndex": 0,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 97,
+                      "duration": 99,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-07T15:01:56.831Z",
+                      "startTime": "2025-04-07T17:24:08.976Z",
                       "attachments": []
                     }
                   ],
@@ -2960,14 +3343,14 @@
                   "results": [
                     {
                       "workerIndex": 8,
-                      "parallelIndex": 0,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 40,
+                      "duration": 55,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-07T15:01:56.941Z",
+                      "startTime": "2025-04-07T17:24:09.086Z",
                       "attachments": []
                     }
                   ],
@@ -2993,14 +3376,14 @@
                   "results": [
                     {
                       "workerIndex": 8,
-                      "parallelIndex": 0,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 167,
+                      "duration": 176,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-07T15:01:56.994Z",
+                      "startTime": "2025-04-07T17:24:09.155Z",
                       "attachments": []
                     }
                   ],
@@ -3043,14 +3426,14 @@
                   "results": [
                     {
                       "workerIndex": 8,
-                      "parallelIndex": 0,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 70,
+                      "duration": 65,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-07T15:01:57.185Z",
+                      "startTime": "2025-04-07T17:24:09.355Z",
                       "attachments": []
                     }
                   ],
@@ -3076,14 +3459,14 @@
                   "results": [
                     {
                       "workerIndex": 8,
-                      "parallelIndex": 0,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 164,
+                      "duration": 46,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-07T15:01:57.267Z",
+                      "startTime": "2025-04-07T17:24:09.432Z",
                       "attachments": []
                     }
                   ],
@@ -3109,14 +3492,14 @@
                   "results": [
                     {
                       "workerIndex": 8,
-                      "parallelIndex": 0,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 164,
+                      "duration": 165,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-07T15:01:57.442Z",
+                      "startTime": "2025-04-07T17:24:09.489Z",
                       "attachments": []
                     }
                   ],
@@ -3142,14 +3525,14 @@
                   "results": [
                     {
                       "workerIndex": 8,
-                      "parallelIndex": 0,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 155,
+                      "duration": 389,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-07T15:01:57.616Z",
+                      "startTime": "2025-04-07T17:24:09.669Z",
                       "attachments": []
                     }
                   ],
@@ -3175,14 +3558,14 @@
                   "results": [
                     {
                       "workerIndex": 8,
-                      "parallelIndex": 0,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 164,
+                      "duration": 169,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-07T15:01:57.780Z",
+                      "startTime": "2025-04-07T17:24:10.070Z",
                       "attachments": []
                     }
                   ],
@@ -3207,15 +3590,15 @@
                   "projectName": "api",
                   "results": [
                     {
-                      "workerIndex": 9,
-                      "parallelIndex": 2,
+                      "workerIndex": 8,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 166,
+                      "duration": 172,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-07T15:01:58.076Z",
+                      "startTime": "2025-04-07T17:24:10.251Z",
                       "attachments": []
                     }
                   ],
@@ -3241,14 +3624,14 @@
                   "results": [
                     {
                       "workerIndex": 8,
-                      "parallelIndex": 0,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 148,
+                      "duration": 159,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-07T15:01:57.955Z",
+                      "startTime": "2025-04-07T17:24:10.438Z",
                       "attachments": []
                     }
                   ],
@@ -3290,15 +3673,15 @@
                   "projectName": "functional",
                   "results": [
                     {
-                      "workerIndex": 10,
-                      "parallelIndex": 0,
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 18,
+                      "duration": 10,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-07T15:01:59.386Z",
+                      "startTime": "2025-04-07T17:24:11.725Z",
                       "attachments": []
                     }
                   ],
@@ -3323,15 +3706,15 @@
                   "projectName": "functional",
                   "results": [
                     {
-                      "workerIndex": 11,
-                      "parallelIndex": 2,
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
                       "status": "passed",
-                      "duration": 20,
+                      "duration": 3,
                       "errors": [],
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-07T15:01:59.766Z",
+                      "startTime": "2025-04-07T17:24:11.750Z",
                       "attachments": []
                     }
                   ],
@@ -3356,10 +3739,10 @@
                   "projectName": "functional",
                   "results": [
                     {
-                      "workerIndex": 10,
-                      "parallelIndex": 0,
+                      "workerIndex": 9,
+                      "parallelIndex": 1,
                       "status": "failed",
-                      "duration": 10,
+                      "duration": 6,
                       "error": {
                         "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m12\u001b[39m\nReceived: \u001b[31m13\u001b[39m",
                         "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m12\u001b[39m\nReceived: \u001b[31m13\u001b[39m\n    at C:\\Users\\Drew\\Documents\\VScode-workspace\\playwright-automation-exercise\\test\\functional\\tests\\sumFunction.spec.ts:10:47",
@@ -3390,7 +3773,7 @@
                       "stdout": [],
                       "stderr": [],
                       "retry": 0,
-                      "startTime": "2025-04-07T15:01:59.423Z",
+                      "startTime": "2025-04-07T17:24:11.764Z",
                       "attachments": [
                         {
                           "name": "_prompt-0",
@@ -3420,9 +3803,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2025-04-07T15:00:47.271Z",
-    "duration": 109446.79800000001,
-    "expected": 53,
+    "startTime": "2025-04-07T17:22:52.078Z",
+    "duration": 116611.962,
+    "expected": 59,
     "skipped": 0,
     "unexpected": 1,
     "flaky": 0

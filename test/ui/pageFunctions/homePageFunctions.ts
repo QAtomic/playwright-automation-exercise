@@ -23,7 +23,7 @@ export class HomePageFunctions {
 
 
     async asAnAuthenticatedUserOnHomePage() {
-        test.step("As An Authenticated User On HomePage", async () => {
+        await test.step("As An Authenticated User On HomePage", async () => {
             await this.loginPageFunctions.loginWithValidCredentials();
         });
     }

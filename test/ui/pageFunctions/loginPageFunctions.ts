@@ -26,7 +26,7 @@ export class LoginPageFunctions {
     }
 
     async asAnUnauthenticatedUserOnLoginPage() {
-        test.step("As An Unauthenticated User On LoginPage", async () => {
+        await test.step("As An Unauthenticated User On LoginPage", async () => {
             await this.homePage.navigateToHomePage();
             await this.homePage.clickLogin();
         });

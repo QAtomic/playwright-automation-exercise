@@ -1,0 +1,88 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Login Tests >> Login Page Required Fields
+- Location: C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\loginTestsPROD.spec.ts:31:5
+
+# Error details
+
+```
+Error: Timed out 5000ms waiting for expect(locator).not.toHaveAttribute()
+
+Locator: locator('form').filter({ hasText: 'Login' }).getByPlaceholder('Email Address')
+Expected: not have attribute
+Received: have attribute
+Call log:
+  - expect.not.toHaveAttribute with timeout 5000ms
+  - waiting for locator('form').filter({ hasText: 'Login' }).getByPlaceholder('Email Address')
+    9 × locator resolved to <input value="" required="" type="email" name="email" data-qa="login-email" placeholder="Email Address"/>
+      - unexpected value "attribute present"
+
+    at verifyElementIsNotRequired (C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\utils\requiredFieldChecker.ts:10:31)
+    at LoginPage.verifyRequiredFields (C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\pages\loginPage.ts:85:15)
+    at C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\loginTestsPROD.spec.ts:36:9
+```
+
+# Page snapshot
+
+```yaml
+- banner:
+  - link "Website for automation practice":
+    - img "Website for automation practice"
+  - list:
+    - listitem:
+      - link " Home"
+    - listitem:
+      - link " Products"
+    - listitem:
+      - link " Cart"
+    - listitem:
+      - link " Signup / Login"
+    - listitem:
+      - link " Test Cases"
+    - listitem:
+      - link " API Testing"
+    - listitem:
+      - link " Video Tutorials"
+    - listitem:
+      - link " Contact us"
+- heading "Login to your account" [level=2]
+- textbox "Email Address"
+- textbox "Password"
+- button "Login"
+- heading "OR" [level=2]
+- heading "New User Signup!" [level=2]
+- textbox "Name"
+- textbox "Email Address"
+- button "Signup"
+- contentinfo:
+  - heading "Subscription" [level=2]
+  - textbox "Your email address"
+  - button ""
+  - paragraph: Get the most recent updates from our site and be updated your self...
+  - paragraph: Copyright © 2021 All rights reserved
+- insertion
+- insertion
+```
+
+# Test source
+
+```ts
+   1 | import { Locator, expect } from "@playwright/test";
+   2 |
+   3 |
+   4 | export async function verifyElementIsRequired(locator: Locator) {
+   5 |     await expect(locator).toHaveAttribute('required');
+   6 | }
+   7 |
+   8 |
+   9 | export async function verifyElementIsNotRequired(locator: Locator) {
+> 10 |     await expect(locator).not.toHaveAttribute('required');
+     |                               ^ Error: Timed out 5000ms waiting for expect(locator).not.toHaveAttribute()
+  11 | }
+```

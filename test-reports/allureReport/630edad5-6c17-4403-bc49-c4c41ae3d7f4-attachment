@@ -1,0 +1,44 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Signup Page Tests >> Signup Page Required Fields
+- Location: C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\signupPageTestsPROD.spec.ts:9:5
+
+# Error details
+
+```
+Error: expect(locator).toHaveAttribute()
+
+Locator: getByRole('textbox', { name: 'First name *' })
+Expected: have attribute
+Received: undefined
+Call log:
+  - expect.toHaveAttribute with timeout 5000ms
+  - waiting for getByRole('textbox', { name: 'First name *' })
+
+    at verifyElementIsRequired (C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\utils\requiredFieldChecker.ts:5:27)
+    at C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\pages\signupPage.ts:95:19
+    at SignupPage.verifyRequiredFields (C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\pages\signupPage.ts:86:9)
+```
+
+# Test source
+
+```ts
+   1 | import { Locator, expect } from "@playwright/test";
+   2 |
+   3 |
+   4 | export async function verifyElementIsRequired(locator: Locator) {
+>  5 |     await expect(locator).toHaveAttribute('required');
+     |                           ^ Error: expect(locator).toHaveAttribute()
+   6 | }
+   7 |
+   8 |
+   9 | export async function verifyElementIsNotRequired(locator: Locator) {
+  10 |     await expect(locator).not.toHaveAttribute('required');
+  11 | }
+```

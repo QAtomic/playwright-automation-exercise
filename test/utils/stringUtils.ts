@@ -8,6 +8,13 @@ export function generateRandomString(length: number) {
       result += characters.charAt(randomIndex);
     }
     return result;
-  }
+}
+
+
+export function stringContainsAnyFromArray(str: string, arr : string[]) {
+  return arr.some(substring => str.includes(substring));
+}
+
+
   
  

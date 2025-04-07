@@ -1,0 +1,533 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Home Page Tests >> Check For Broken Links
+- Location: C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\homePageTestsPROD.spec.ts:17:5
+
+# Error details
+
+```
+Error: Error: apiRequestContext.get: Test ended.
+
+expect(received).toBeTruthy()
+
+Received: null
+    at C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\utils\brokenLinkChecker.ts:62:45
+    at checkForBrokenLinks (C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\utils\brokenLinkChecker.ts:7:5)
+    at HomePage.checkForBrokenLinks (C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\pages\homePage.ts:73:9)
+    at C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\homePageTestsPROD.spec.ts:20:9
+```
+
+# Page snapshot
+
+```yaml
+- banner:
+  - link "Website for automation practice":
+    - img "Website for automation practice"
+  - list:
+    - listitem:
+      - link " Home"
+    - listitem:
+      - link " Products"
+    - listitem:
+      - link " Cart"
+    - listitem:
+      - link " Signup / Login"
+    - listitem:
+      - link " Test Cases"
+    - listitem:
+      - link " API Testing"
+    - listitem:
+      - link " Video Tutorials"
+    - listitem:
+      - link " Contact us"
+- list:
+  - listitem
+  - listitem
+  - listitem
+- heading "AutomationExercise" [level=1]
+- heading "Full-Fledged practice website for Automation Engineers" [level=2]
+- paragraph: All QA engineers can use this website for automation practice and API testing either they are at beginner or advance level. This is for everybody to help them brush up their automation skills.
+- link "Test Cases":
+  - button "Test Cases"
+- link "APIs list for practice":
+  - button "APIs list for practice"
+- img "demo website for practice"
+- link ""
+- link ""
+- heading "Category" [level=2]
+- heading " Women" [level=4]:
+  - link " Women"
+- heading " Men" [level=4]:
+  - link " Men"
+- heading " Kids" [level=4]:
+  - link " Kids"
+- insertion
+- heading "Brands" [level=2]
+- list:
+  - listitem:
+    - link "(6) Polo"
+  - listitem:
+    - link "(5) H&M"
+  - listitem:
+    - link "(5) Madame"
+    - link "Software testing services":
+      - img
+      - text: Software testing services
+  - listitem:
+    - link "(3) Mast & Harbour"
+  - listitem:
+    - link "(4) Babyhug"
+  - listitem:
+    - link "(3) Allen Solly Junior"
+  - listitem:
+    - link "(3) Kookie Kids"
+  - listitem:
+    - link "(5) Biba"
+- heading "Features Items" [level=2]
+- img "ecommerce website products"
+- heading "Rs. 500" [level=2]
+- paragraph: Blue Top
+- text:  Add to cart
+- heading "Rs. 500" [level=2]
+- paragraph: Blue Top
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 400" [level=2]
+- paragraph: Men Tshirt
+- text:  Add to cart
+- heading "Rs. 400" [level=2]
+- paragraph: Men Tshirt
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 1000" [level=2]
+- paragraph:
+  - text: Sleeveless
+  - link "Dress":
+    - img
+    - text: Dress
+- text:  Add to cart
+- heading "Rs. 1000" [level=2]
+- paragraph: Sleeveless Dress
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 1500" [level=2]
+- paragraph: Stylish Dress
+- text:  Add to cart
+- heading "Rs. 1500" [level=2]
+- paragraph: Stylish Dress
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 600" [level=2]
+- paragraph: Winter Top
+- text:  Add to cart
+- heading "Rs. 600" [level=2]
+- paragraph: Winter Top
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 400" [level=2]
+- paragraph: Summer White Top
+- text:  Add to cart
+- heading "Rs. 400" [level=2]
+- paragraph: Summer White Top
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 1000" [level=2]
+- paragraph: Madame Top For Women
+- text:  Add to cart
+- heading "Rs. 1000" [level=2]
+- paragraph: Madame Top For Women
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 700" [level=2]
+- paragraph: Fancy Green Top
+- text:  Add to cart
+- heading "Rs. 700" [level=2]
+- paragraph: Fancy Green Top
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 499" [level=2]
+- paragraph: Sleeves Printed Top - White
+- text:  Add to cart
+- heading "Rs. 499" [level=2]
+- paragraph: Sleeves Printed Top - White
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 359" [level=2]
+- paragraph: Half Sleeves Top Schiffli Detailing - Pink
+- text:  Add to cart
+- heading "Rs. 359" [level=2]
+- paragraph: Half Sleeves Top Schiffli Detailing - Pink
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 278" [level=2]
+- paragraph: Frozen Tops For Kids
+- text:  Add to cart
+- heading "Rs. 278" [level=2]
+- paragraph: Frozen Tops For Kids
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 679" [level=2]
+- paragraph: Full Sleeves Top Cherry - Pink
+- text:  Add to cart
+- heading "Rs. 679" [level=2]
+- paragraph: Full Sleeves Top Cherry - Pink
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 315" [level=2]
+- paragraph: Printed Off Shoulder Top - White
+- text:  Add to cart
+- heading "Rs. 315" [level=2]
+- paragraph: Printed Off Shoulder Top - White
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 478" [level=2]
+- paragraph: Sleeves Top and Short - Blue & Pink
+- text:  Add to cart
+- heading "Rs. 478" [level=2]
+- paragraph: Sleeves Top and Short - Blue & Pink
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 1200" [level=2]
+- paragraph: Little Girls Mr. Panda Shirt
+- text:  Add to cart
+- heading "Rs. 1200" [level=2]
+- paragraph: Little Girls Mr. Panda Shirt
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 1050" [level=2]
+- paragraph: Sleeveless Unicorn Patch Gown - Pink
+- text:  Add to cart
+- heading "Rs. 1050" [level=2]
+- paragraph: Sleeveless Unicorn Patch Gown - Pink
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 1190" [level=2]
+- paragraph: Cotton Mull Embroidered Dress
+- text:  Add to cart
+- heading "Rs. 1190" [level=2]
+- paragraph: Cotton Mull Embroidered Dress
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 1530" [level=2]
+- paragraph: Blue Cotton Indie Mickey Dress
+- text:  Add to cart
+- heading "Rs. 1530" [level=2]
+- paragraph: Blue Cotton Indie Mickey Dress
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 1600" [level=2]
+- paragraph: Long Maxi Tulle Fancy Dress Up Outfits -Pink
+- text:  Add to cart
+- heading "Rs. 1600" [level=2]
+- paragraph: Long Maxi Tulle Fancy Dress Up Outfits -Pink
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 1100" [level=2]
+- paragraph: Sleeveless Unicorn Print Fit & Flare Net Dress - Multi
+- text:  Add to cart
+- heading "Rs. 1100" [level=2]
+- paragraph: Sleeveless Unicorn Print Fit & Flare Net Dress - Multi
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 849" [level=2]
+- paragraph: Colour Blocked Shirt – Sky Blue
+- text:  Add to cart
+- heading "Rs. 849" [level=2]
+- paragraph: Colour Blocked Shirt – Sky Blue
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 1299" [level=2]
+- paragraph: Pure Cotton V-Neck T-Shirt
+- text:  Add to cart
+- heading "Rs. 1299" [level=2]
+- paragraph: Pure Cotton V-Neck T-Shirt
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 1000" [level=2]
+- paragraph: Green Side Placket Detail T-Shirt
+- text:  Add to cart
+- heading "Rs. 1000" [level=2]
+- paragraph: Green Side Placket Detail T-Shirt
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 1500" [level=2]
+- paragraph: Premium Polo T-Shirts
+- text:  Add to cart
+- heading "Rs. 1500" [level=2]
+- paragraph: Premium Polo T-Shirts
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 850" [level=2]
+- paragraph: Pure Cotton Neon Green Tshirt
+- text:  Add to cart
+- heading "Rs. 850" [level=2]
+- paragraph: Pure Cotton Neon Green Tshirt
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 799" [level=2]
+- paragraph: Soft Stretch Jeans
+- text:  Add to cart
+- heading "Rs. 799" [level=2]
+- paragraph: Soft Stretch Jeans
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 1200" [level=2]
+- paragraph: Regular Fit Straight Jeans
+- text:  Add to cart
+- heading "Rs. 1200" [level=2]
+- paragraph: Regular Fit Straight Jeans
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 1400" [level=2]
+- paragraph: Grunt Blue Slim Fit Jeans
+- text:  Add to cart
+- heading "Rs. 1400" [level=2]
+- paragraph: Grunt Blue Slim Fit Jeans
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 2300" [level=2]
+- paragraph: Rose Pink Embroidered Maxi Dress
+- text:  Add to cart
+- heading "Rs. 2300" [level=2]
+- paragraph: Rose Pink Embroidered Maxi Dress
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 3000" [level=2]
+- paragraph: Cotton Silk Hand Block Print Saree
+- text:  Add to cart
+- heading "Rs. 3000" [level=2]
+- paragraph: Cotton Silk Hand Block Print Saree
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 3500" [level=2]
+- paragraph: Rust Red Linen Saree
+- text:  Add to cart
+- heading "Rs. 3500" [level=2]
+- paragraph: Rust Red Linen Saree
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 5000" [level=2]
+- paragraph: Beautiful Peacock Blue Cotton Linen Saree
+- text:  Add to cart
+- heading "Rs. 5000" [level=2]
+- paragraph: Beautiful Peacock Blue Cotton Linen Saree
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 1400" [level=2]
+- paragraph: Lace Top For Women
+- text:  Add to cart
+- heading "Rs. 1400" [level=2]
+- paragraph: Lace Top For Women
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- img "ecommerce website products"
+- heading "Rs. 1389" [level=2]
+- paragraph: GRAPHIC DESIGN MEN T SHIRT - BLUE
+- text:  Add to cart
+- heading "Rs. 1389" [level=2]
+- paragraph: GRAPHIC DESIGN MEN T SHIRT - BLUE
+- text:  Add to cart
+- list:
+  - listitem:
+    - link " View Product"
+- heading "recommended items" [level=2]
+- img "ecommerce website products"
+- heading "Rs. 1500" [level=2]
+- paragraph: Stylish Dress
+- text:  Add to cart
+- img "ecommerce website products"
+- heading "Rs. 600" [level=2]
+- paragraph: Winter Top
+- text:  Add to cart
+- img "ecommerce website products"
+- heading "Rs. 400" [level=2]
+- paragraph: Summer White Top
+- text:  Add to cart
+- link ""
+- link ""
+- insertion
+- contentinfo:
+  - heading "Subscription" [level=2]
+  - textbox "Your email address"
+  - button ""
+  - paragraph: Get the most recent updates from our site and be updated your self...
+  - paragraph: Copyright © 2021 All rights reserved
+```
+
+# Test source
+
+```ts
+   1 | import test, { Page, TestInfo, expect} from "@playwright/test";
+   2 | import * as dotenv from 'dotenv';
+   3 | dotenv.config();
+   4 |
+   5 |
+   6 | export async function checkForBrokenLinks(page: Page, testInfo: TestInfo) {
+   7 |     await test.step("Check For Broken Links", async () => {
+   8 |         const baseURL = testInfo.project.use.baseURL;
+   9 |
+  10 |         const links = page.locator("a");
+  11 |
+  12 |         const allLinks = await Promise.all(await links.all()).then(links => {
+  13 |             return links;
+  14 |         });
+  15 |
+  16 |         const allLinksAndText = [];
+  17 |         for (let i = 0; i < allLinks.length; i++) {
+  18 |             let linkText = await allLinks[i].innerText()
+  19 |             let linkHref = await allLinks[i].getAttribute("href");
+  20 |             allLinksAndText.push({
+  21 |                 innerText : linkText,
+  22 |                 href : linkHref
+  23 |             });
+  24 |         };
+  25 |
+  26 |         const allValidHrefs = [];
+  27 |         for (let i=0; i < allLinksAndText.length; i++) {
+  28 |             let loopHref = allLinksAndText[i].href;
+  29 |             let loopInnerText = allLinksAndText[i].innerText;
+  30 |             if (loopInnerText.replaceAll(" ","").toUpperCase().includes("LOGOUT")) {
+  31 |                 console.log(loopInnerText + " link was skipped because it's Logout functionality");
+  32 |                 continue;
+  33 |             };
+  34 |             expect.soft(loopHref, `${loopInnerText} has a null href`).toBeTruthy();
+  35 |             if (!loopHref) continue;
+  36 |
+  37 |             if (loopHref?.includes("tel:")) {
+  38 |                 console.log(loopInnerText + " link was skipped because it's a phone number");
+  39 |                 continue;
+  40 |             }
+  41 |
+  42 |             if (loopHref.startsWith("mailto")) continue;
+  43 |
+  44 |             if (loopHref.charAt(0) === "/" || loopHref?.charAt(0) === "#") loopHref = baseURL + loopHref;
+  45 |         
+  46 |             //if (!loopHref?.includes(baseURL)) continue;
+  47 |
+  48 |             allValidHrefs.push({
+  49 |                 innerText : loopInnerText,
+  50 |                 href : loopHref
+  51 |             });
+  52 |         };
+  53 |
+  54 |         for (let valid of allValidHrefs) {
+  55 |             try {
+  56 |                 console.log("Test : " + valid.href);
+  57 |                 const response = await page.request.get(valid.href);
+  58 |                 expect.soft(response.ok(), `Link ${valid.innerText} with href ${valid.href} is not valid`).toBeTruthy();
+  59 |                 console.log("Response Status : " + response.status().toString());
+  60 |             } catch(err) {
+  61 |                 expect.soft(null, `Link ${valid.innerText} with href ${valid.href} is not valid`).toBeTruthy();
+> 62 |                 expect.soft(null, "" + err).toBeTruthy();
+     |                                             ^ Error: Error: apiRequestContext.get: Test ended.
+  63 |             }
+  64 |         };
+  65 |     })
+  66 |     
+  67 |     
+  68 | };
+```

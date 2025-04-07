@@ -29,9 +29,5 @@ export class HomePageFunctions {
             await takeScreenshot("Authenticated User On HomePage", this.page, this.testInfo);
         });
     }
-   
-
-
-
 
 }

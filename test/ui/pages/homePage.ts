@@ -1,6 +1,7 @@
 import { test, expect, Locator, Page, TestInfo } from '@playwright/test';
 import { Header } from '../header/header';
 import { BasePage } from '../basePage/basePage';
+import { checkForBrokenLinks } from '../../utils/brokenLinkChecker';
 
 
 export class HomePage extends BasePage {
@@ -66,6 +67,10 @@ export class HomePage extends BasePage {
             const pageTitle = await this.page.title();
             expect(pageTitle).toBe("Automation Exercise");
         });
+    }
+
+    async checkForBrokenLinks() {
+        await checkForBrokenLinks(this.page, this.testInfo, "Add to cart");
     }
 
 }

@@ -14,5 +14,12 @@ test.describe("Home Page Tests", () => {
         await homePage.verifyLogo();
     });
 
+    test("Check For Broken Links", async ({ page }, testInfo) => {
+        test.setTimeout(300000);
+        const homePage = new HomePage(page, testInfo);
+        await homePage.navigateToHomePage();
+        await homePage.checkForBrokenLinks();
+    }); 
+
 
 });

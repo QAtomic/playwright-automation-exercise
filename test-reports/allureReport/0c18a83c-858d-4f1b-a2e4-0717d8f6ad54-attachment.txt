@@ -1,0 +1,80 @@
+Test : https://www.automationexercise.com/
+Response Status : 200
+Test : https://www.automationexercise.com/
+Response Status : 200
+Test : https://www.automationexercise.com/products
+Response Status : 200
+Test : https://www.automationexercise.com/view_cart
+Response Status : 200
+Test : https://www.automationexercise.com/login
+Response Status : 200
+Test : https://www.automationexercise.com/test_cases
+Response Status : 200
+Test : https://www.automationexercise.com/api_list
+Test : https://www.youtube.com/c/AutomationExercise
+Test : https://www.automationexercise.com/contact_us
+Test : https://www.automationexercise.com/test_cases
+Test : https://www.automationexercise.com/api_list
+Test : https://www.automationexercise.com/test_cases
+Test : https://www.automationexercise.com/api_list
+Test : https://www.automationexercise.com/test_cases
+Test : https://www.automationexercise.com/api_list
+Test : https://www.automationexercise.com#slider-carousel
+Test : https://www.automationexercise.com#slider-carousel
+Test : https://www.automationexercise.com#Women
+Test : https://www.automationexercise.com/category_products/1
+Test : https://www.automationexercise.com/category_products/2
+Test : https://www.automationexercise.com/category_products/7
+Test : https://www.automationexercise.com#Men
+Test : https://www.automationexercise.com/category_products/3
+Test : https://www.automationexercise.com/category_products/6
+Test : https://www.automationexercise.com#Kids
+Test : https://www.automationexercise.com/category_products/4
+Test : https://www.automationexercise.com/category_products/5
+Test : https://www.automationexercise.com/brand_products/Polo
+Test : https://www.automationexercise.com/brand_products/H&M
+Test : https://www.automationexercise.com/brand_products/Madame
+Test : https://www.automationexercise.com/brand_products/Mast & Harbour
+Test : https://www.automationexercise.com/brand_products/Babyhug
+Test : https://www.automationexercise.com/brand_products/Allen Solly Junior
+Test : https://www.automationexercise.com/brand_products/Kookie Kids
+Test : https://www.automationexercise.com/brand_products/Biba
+Test : https://www.automationexercise.com/view_cart
+Test : https://www.automationexercise.com/product_details/1
+Test : https://www.automationexercise.com/product_details/2
+Test : https://www.automationexercise.com#
+Test : https://www.automationexercise.com/product_details/3
+Test : https://www.automationexercise.com/product_details/4
+Test : https://www.automationexercise.com/product_details/5
+Test : https://www.automationexercise.com/product_details/6
+Test : https://www.automationexercise.com/product_details/7
+Test : https://www.automationexercise.com/product_details/8
+Test : https://www.automationexercise.com/product_details/11
+Test : https://www.automationexercise.com/product_details/12
+Test : https://www.automationexercise.com/product_details/13
+Test : https://www.automationexercise.com/product_details/14
+Test : https://www.automationexercise.com/product_details/15
+Test : https://www.automationexercise.com/product_details/16
+Test : https://www.automationexercise.com/product_details/18
+Test : https://www.automationexercise.com/product_details/19
+Test : https://www.automationexercise.com/product_details/20
+Test : https://www.automationexercise.com/product_details/21
+Test : https://www.automationexercise.com/product_details/22
+Test : https://www.automationexercise.com/product_details/23
+Test : https://www.automationexercise.com/product_details/24
+Test : https://www.automationexercise.com/product_details/28
+Test : https://www.automationexercise.com/product_details/29
+Test : https://www.automationexercise.com/product_details/30
+Test : https://www.automationexercise.com/product_details/31
+Test : https://www.automationexercise.com/product_details/33
+Test : https://www.automationexercise.com/product_details/35
+Test : https://www.automationexercise.com/product_details/37
+Test : https://www.automationexercise.com/product_details/38
+Test : https://www.automationexercise.com/product_details/39
+Test : https://www.automationexercise.com/product_details/40
+Test : https://www.automationexercise.com/product_details/41
+Test : https://www.automationexercise.com/product_details/42
+Test : https://www.automationexercise.com/product_details/43
+Test : https://www.automationexercise.com#recommended-item-carousel
+Test : https://www.automationexercise.com#recommended-item-carousel
+Test : https://www.automationexercise.com#top

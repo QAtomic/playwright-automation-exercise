@@ -1,0 +1,668 @@
+str = 
+arr = Add to cart
+str = https://www.automationexercise.com/
+arr = Add to cart
+str =  Home
+arr = Add to cart
+str = https://www.automationexercise.com/
+arr = Add to cart
+str =  Products
+arr = Add to cart
+str = https://www.automationexercise.com/products
+arr = Add to cart
+str =  Cart
+arr = Add to cart
+str = https://www.automationexercise.com/view_cart
+arr = Add to cart
+str =  Signup / Login
+arr = Add to cart
+str = https://www.automationexercise.com/login
+arr = Add to cart
+str =  Test Cases
+arr = Add to cart
+str = https://www.automationexercise.com/test_cases
+arr = Add to cart
+str =  API Testing
+arr = Add to cart
+str = https://www.automationexercise.com/api_list
+arr = Add to cart
+str =  Video Tutorials
+arr = Add to cart
+str = https://www.youtube.com/c/AutomationExercise
+arr = Add to cart
+str =  Contact us
+arr = Add to cart
+str = https://www.automationexercise.com/contact_us
+arr = Add to cart
+str = Test Cases
+arr = Add to cart
+str = https://www.automationexercise.com/test_cases
+arr = Add to cart
+str = APIs list for practice
+arr = Add to cart
+str = https://www.automationexercise.com/api_list
+arr = Add to cart
+str = Test Cases
+arr = Add to cart
+str = https://www.automationexercise.com/test_cases
+arr = Add to cart
+str = APIs list for practice
+arr = Add to cart
+str = https://www.automationexercise.com/api_list
+arr = Add to cart
+str = Test Cases
+arr = Add to cart
+str = https://www.automationexercise.com/test_cases
+arr = Add to cart
+str = APIs list for practice
+arr = Add to cart
+str = https://www.automationexercise.com/api_list
+arr = Add to cart
+str = 
+arr = Add to cart
+str = https://www.automationexercise.com#slider-carousel
+arr = Add to cart
+str = 
+arr = Add to cart
+str = https://www.automationexercise.com#slider-carousel
+arr = Add to cart
+str = WOMEN
+arr = Add to cart
+str = https://www.automationexercise.com#Women
+arr = Add to cart
+str = Dress 
+arr = Add to cart
+str = https://www.automationexercise.com/category_products/1
+arr = Add to cart
+str = Tops 
+arr = Add to cart
+str = https://www.automationexercise.com/category_products/2
+arr = Add to cart
+str = Saree 
+arr = Add to cart
+str = https://www.automationexercise.com/category_products/7
+arr = Add to cart
+str = MEN
+arr = Add to cart
+str = https://www.automationexercise.com#Men
+arr = Add to cart
+str = Tshirts 
+arr = Add to cart
+str = https://www.automationexercise.com/category_products/3
+arr = Add to cart
+str = Jeans 
+arr = Add to cart
+str = https://www.automationexercise.com/category_products/6
+arr = Add to cart
+str = KIDS
+arr = Add to cart
+str = https://www.automationexercise.com#Kids
+arr = Add to cart
+str = Dress 
+arr = Add to cart
+str = https://www.automationexercise.com/category_products/4
+arr = Add to cart
+str = Tops & Shirts 
+arr = Add to cart
+str = https://www.automationexercise.com/category_products/5
+arr = Add to cart
+str = (6)
+POLO
+arr = Add to cart
+str = https://www.automationexercise.com/brand_products/Polo
+arr = Add to cart
+str = (5)
+H&M
+arr = Add to cart
+str = https://www.automationexercise.com/brand_products/H&M
+arr = Add to cart
+str = (5)
+MADAME
+arr = Add to cart
+str = https://www.automationexercise.com/brand_products/Madame
+arr = Add to cart
+str = (3)
+MAST & HARBOUR
+arr = Add to cart
+str = https://www.automationexercise.com/brand_products/Mast & Harbour
+arr = Add to cart
+str = (4)
+BABYHUG
+arr = Add to cart
+str = https://www.automationexercise.com/brand_products/Babyhug
+arr = Add to cart
+str = (3)
+ALLEN SOLLY JUNIOR
+arr = Add to cart
+str = https://www.automationexercise.com/brand_products/Allen Solly Junior
+arr = Add to cart
+str = (3)
+KOOKIE KIDS
+arr = Add to cart
+str = https://www.automationexercise.com/brand_products/Kookie Kids
+arr = Add to cart
+str = (5)
+BIBA
+arr = Add to cart
+str = https://www.automationexercise.com/brand_products/Biba
+arr = Add to cart
+str = View Cart
+arr = Add to cart
+str = https://www.automationexercise.com/view_cart
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/1
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/2
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/3
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/4
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/5
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/6
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/7
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/8
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/11
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/12
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/13
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/14
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/15
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/16
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/18
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/19
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/20
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/21
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/22
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/23
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/24
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/28
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/29
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/30
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/31
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/33
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/35
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/37
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/38
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/39
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/40
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/41
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/42
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = View Product
+arr = Add to cart
+str = https://www.automationexercise.com/product_details/43
+arr = Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = Add to cart
+arr = Add to cart
+Link with Inner Text Omitted : Add to cart
+str = 
+arr = Add to cart
+str = https://www.automationexercise.com#recommended-item-carousel
+arr = Add to cart
+str = 
+arr = Add to cart
+str = https://www.automationexercise.com#recommended-item-carousel
+arr = Add to cart
+str = 
+arr = Add to cart
+str = https://www.automationexercise.com#top
+arr = Add to cart
+Test : https://www.automationexercise.com/
+Response Status : 200
+Test : https://www.automationexercise.com/
+Response Status : 200
+Test : https://www.automationexercise.com/products
+Response Status : 200
+Test : https://www.automationexercise.com/view_cart
+Response Status : 200
+Test : https://www.automationexercise.com/login
+Response Status : 200
+Test : https://www.automationexercise.com/test_cases
+Response Status : 200
+Test : https://www.automationexercise.com/api_list
+Response Status : 200
+Test : https://www.youtube.com/c/AutomationExercise
+Response Status : 200
+Test : https://www.automationexercise.com/contact_us
+Response Status : 200
+Test : https://www.automationexercise.com/test_cases
+Response Status : 200
+Test : https://www.automationexercise.com/api_list
+Response Status : 200
+Test : https://www.automationexercise.com/test_cases
+Response Status : 200
+Test : https://www.automationexercise.com/api_list
+Response Status : 200
+Test : https://www.automationexercise.com/test_cases
+Response Status : 200
+Test : https://www.automationexercise.com/api_list
+Response Status : 200
+Test : https://www.automationexercise.com#slider-carousel
+Response Status : 200
+Test : https://www.automationexercise.com#slider-carousel
+Response Status : 200
+Test : https://www.automationexercise.com#Women
+Response Status : 200
+Test : https://www.automationexercise.com/category_products/1
+Response Status : 200
+Test : https://www.automationexercise.com/category_products/2
+Response Status : 200
+Test : https://www.automationexercise.com/category_products/7
+Response Status : 200
+Test : https://www.automationexercise.com#Men
+Response Status : 200
+Test : https://www.automationexercise.com/category_products/3
+Response Status : 200
+Test : https://www.automationexercise.com/category_products/6
+Response Status : 200
+Test : https://www.automationexercise.com#Kids
+Response Status : 200
+Test : https://www.automationexercise.com/category_products/4
+Response Status : 200
+Test : https://www.automationexercise.com/category_products/5
+Response Status : 200
+Test : https://www.automationexercise.com/brand_products/Polo
+Response Status : 200
+Test : https://www.automationexercise.com/brand_products/H&M
+Response Status : 200
+Test : https://www.automationexercise.com/brand_products/Madame
+Response Status : 200
+Test : https://www.automationexercise.com/brand_products/Mast & Harbour
+Response Status : 200
+Test : https://www.automationexercise.com/brand_products/Babyhug
+Response Status : 200
+Test : https://www.automationexercise.com/brand_products/Allen Solly Junior
+Response Status : 200
+Test : https://www.automationexercise.com/brand_products/Kookie Kids
+Response Status : 200
+Test : https://www.automationexercise.com/brand_products/Biba
+Response Status : 200
+Test : https://www.automationexercise.com/view_cart
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/1
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/2
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/3
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/4
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/5
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/6
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/7
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/8
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/11
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/12
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/13
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/14
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/15
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/16
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/18
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/19
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/20
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/21
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/22
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/23
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/24
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/28
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/29
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/30
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/31
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/33
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/35
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/37
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/38
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/39
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/40
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/41
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/42
+Response Status : 200
+Test : https://www.automationexercise.com/product_details/43
+Response Status : 200
+Test : https://www.automationexercise.com#recommended-item-carousel
+Response Status : 200
+Test : https://www.automationexercise.com#recommended-item-carousel
+Response Status : 200
+Test : https://www.automationexercise.com#top
+Response Status : 200

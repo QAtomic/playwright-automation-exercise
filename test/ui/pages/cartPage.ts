@@ -1,18 +1,16 @@
 import { test, expect, Locator, Page, TestInfo } from '@playwright/test';
 import * as dotenv from 'dotenv';
+import { BasePage } from '../basePage/basePage';
 dotenv.config();
 
 
-export class CartPage {
+export class CartPage extends BasePage {
     url = "/view_cart";
-    page: Page;
-    testInfo: TestInfo;
 
     proceedToCheckoutButton: Locator;
 
     constructor(page: Page, testInfo: TestInfo) {
-        this.page = page;
-        this.testInfo = testInfo;
+        super(page, testInfo);
 
         this.proceedToCheckoutButton = this.page.getByText('Proceed To Checkout');
     }

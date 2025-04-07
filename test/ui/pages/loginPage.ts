@@ -1,19 +1,18 @@
 import { test, expect, Locator, Page, TestInfo } from '@playwright/test';
 import * as dotenv from 'dotenv';
+import { BasePage } from '../basePage/basePage';
+import { generateRandomString } from '../../utils/stringUtils';
 dotenv.config();
 
-export class LoginPage {
-    page: Page;
-    testInfo: TestInfo;
-
+export class LoginPage extends BasePage {
+ 
     emailInput: Locator;
     passwordInput: Locator;
     loginButton: Locator;
     invalidEmailOrPasswordMessage: Locator;
 
     constructor(page: Page, testInfo: TestInfo) {
-        this.page = page;
-        this.testInfo = testInfo;
+        super(page, testInfo);
 
         this.emailInput = this.page.locator('form').filter({ hasText: 'Login' }).getByPlaceholder('Email Address');
         this.passwordInput = this.page.getByRole('textbox', { name: 'password' });
@@ -28,7 +27,7 @@ export class LoginPage {
             await this.passwordInput.fill(password);
             await this.loginButton.click();
         }); 
-    }
+    };
 
     async enterValidCredentialsAndSubmit() {
         let email = "";
@@ -50,7 +49,7 @@ export class LoginPage {
         }
         
         await this.enterCredentialsAndSubmit(email, password);
-    }
+    };
 
     async verifyIncorrectEmailOrPasswordMessageDisplays() {
         await test.step('Verify Incorrect Email Or Password Message Displays', async () => {
@@ -58,4 +57,14 @@ export class LoginPage {
         });
     };
 
-}
+    async enterNewUserInfoAndClickSignup() {
+        await test.step("Enter New User Info And Click Signup", async () => {
+            const randomString = generateRandomString(10);
+
+            await this.page.getByRole('textbox', { name: 'Name' }).fill('Playwright Test');
+            await this.page.locator('form').filter({ hasText: 'Signup' }).getByPlaceholder('Email Address').fill(randomString + '@Playwright.com');
+            await this.page.getByRole('button', { name: 'Signup' }).click();
+        });
+    };
+
+};

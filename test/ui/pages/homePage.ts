@@ -1,10 +1,9 @@
 import { test, expect, Locator, Page, TestInfo } from '@playwright/test';
 import { Header } from '../header/header';
+import { BasePage } from '../basePage/basePage';
 
 
-export class HomePage {
-    page: Page;
-    testInfo: TestInfo;
+export class HomePage extends BasePage {
 
     header: Header;
 
@@ -12,10 +11,9 @@ export class HomePage {
     
 
     constructor(page: Page, testInfo: TestInfo) {
-        this.page = page;
-        this.testInfo = testInfo;
+        super(page, testInfo);
 
-        this.header = new Header(this.page);
+        this.header = new Header(this.page, this.testInfo);
 
         this.logo = this.page.getByAltText('Website for automation practice', {exact: true});
     };
@@ -42,5 +40,16 @@ export class HomePage {
         await expect(this.logo).toHaveScreenshot('logo.png');
     }
 
+    async verifyLoggedInUsername(name: string) {
+        await expect(this.page.getByText('Logged in as')).toContainText(name);
+    }
 
+    async clickDeleteAccount() {
+        await this.header.clickDeleteAccountLink();
+    }
+
+    async verifyPageTitle() {
+        const title = await this.page.title();
+        expect(await this.page.title()).toBe("Automation Exercise");
+    }
 };

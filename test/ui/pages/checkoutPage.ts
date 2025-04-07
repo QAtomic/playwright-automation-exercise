@@ -1,12 +1,12 @@
-import { expect, Locator, Page } from '@playwright/test';
+import { expect, Locator, Page, TestInfo } from '@playwright/test';
+import { BasePage } from '../basePage/basePage';
 
-export class ChckoutPage {
-    private page: Page;
+export class CheckoutPage extends BasePage {
 
-    private placeOrderButton: Locator;
+    placeOrderButton: Locator;
 
-    constructor(page: Page) {
-        this.page = page;
+    constructor(page: Page, testInfo: TestInfo) {
+        super(page, testInfo);
         this.placeOrderButton = this.page.getByRole('link', { name: 'Place Order' });
     }
 

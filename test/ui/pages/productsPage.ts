@@ -1,10 +1,10 @@
-import { expect, Locator, Page } from '@playwright/test';
+import { expect, Locator, Page, TestInfo } from '@playwright/test';
+import { BasePage } from '../basePage/basePage';
 
-export class ProductsPage {
-    page: Page;
+export class ProductsPage extends BasePage {
 
-    constructor(page: Page) {
-        this.page = page;
+    constructor(page: Page, testInfo: TestInfo) {
+        super(page, testInfo);
     }
 
     async addFirstAvailableProductToCart() {

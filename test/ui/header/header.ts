@@ -1,23 +1,25 @@
-import { expect, Locator, Page } from '@playwright/test';
+import { expect, Locator, Page, TestInfo } from '@playwright/test';
+import { BasePage } from '../basePage/basePage';
 
-export class Header {
-    private page: Page;
+export class Header extends BasePage {
 
-    private homeLink: Locator;
-    private productsLink: Locator;
-    private cartLink: Locator;
-    private loginLink: Locator;
-    private logoutLink: Locator;
+    homeLink: Locator;
+    productsLink: Locator;
+    cartLink: Locator;
+    loginLink: Locator;
+    logoutLink: Locator;
+    deleteAccountLink: Locator;
     
 
-    constructor(page: Page) {
-        this.page = page;
+    constructor(page: Page, testInfo: TestInfo) {
+        super(page, testInfo);
 
         this.homeLink = this.page.getByRole('link', { name: 'Home' });
         this.productsLink = this.page.getByRole('link', { name: 'Products' });
         this.cartLink = this.page.getByRole('link', { name: 'Cart' });
         this.loginLink = this.page.getByRole('link', { name: 'Signup / Login' });
         this.logoutLink = this.page.getByRole('link', { name: 'Logout' }); 
+        this.deleteAccountLink = this.page.getByRole('link', { name: 'Delete Account' });
     };
 
     async clickHomeLink() {
@@ -42,5 +44,9 @@ export class Header {
 
     async verifyLogoutLinkDisplays() {
         await expect(this.logoutLink).toBeVisible({ timeout: 15000 });
+    }
+
+    async clickDeleteAccountLink() {
+        await this.deleteAccountLink.click();
     }
 };

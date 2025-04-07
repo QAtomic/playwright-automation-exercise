@@ -31,7 +31,7 @@ test.describe("Customer Registration Tests", () => {
         await deletedAccountPage.verifyAccountDeletedMessageDisplays();
         await deletedAccountPage.clickContinueButton();
 
-        homePage.verifyPageTitle();
+        await homePage.verifyPageTitle();
     });
 
 });

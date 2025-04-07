@@ -22,7 +22,7 @@ export class LoginPage extends BasePage {
 
 
     async enterCredentialsAndSubmit(email: string, password: string) {
-        test.step('Enter Credentials and Submit', async () => {
+        await test.step('Enter Credentials and Submit', async () => {
             await this.emailInput.fill(email);
             await this.passwordInput.fill(password);
             await this.loginButton.click();

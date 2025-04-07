@@ -10,11 +10,16 @@ export class AccountCreatedPage extends BasePage {
 
 
     async verifyAccountCreatedMessageDisplays() {
-        await expect(this.page.getByText('Account Created!')).toBeVisible();
+        await test.step("Verify Account Created Message Displays", async () => {
+            const pageText = await this.page.locator('#form').innerText();
+            expect(pageText).toContain('ACCOUNT CREATED!');
+        });
     }
 
     async clickContinueButton() {
-        await this.page.getByRole('link', { name: 'Continue' }).click();
+        await test.step("Click Continue Button", async () => {
+            await this.page.getByRole('link', { name: 'Continue' }).click();
+        });   
     }
 
 }

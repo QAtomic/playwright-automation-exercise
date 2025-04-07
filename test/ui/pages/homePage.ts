@@ -19,11 +19,15 @@ export class HomePage extends BasePage {
     };
 
     async navigateToHomePage() {
-        await this.page.goto('/');
+        await test.step("Navigate to Home Page", async () => {
+            await this.page.goto('/');
+        });
     }
 
     async clickLogin() {
-        await this.header.clickLogin();
+        await test.step("Click Login", async () => {
+            await this.header.clickLogin();
+        });
     }
 
     async verifyUserIsLoggedIn() {
@@ -33,23 +37,35 @@ export class HomePage extends BasePage {
     }
 
     async clickProductsLink() {
-        await this.header.clickProductsLink();
+        await test.step('Click Products Link', async () => {
+            await this.header.clickProductsLink();
+        });
     }
 
     async verifyLogo() {
-        await expect(this.logo).toHaveScreenshot('logo.png');
+        await test.step('Verify Logo', async () => {
+            await expect(this.logo).toHaveScreenshot('logo.png');
+        });
     }
 
     async verifyLoggedInUsername(name: string) {
-        await expect(this.page.getByText('Logged in as')).toContainText(name);
+        await test.step("Verify Logged In Username = " + name, async () => {
+            const loggedInName = await this.page.getByText('Logged in as').innerText();
+            expect(loggedInName).toContain(name);
+        });
     }
 
     async clickDeleteAccount() {
-        await this.header.clickDeleteAccountLink();
+        await test.step("Click Delete Account", async () => {
+            await this.header.clickDeleteAccountLink();
+        });
     }
 
     async verifyPageTitle() {
-        const title = await this.page.title();
-        expect(await this.page.title()).toBe("Automation Exercise");
+        await test.step("Verify Page Title", async () => {
+            const pageTitle = await this.page.title();
+            expect(pageTitle).toBe("Automation Exercise");
+        });
     }
-};
+
+}

@@ -9,12 +9,12 @@ test.describe("Login Tests", () => {
 
     
     test('Valid Login', async ({ page }, testInfo) => { 
-            const homePageFunctions = new HomePageFunctions(page, testInfo);
-            await homePageFunctions.asAnAuthenticatedUserOnHomePage();
+        const homePageFunctions = new HomePageFunctions(page, testInfo);
+        await homePageFunctions.asAnAuthenticatedUserOnHomePage();
     
-            const homePage = new HomePage(page, testInfo);
-            await homePage.verifyUserIsLoggedIn();
-        });
+        const homePage = new HomePage(page, testInfo);
+        await homePage.verifyUserIsLoggedIn();
+    });
     
     
     test('Invalid Login', async ({ page }, testInfo) => {

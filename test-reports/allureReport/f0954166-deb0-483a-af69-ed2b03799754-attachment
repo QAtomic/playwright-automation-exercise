@@ -1,0 +1,94 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Customer Registration Tests >> New Customer Registration
+- Location: C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\customerRegistrationTests.spec.ts:12:5
+
+# Error details
+
+```
+Error: expect(received).toContain(expected) // indexOf
+
+Expected substring: "Account Created!"
+Received string:    "ACCOUNT CREATED!·
+Congratulations! Your new account has been successfully created!·
+You can now take advantage of member privileges to enhance your online shopping experience with us.·
+Continue"
+    at C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\pages\accountCreatedPage.ts:16:30
+    at AccountCreatedPage.verifyAccountCreatedMessageDisplays (C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\pages\accountCreatedPage.ts:13:9)
+    at C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\customerRegistrationTests.spec.ts:24:9
+```
+
+# Page snapshot
+
+```yaml
+- banner:
+  - link "Automation Exercise website":
+    - img "Automation Exercise website"
+  - list:
+    - listitem:
+      - link " Home"
+    - listitem:
+      - link " Products"
+    - listitem:
+      - link " Cart"
+    - listitem:
+      - link " Signup / Login"
+    - listitem:
+      - link " Test Cases"
+    - listitem:
+      - link " API Testing"
+    - listitem:
+      - link " Video Tutorials"
+    - listitem:
+      - link " Contact us"
+- heading "Account Created!" [level=2]
+- paragraph: Congratulations! Your new account has been successfully created!
+- paragraph: You can now take advantage of member privileges to enhance your online shopping experience with us.
+- link "Continue"
+- contentinfo:
+  - heading "Subscription" [level=2]
+  - textbox "Your email address"
+  - button ""
+  - paragraph: Get the most recent updates from our site and be updated your self...
+  - paragraph: Copyright © 2021 All rights reserved
+- insertion
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect, Locator, Page, TestInfo } from '@playwright/test';
+   2 | import { BasePage } from '../basePage/basePage';
+   3 |
+   4 |
+   5 | export class AccountCreatedPage extends BasePage {
+   6 |
+   7 |     constructor(page: Page, testInfo: TestInfo) {
+   8 |         super(page, testInfo);
+   9 |     }
+  10 |
+  11 |
+  12 |     async verifyAccountCreatedMessageDisplays() {
+  13 |         await test.step("Verify Account Created Message Displays", async () => {
+  14 |             const pageText = await this.page.locator('#form').innerText();
+  15 |             console.log("Created Text : " + pageText);
+> 16 |             expect(pageText).toContain('Account Created!');
+     |                              ^ Error: expect(received).toContain(expected) // indexOf
+  17 |             //await expect(this.page.getByText('Account Created!')).toBeVisible();
+  18 |         });
+  19 |     }
+  20 |
+  21 |     async clickContinueButton() {
+  22 |         await test.step("Click Continue Button", async () => {
+  23 |             await this.page.getByRole('link', { name: 'Continue' }).click();
+  24 |         });   
+  25 |     }
+  26 |
+  27 | }
+```

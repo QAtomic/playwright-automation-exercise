@@ -12,7 +12,7 @@ export class CartPage extends BasePage {
     constructor(page: Page, testInfo: TestInfo) {
         super(page, testInfo);
 
-        this.proceedToCheckoutButton = this.page.getByText('Proceed To Checkout');
+        this.proceedToCheckoutButton = this.page.getByRole('button', { name: 'Proceed To Checkout'});
     }
 
 
@@ -23,7 +23,9 @@ export class CartPage extends BasePage {
     };
 
     async clickProceedToCheckoutButton() {
-        await this.proceedToCheckoutButton.click();
+        await test.step('Click Proceed To Checkout Button', async () => {
+            await this.proceedToCheckoutButton.click();
+        });
     }
 
     async verifyFirstProductQuantity(num: number) {
@@ -34,11 +36,13 @@ export class CartPage extends BasePage {
     };
     
     async removeAllItemsFromCart() {
-        await this.page.goto(this.url);
-        const removeItemButtons = await this.page.getByRole('cell', { name: '' }).locator('a').all();
-        for (const removeItemButton of removeItemButtons) {
-            await removeItemButton.click();
-        }
+        await test.step('Remove All Items From Cart', async () => {
+            await this.page.goto(this.url);
+            const removeItemButtons = await this.page.getByRole('cell', { name: '' }).locator('a').all();
+            for (const removeItemButton of removeItemButtons) {
+                await removeItemButton.click();
+            }
+        });
     }
 
 }

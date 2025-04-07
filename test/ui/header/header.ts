@@ -1,4 +1,4 @@
-import { expect, Locator, Page, TestInfo } from '@playwright/test';
+import { test, expect, Locator, Page, TestInfo } from '@playwright/test';
 import { BasePage } from '../basePage/basePage';
 
 export class Header extends BasePage {
@@ -23,30 +23,31 @@ export class Header extends BasePage {
     };
 
     async clickHomeLink() {
-        await this.homeLink.click();
+           await this.homeLink.click(); 
     }
 
     async clickProductsLink() {
-        await this.productsLink.click();
+            await this.productsLink.click();
     }
 
     async clickCartLink() {
-        await this.cartLink.click();
+            await this.cartLink.click();
     }
 
     async clickLogin() {
-        await this.loginLink.click();
+            await this.loginLink.click();
     }
 
     async clickLogout() {
-        await this.logoutLink.click();
+            await this.logoutLink.click();
     }
 
     async verifyLogoutLinkDisplays() {
-        await expect(this.logoutLink).toBeVisible({ timeout: 15000 });
+            await expect(this.logoutLink).toBeVisible({ timeout: 15000 });
     }
 
     async clickDeleteAccountLink() {
-        await this.deleteAccountLink.click();
+            await this.deleteAccountLink.click();
     }
-};
+
+}

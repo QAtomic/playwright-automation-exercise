@@ -1,0 +1,107 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Verify Men Tshirt in Cart
+- Location: C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\cartSerialTests.spec.ts:18:5
+
+# Error details
+
+```
+Error: locator.click: Test timeout of 15000ms exceeded.
+Call log:
+  - waiting for getByRole('link', { name: 'View Cart' })
+    - waiting for" https://www.automationexercise.com/view_cart" navigation to finish...
+    - navigated to "https://www.automationexercise.com/view_cart"
+
+    at C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\pages\productsPage.ts:30:70
+    at ProductsPage.clickViewCartLink (C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\pages\productsPage.ts:29:20)
+    at C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\pageFunctions\cartPageFunctions.ts:48:37
+```
+
+# Page snapshot
+
+```yaml
+- banner:
+  - link "Website for automation practice":
+    - img "Website for automation practice"
+  - list:
+    - listitem:
+      - link " Home"
+    - listitem:
+      - link " Products"
+    - listitem:
+      - link " Cart"
+    - listitem:
+      - link " Logout"
+    - listitem:
+      - link " Delete Account"
+    - listitem:
+      - link " Test Cases"
+    - listitem:
+      - link " API Testing"
+    - listitem:
+      - link " Video Tutorials"
+    - listitem:
+      - link " Contact us"
+    - listitem:  Logged in as QA FF
+- list:
+  - listitem:
+    - link "Home"
+  - listitem: Shopping Cart
+- paragraph:
+  - text: Cart is empty! Click
+  - link "here"
+  - text: to buy products.
+- contentinfo:
+  - heading "Subscription" [level=2]
+  - textbox "Your email address"
+  - button ""
+  - paragraph: Get the most recent updates from our site and be updated your self...
+  - paragraph: Copyright © 2021 All rights reserved
+- insertion
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect, Locator, Page, TestInfo } from '@playwright/test';
+   2 | import { BasePage } from '../basePage/basePage';
+   3 |
+   4 | export class ProductsPage extends BasePage {
+   5 |
+   6 |     constructor(page: Page, testInfo: TestInfo) {
+   7 |         super(page, testInfo);
+   8 |     }
+   9 |
+  10 |     async addFirstAvailableProductToCart() {
+  11 |         await test.step("Add First Available Product To Cart", async () => {
+  12 |             await this.page.locator('.productinfo > .btn').first().click();
+  13 |         }); 
+  14 |     }
+  15 |
+  16 |     async addProductToCart(product: string) {
+  17 |         await test.step("Add Product To Cart : " + product, async () => {
+  18 |             await this.page.locator('.single-products', { hasText: product}).locator('.productinfo').locator('a.add-to-cart').click();
+  19 |         });
+  20 |     }
+  21 |
+  22 |     async verifyProductAddedToCartMessageAppears() {
+  23 |         await test.step("Verify Product Added To Cart Message Appears", async () => {
+  24 |             await expect(this.page.getByText('Your product has been added to cart. View Cart')).toBeVisible();
+  25 |         });
+  26 |     }
+  27 |
+  28 |     async clickViewCartLink() {
+  29 |         await test.step("Click View Cart Link", async () => {
+> 30 |             await this.page.getByRole('link', { name: 'View Cart' }).click();
+     |                                                                      ^ Error: locator.click: Test timeout of 15000ms exceeded.
+  31 |         });
+  32 |     }
+  33 |
+  34 | }
+```

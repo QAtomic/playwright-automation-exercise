@@ -1,3 +1,0 @@
-[
-  'Rs. 600\n\nWinter Top\n\nAdd to cart\nRs. 600\n\nWinter Top\n\nAdd to cart'
-]

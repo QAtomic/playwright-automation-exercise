@@ -21,7 +21,7 @@ test.describe("Customer Registration Tests", () => {
         await signupPage.enterAccountInformationAndAddressInformationAndClickCreateAccount();
 
         const accountCreatedPage = new AccountCreatedPage(page, testInfo);
-        await accountCreatedPage.verifyAccountCreatedMessageDisplays;
+        await accountCreatedPage.verifyAccountCreatedMessageDisplays();
         await accountCreatedPage.clickContinueButton();
 
         await homePage.verifyLoggedInUsername("Playwright");

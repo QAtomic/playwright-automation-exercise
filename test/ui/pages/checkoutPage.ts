@@ -1,4 +1,4 @@
-import { expect, Locator, Page, TestInfo } from '@playwright/test';
+import { test, expect, Locator, Page, TestInfo } from '@playwright/test';
 import { BasePage } from '../basePage/basePage';
 
 export class CheckoutPage extends BasePage {
@@ -11,11 +11,15 @@ export class CheckoutPage extends BasePage {
     }
 
     async verifyAProductExistsInOrderSummary() {
-        await expect(this.page.locator('product-1')).toBeVisible();
+        await test.step("Verify A Product Exists In Order Summary", async () => {
+            await expect(this.page.locator('product-1')).toBeVisible();
+        });
     }
 
     async clickPlaceOrderButton() {
-        await this.placeOrderButton.click();
+        await test.step("Click Place Order Button", async () => {
+            await this.placeOrderButton.click();
+        });
     }
 
 

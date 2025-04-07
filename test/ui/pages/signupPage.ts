@@ -1,8 +1,9 @@
 import { test, expect, Locator, Page, TestInfo } from '@playwright/test';
-import { getRandomDateBetweenDaysAgo } from '../../utils/dateUtils';
-import { randomNumberBetween } from '../../utils/numberUtils';
 import { BasePage } from '../basePage/basePage';
+import { getRandomDateBetweenDaysAgo } from '../../utils/dateUtils';
 import { generateRandomString } from '../../utils/stringUtils';
+import { randomNumberBetween } from '../../utils/numberUtils';
+
 
 
 export class SignupPage extends BasePage {
@@ -13,7 +14,7 @@ export class SignupPage extends BasePage {
 
 
     async enterAccountInformationAndAddressInformationAndClickCreateAccount() {
-        test.step("Enter Account Information And Address Information And Click Create Account", async () => {
+        await test.step("Enter Account Information And Address Information And Click Create Account", async () => {
             const randomBirthDate = getRandomDateBetweenDaysAgo(6570,32850);
             const randomFirstName = generateRandomString(8);
             const randomPhoneNumber = randomNumberBetween(1111111111, 9999999999);

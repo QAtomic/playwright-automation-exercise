@@ -9,11 +9,16 @@ export class DeletedAccountPage extends BasePage {
     }
 
     async verifyAccountDeletedMessageDisplays(){
-        await expect(this.page.getByText('Account Deleted!')).toBeVisible();
+        await test.step("Verify Account Deleted Message Displays", async () => {
+            const pageText = await this.page.locator('#form').innerText();
+            expect(pageText).toContain('ACCOUNT DELETED!');
+        });
     }
 
     async clickContinueButton() {
-        await this.page.getByRole('link', { name: 'Continue' }).click();
+        await test.step("Click Continue Button", async () => {
+            await this.page.getByRole('link', { name: 'Continue' }).click();
+        });
     }
     
     

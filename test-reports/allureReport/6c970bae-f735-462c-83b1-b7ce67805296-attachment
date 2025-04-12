@@ -1,0 +1,119 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Login Tests >> Example New Requirement
+- Location: C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\loginTests.spec.ts:40:5
+
+# Error details
+
+```
+Error: expect(received).toBeFalsy()
+
+Received: "Development In Progress"
+    at C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\loginTests.spec.ts:48:43
+```
+
+# Page snapshot
+
+```yaml
+- banner:
+  - link "Website for automation practice":
+    - img "Website for automation practice"
+  - list:
+    - listitem:
+      - link " Home"
+    - listitem:
+      - link " Products"
+    - listitem:
+      - link " Cart"
+    - listitem:
+      - link " Signup / Login"
+    - listitem:
+      - link " Test Cases"
+    - listitem:
+      - link " API Testing"
+    - listitem:
+      - link " Video Tutorials"
+    - listitem:
+      - link " Contact us"
+- heading "Login to your account" [level=2]
+- textbox "Email Address"
+- textbox "Password"
+- button "Login"
+- heading "OR" [level=2]
+- heading "New User Signup!" [level=2]
+- textbox "Name"
+- textbox "Email Address"
+- button "Signup"
+- contentinfo:
+  - heading "Subscription" [level=2]
+  - textbox "Your email address"
+  - button ""
+  - paragraph: Get the most recent updates from our site and be updated your self...
+  - paragraph: Copyright © 2021 All rights reserved
+- insertion
+- insertion
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect } from "@playwright/test";
+   2 | import { LoginPageFunctions } from "../pageFunctions/loginPageFunctions";
+   3 | import { LoginPage } from "../pages/loginPage";
+   4 | import { HomePageFunctions } from "../pageFunctions/homePageFunctions";
+   5 | import { HomePage } from "../pages/homePage";
+   6 |
+   7 |
+   8 | test.describe("Login Tests", () => {
+   9 |
+  10 |     
+  11 |     test('Valid Login @PROD', async ({ page }, testInfo) => { 
+  12 |         const homePageFunctions = new HomePageFunctions(page, testInfo);
+  13 |         await homePageFunctions.asAnAuthenticatedUserOnHomePage();
+  14 |     
+  15 |         const homePage = new HomePage(page, testInfo);
+  16 |         await homePage.verifyUserIsLoggedIn();
+  17 |     });
+  18 |     
+  19 |     
+  20 |     test('Invalid Login @PROD', async ({ page }, testInfo) => {
+  21 |         const loginPageFunctions = new LoginPageFunctions(page, testInfo);
+  22 |         await loginPageFunctions.asAnUnauthenticatedUserOnLoginPage();
+  23 |
+  24 |         const loginPage = new LoginPage(page, testInfo);
+  25 |         await loginPage.enterCredentialsAndSubmit("Drew@Atomic.com","InvalidPassword");
+  26 |         await loginPage.verifyIncorrectEmailOrPasswordMessageDisplays();
+  27 |
+  28 |     });
+  29 |
+  30 |
+  31 |     test('Login Page Required Fields @PROD', async ({ page }, testInfo) => {
+  32 |         const loginPageFunctions = new LoginPageFunctions(page, testInfo);
+  33 |         await loginPageFunctions.asAnUnauthenticatedUserOnLoginPage();
+  34 |
+  35 |         const loginPage = new LoginPage(page, testInfo);
+  36 |         await loginPage.verifyRequiredFields();
+  37 |     });
+  38 |
+  39 |
+  40 |     test('Example New Requirement', {
+  41 |         annotation : [
+  42 |             { type : 'Current Sprint', description : 'AUT-212' }
+  43 |         ]
+  44 |     }, async ({ page }, testInfo) => {
+  45 |         const loginPageFunctions = new LoginPageFunctions(page, testInfo);
+  46 |         await loginPageFunctions.asAnUnauthenticatedUserOnLoginPage();
+  47 |
+> 48 |         expect("Development In Progress").toBeFalsy();
+     |                                           ^ Error: expect(received).toBeFalsy()
+  49 |
+  50 |         //testInfo.fail(true, "Development In Progress");
+  51 |     })
+  52 | });
+```

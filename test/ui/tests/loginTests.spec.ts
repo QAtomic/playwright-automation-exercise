@@ -37,4 +37,14 @@ test.describe("Login Tests", () => {
     });
 
 
+    test('Example New Requirement', {
+        annotation : [
+            { type : 'Current Sprint', description : 'AUT-212' }
+        ]
+    }, async ({ page }, testInfo) => {
+        const loginPageFunctions = new LoginPageFunctions(page, testInfo);
+        await loginPageFunctions.asAnUnauthenticatedUserOnLoginPage();
+
+        testInfo.fail(true, "Development In Progress");
+    })
 });

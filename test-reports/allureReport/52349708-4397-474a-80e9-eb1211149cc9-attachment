@@ -1,0 +1,91 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Customer Registration Tests >> New Customer Registration
+- Location: C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\customerRegistrationTests.spec.ts:12:5
+
+# Error details
+
+```
+Error: locator.click: Test timeout of 15000ms exceeded.
+Call log:
+  - waiting for getByRole('link', { name: 'Continue' })
+    - locator resolved to <a href="/" class="btn btn-primary" data-qa="continue-button">Continue</a>
+  - attempting click action
+    - waiting for element to be visible, enabled and stable
+
+    at C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\pages\accountCreatedPage.ts:21:69
+    at AccountCreatedPage.clickContinueButton (C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\pages\accountCreatedPage.ts:20:20)
+    at C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\customerRegistrationTests.spec.ts:25:34
+```
+
+# Page snapshot
+
+```yaml
+- banner:
+  - link "Automation Exercise website":
+    - img "Automation Exercise website"
+  - list:
+    - listitem:
+      - link " Home"
+    - listitem:
+      - link " Products"
+    - listitem:
+      - link " Cart"
+    - listitem:
+      - link " Signup / Login"
+    - listitem:
+      - link " Test Cases"
+    - listitem:
+      - link " API Testing"
+    - listitem:
+      - link " Video Tutorials"
+    - listitem:
+      - link " Contact us"
+- heading "Account Created!" [level=2]
+- paragraph: Congratulations! Your new account has been successfully created!
+- paragraph: You can now take advantage of member privileges to enhance your online shopping experience with us.
+- link "Continue"
+- contentinfo:
+  - heading "Subscription" [level=2]
+  - textbox "Your email address"
+  - button ""
+  - paragraph: Get the most recent updates from our site and be updated your self...
+  - paragraph: Copyright © 2021 All rights reserved
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect, Locator, Page, TestInfo } from '@playwright/test';
+   2 | import { BasePage } from '../basePage/basePage';
+   3 |
+   4 |
+   5 | export class AccountCreatedPage extends BasePage {
+   6 |
+   7 |     constructor(page: Page, testInfo: TestInfo) {
+   8 |         super(page, testInfo);
+   9 |     }
+  10 |
+  11 |
+  12 |     async verifyAccountCreatedMessageDisplays() {
+  13 |         await test.step("Verify Account Created Message Displays", async () => {
+  14 |             const pageText = await this.page.locator('#form').innerText();
+  15 |             expect(pageText).toContain('ACCOUNT CREATED!');
+  16 |         });
+  17 |     }
+  18 |
+  19 |     async clickContinueButton() {
+  20 |         await test.step("Click Continue Button", async () => {
+> 21 |             await this.page.getByRole('link', { name: 'Continue' }).click();
+     |                                                                     ^ Error: locator.click: Test timeout of 15000ms exceeded.
+  22 |         });   
+  23 |     }
+  24 |
+  25 | }
+```

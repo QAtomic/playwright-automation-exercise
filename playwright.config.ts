@@ -44,7 +44,8 @@ export default defineConfig({
   projects: [
     {
       name: 'production-validation',
-      testMatch: 'ui/**/*PROD.*spec.ts',
+      testMatch: 'ui/tests/**/*spec.ts',
+      grep: /@PROD/,
       use: {
         baseURL: process.env.PROD_BASE_URL,
         ...devices['Desktop Chrome'] 
@@ -78,12 +79,12 @@ export default defineConfig({
     },
     {
       name: 'api',
-      testMatch: 'api/**/*spec.ts',
+      testMatch: 'api/tests/**/*spec.ts',
       use: { ...devices['Desktop Chrome'] },
     },
     {
       name: 'functional',
-      testMatch: 'functional/**/*spec.ts',
+      testMatch: 'functional/tests/**/*spec.ts',
       use: { ...devices['Desktop Chrome'] },
     },
 

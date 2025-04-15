@@ -1,8 +1,9 @@
 import { test, expect, Locator, Page, TestInfo } from '@playwright/test';
-import * as dotenv from 'dotenv';
 import { BasePage } from '../basePage/basePage';
 import { generateRandomString } from '../../utils/stringUtils';
 import { verifyElementIsNotRequired, verifyElementIsRequired } from '../../utils/requiredFieldChecker';
+
+import * as dotenv from 'dotenv';
 dotenv.config();
 
 export class LoginPage extends BasePage {
@@ -38,6 +39,28 @@ export class LoginPage extends BasePage {
         }); 
     };
 
+    async enterUserCredentialsAndSubmit(user : string) {
+        let email = "";
+        let password = "";
+        if (user === 'production-validation') {
+            email = process.env.PROD_EMAIL as string;
+            password = process.env.PROD_PASSWORD as string
+        } else if (user === 'qa-chromium') {
+            email = process.env.QA_CHROMIUM_EMAIL as string;
+            password = process.env.QA_CHROMIUM_PASSWORD as string
+        } else if (user === 'qa-firefox') {
+            email = process.env.QA_FIREFOX_EMAIL as string;
+            password = process.env.QA_FIREFOX_PASSWORD as string
+        } else if (user === 'qa-webkit') {
+            email = process.env.QA_WEBKIT_EMAIL as string;
+            password = process.env.QA_WEBKIT_PASSWORD as string
+        } else {
+            test.fail(true, "Login Setup Issue");
+        }
+        
+        await this.enterCredentialsAndSubmit(email, password);
+    };
+
     async enterValidCredentialsAndSubmit() {
         let email = "";
         let password = "";
@@ -53,6 +76,9 @@ export class LoginPage extends BasePage {
         } else if (this.testInfo.project.name === 'qa-webkit') {
             email = process.env.QA_WEBKIT_EMAIL as string;
             password = process.env.QA_WEBKIT_PASSWORD as string
+        } else if (this.testInfo.project.name === 'setup') {
+            email = process.env.QA_CHROMIUM_EMAIL as string;
+            password = process.env.QA_CHROMIUM_PASSWORD as string
         } else {
             test.fail(true, "Login Setup Issue");
         }

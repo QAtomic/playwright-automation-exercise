@@ -1,0 +1,54 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: First Product In Cart
+- Location: C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\cartSerialTests.spec.ts:9:1
+
+# Error details
+
+```
+Error: Error reading storage state from playwright/.auth/authUser.json:
+ENOENT: no such file or directory, open 'C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\playwright\.auth\authUser.json'
+```
+
+# Test source
+
+```ts
+   1 | import { test } from '@playwright/test';
+   2 | import { firstProductInCart, verifyCartQuantity, verifyProductInCart } from './serialTests/cartTests';
+   3 | import { CartPage } from '../pages/cartPage';
+   4 |
+   5 | test.describe.configure({ mode: 'default' });
+   6 |
+   7 | test.use({ storageState: 'playwright/.auth/authUser.json' });
+   8 |
+>  9 | test('First Product In Cart', async ({ page }, testInfo) => {
+     | ^ Error: Error reading storage state from playwright/.auth/authUser.json:
+  10 |     await firstProductInCart(page, testInfo);
+  11 | });
+  12 |
+  13 | test('Verify Cart Quantity', async ({ page }, testInfo) => {
+  14 |     await verifyCartQuantity(page, testInfo)
+  15 | });
+  16 |
+  17 | const products = ['Men Tshirt', 'Sleeveless Dress', 'Stylish Dress', 'Winter Top'];
+  18 |
+  19 | for (const product of products) {
+  20 |     test(`Verify ${product} in Cart`, async ({ page }, testInfo) => {
+  21 |     await verifyProductInCart(page, testInfo, product)
+  22 | });
+  23 | }
+  24 |
+  25 |
+  26 |
+  27 | test.afterEach( async ({ page }, testInfo) => {
+  28 |     const cartPage = new CartPage(page, testInfo);
+  29 |     await cartPage.removeAllItemsFromCart();
+  30 |     await page.waitForTimeout(1000);
+  31 | });
+```

@@ -1,0 +1,129 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Authenticate User
+- Location: C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\setup\authUser.setup.ts:11:1
+
+# Error details
+
+```
+Error: expect(locator).toBeVisible()
+
+Locator: getByRole('link', { name: 'Logout' })
+Expected: visible
+Received: <element(s) not found>
+Call log:
+  - expect.toBeVisible with timeout 15000ms
+  - waiting for getByRole('link', { name: 'Logout' })
+
+    at Header.verifyLogoutLinkDisplays (C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\header\header.ts:46:43)
+    at C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\pages\homePage.ts:36:31
+    at HomePage.verifyUserIsLoggedIn (C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\pages\homePage.ts:35:20)
+    at LoginPageFunctions.loginWithValidCredentials (C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\pageFunctions\loginPageFunctions.ts:26:29)
+    at C:\Users\Drew\Documents\VScode-workspace\playwright-automation-exercise\test\ui\tests\setup\authUser.setup.ts:13:3
+```
+
+# Page snapshot
+
+```yaml
+- banner:
+  - link "Website for automation practice":
+    - img "Website for automation practice"
+  - list:
+    - listitem:
+      - link " Home"
+    - listitem:
+      - link " Products"
+    - listitem:
+      - link " Cart"
+    - listitem:
+      - link " Signup / Login"
+    - listitem:
+      - link " Test Cases"
+    - listitem:
+      - link " API Testing"
+    - listitem:
+      - link " Video Tutorials"
+    - listitem:
+      - link " Contact us"
+- heading "Login to your account" [level=2]
+- textbox "Email Address"
+- textbox "Password"
+- button "Login"
+- heading "OR" [level=2]
+- heading "New User Signup!" [level=2]
+- textbox "Name"
+- textbox "Email Address"
+- button "Signup"
+- contentinfo:
+  - heading "Subscription" [level=2]
+  - textbox "Your email address"
+  - button ""
+  - paragraph: Get the most recent updates from our site and be updated your self...
+  - paragraph: Copyright © 2021 All rights reserved
+- insertion
+```
+
+# Test source
+
+```ts
+   1 | import { test, expect, Locator, Page, TestInfo } from '@playwright/test';
+   2 | import { BasePage } from '../basePage/basePage';
+   3 |
+   4 | export class Header extends BasePage {
+   5 |
+   6 |     homeLink: Locator;
+   7 |     productsLink: Locator;
+   8 |     cartLink: Locator;
+   9 |     loginLink: Locator;
+  10 |     logoutLink: Locator;
+  11 |     deleteAccountLink: Locator;
+  12 |     
+  13 |
+  14 |     constructor(page: Page, testInfo: TestInfo) {
+  15 |         super(page, testInfo);
+  16 |
+  17 |         this.homeLink = this.page.getByRole('link', { name: 'Home' });
+  18 |         this.productsLink = this.page.getByRole('link', { name: 'Products' });
+  19 |         this.cartLink = this.page.getByRole('link', { name: 'Cart' });
+  20 |         this.loginLink = this.page.getByRole('link', { name: 'Signup / Login' });
+  21 |         this.logoutLink = this.page.getByRole('link', { name: 'Logout' }); 
+  22 |         this.deleteAccountLink = this.page.getByRole('link', { name: 'Delete Account' });
+  23 |     };
+  24 |
+  25 |     async clickHomeLink() {
+  26 |            await this.homeLink.click(); 
+  27 |     }
+  28 |
+  29 |     async clickProductsLink() {
+  30 |             await this.productsLink.click();
+  31 |     }
+  32 |
+  33 |     async clickCartLink() {
+  34 |             await this.cartLink.click();
+  35 |     }
+  36 |
+  37 |     async clickLogin() {
+  38 |             await this.loginLink.click();
+  39 |     }
+  40 |
+  41 |     async clickLogout() {
+  42 |             await this.logoutLink.click();
+  43 |     }
+  44 |
+  45 |     async verifyLogoutLinkDisplays() {
+> 46 |             await expect(this.logoutLink).toBeVisible({ timeout: 15000 });
+     |                                           ^ Error: expect(locator).toBeVisible()
+  47 |     }
+  48 |
+  49 |     async clickDeleteAccountLink() {
+  50 |             await this.deleteAccountLink.click();
+  51 |     }
+  52 |
+  53 | }
+```

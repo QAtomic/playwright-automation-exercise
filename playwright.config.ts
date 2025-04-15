@@ -42,14 +42,25 @@ export default defineConfig({
 
   /* Configure projects for major browsers */
   projects: [
+    // Setup project
+    { 
+      name: 'setup', 
+      testMatch: /.*\.setup\.ts/ ,
+      use: { 
+        baseURL: process.env.QA_BASE_URL,
+        ...devices['Desktop Chrome']
+      } 
+    },
     {
       name: 'production-validation',
       testMatch: 'ui/tests/**/*spec.ts',
       grep: /@PROD/,
       use: {
         baseURL: process.env.PROD_BASE_URL,
+        storageState: 'playwright/.auth/prodUser.json',
         ...devices['Desktop Chrome'] 
       },
+      dependencies: ['setup'],
       retries: 0
     },
     {
@@ -57,25 +68,30 @@ export default defineConfig({
       testMatch: 'ui/tests/**/*spec.ts',
       use: { 
         baseURL: process.env.QA_BASE_URL,
-        ...devices['Desktop Chrome'] 
+        ...devices['Desktop Chrome'], 
+        storageState: 'playwright/.auth/chromeUser.json',
       },
+      dependencies: ['setup'],
     },
     {
       name: 'qa-firefox',
       testMatch: 'ui/tests/**/*spec.ts',
       use: { 
         baseURL: process.env.QA_BASE_URL,
+        storageState: 'playwright/.auth/firefoxUser.json',
         ...devices['Desktop Firefox'] 
       },
+      dependencies: ['setup'],
     },
-
     {
       name: 'qa-webkit',
       testMatch: 'ui/tests/**/*spec.ts',
       use: { 
         baseURL: process.env.QA_BASE_URL,
+        storageState: 'playwright/.auth/webkitUser.json',
         ...devices['Desktop Safari'] 
       },
+      dependencies: ['setup'],
     },
     {
       name: 'api',

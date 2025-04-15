@@ -3,8 +3,14 @@ import { BasePage } from '../basePage/basePage';
 
 export class ProductsPage extends BasePage {
 
+    url : string = this.testInfo.project.use.baseURL + '/products';
+
     constructor(page: Page, testInfo: TestInfo) {
         super(page, testInfo);
+    }
+
+    async navigateToProductsPage() {
+        await this.page.goto(this.url);
     }
 
     async addFirstAvailableProductToCart() {

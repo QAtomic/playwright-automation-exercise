@@ -26,6 +26,14 @@ export class LoginPageFunctions {
         await this.homePage.verifyUserIsLoggedIn();
     }
 
+    async loginWithUserCredentials(user : string){
+        await this.homePage.navigateToHomePage();
+        await this.homePage.clickLogin();
+
+        await this.loginPage.enterUserCredentialsAndSubmit(user);
+        await this.homePage.verifyUserIsLoggedIn();
+    }
+
     async asAnUnauthenticatedUserOnLoginPage() {
         await test.step("As An Unauthenticated User On LoginPage", async () => {
             await this.homePage.navigateToHomePage();

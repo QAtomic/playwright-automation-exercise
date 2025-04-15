@@ -7,6 +7,7 @@ import { HomePage } from "../pages/homePage";
 
 test.describe("Login Tests", () => {
 
+    test.use({ storageState: 'playwright/.auth/noAuth.json' });
     
     test('Valid Login @PROD', async ({ page }, testInfo) => { 
         const homePageFunctions = new HomePageFunctions(page, testInfo);

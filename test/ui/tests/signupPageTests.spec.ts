@@ -5,6 +5,7 @@ import { SignupPage } from "../pages/signupPage";
 
 test.describe("Signup Page Tests", () => {
 
+    test.use({ storageState: 'playwright/.auth/noAuth.json' });
     
     test('Signup Page Required Fields @PROD', async ({ page }, testInfo) => { 
         const signupPageFunctions = new SignupPageFunctions(page, testInfo);

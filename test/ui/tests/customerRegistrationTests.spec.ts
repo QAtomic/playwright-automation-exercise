@@ -8,6 +8,7 @@ import { DeletedAccountPage } from "../pages/deletedAccountPage";
 
 test.describe("Customer Registration Tests", () => {
 
+    test.use({ storageState: 'playwright/.auth/noAuth.json' });
 
     test('New Customer Registration', async ({ page }, testInfo) => {
         const homePage = new HomePage(page, testInfo);

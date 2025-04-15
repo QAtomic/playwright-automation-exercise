@@ -7,6 +7,7 @@ import { HomePage } from '../pages/homePage';
 
 test.describe("Home Page Tests", () => {
 
+    test.use({ storageState: 'playwright/.auth/noAuth.json' });
 
     test('Company Logo @PROD', async ({ page }, testInfo) => {
         const homePage = new HomePage(page, testInfo);
@@ -20,6 +21,5 @@ test.describe("Home Page Tests", () => {
         await homePage.navigateToHomePage();
         await homePage.checkForBrokenLinks();
     }); 
-
 
 });
